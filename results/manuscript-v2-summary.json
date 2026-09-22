@@ -1,0 +1,14 @@
+{
+  "states": 2187,
+  "mean_gain": 0.37654348833161483,
+  "disagreements": 319,
+  "material_gains": 474,
+  "mean_costs": {
+    "fixed_prior_cost": 15.213679012345679,
+    "frozen_policy_cost": 14.938240262314904,
+    "adaptive_cost": 14.56169677398329,
+    "joint_oracle_cost": 11.946666666666667
+  },
+  "validation_max_difference": 5.3608295013773954e-05,
+  "validation_inside_95": 22
+}

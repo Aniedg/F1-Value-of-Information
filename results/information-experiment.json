@@ -1,0 +1,812 @@
+{
+  "version": 7,
+  "label": "Synthetic mechanism study; illustrative parameters",
+  "cases": [
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.15000000000000002,
+        "high": 0.19,
+        "prior_high": 0.5,
+        "noise_sd": 2.1508137994721905,
+        "pit_loss": 18.0,
+        "fresh_degradation": 0.06
+      },
+      "learnable_variance": 0.0576,
+      "noise_variance": 4.626,
+      "total_variance": 4.6836,
+      "report": {
+        "adaptive_cost": 19.68,
+        "frozen_policy_cost": 19.68,
+        "oracle_cost": 19.14,
+        "policy_gain": 0.0,
+        "adaptive_regret": 0.5399999999999991,
+        "planning_information_value": 0.0,
+        "pit_cost": 19.68,
+        "stay_adaptive": 21.054457574216283,
+        "stay_frozen": 21.080000000000002,
+        "adaptive_action": "pit",
+        "frozen_action": "pit"
+      },
+      "refined_report": {
+        "adaptive_cost": 19.68,
+        "frozen_policy_cost": 19.68,
+        "oracle_cost": 19.14,
+        "policy_gain": 0.0,
+        "adaptive_regret": 0.5399999999999991,
+        "planning_information_value": 0.0,
+        "pit_cost": 19.68,
+        "stay_adaptive": 21.05440380702309,
+        "stay_frozen": 21.080000000000002,
+        "adaptive_action": "pit",
+        "frozen_action": "pit"
+      },
+      "rollout": {
+        "trials": 30000,
+        "seed": 20260922,
+        "gain": 0.0,
+        "paired_standard_error": 0.0,
+        "gain_95_ci": [
+          0.0,
+          0.0
+        ],
+        "adaptive_cost": 19.680000000000003,
+        "frozen_cost": 19.680000000000003,
+        "actual_noise_sd": 2.1508137994721905
+      },
+      "sweep": [
+        {
+          "pit_loss": 8,
+          "adaptive_cost": 9.68,
+          "frozen_policy_cost": 9.68,
+          "oracle_cost": 9.68,
+          "policy_gain": 0.0,
+          "adaptive_regret": 0.0,
+          "planning_information_value": 0.0,
+          "pit_cost": 9.68,
+          "stay_adaptive": 11.3,
+          "stay_frozen": 11.3,
+          "adaptive_action": "pit",
+          "frozen_action": "pit"
+        },
+        {
+          "pit_loss": 12,
+          "adaptive_cost": 13.68,
+          "frozen_policy_cost": 13.68,
+          "oracle_cost": 13.68,
+          "policy_gain": 0.0,
+          "adaptive_regret": 0.0,
+          "planning_information_value": 0.0,
+          "pit_cost": 13.68,
+          "stay_adaptive": 15.3,
+          "stay_frozen": 15.3,
+          "adaptive_action": "pit",
+          "frozen_action": "pit"
+        },
+        {
+          "pit_loss": 18,
+          "adaptive_cost": 19.68,
+          "frozen_policy_cost": 19.68,
+          "oracle_cost": 19.14,
+          "policy_gain": 0.0,
+          "adaptive_regret": 0.5399999999999991,
+          "planning_information_value": 0.0,
+          "pit_cost": 19.68,
+          "stay_adaptive": 21.054457574216283,
+          "stay_frozen": 21.080000000000002,
+          "adaptive_action": "pit",
+          "frozen_action": "pit"
+        },
+        {
+          "pit_loss": 24,
+          "adaptive_cost": 21.080000000000005,
+          "frozen_policy_cost": 21.080000000000005,
+          "oracle_cost": 21.080000000000002,
+          "policy_gain": 0.0,
+          "adaptive_regret": 3.552713678800501e-15,
+          "planning_information_value": -3.552713678800501e-15,
+          "pit_cost": 25.68,
+          "stay_adaptive": 21.080000000000005,
+          "stay_frozen": 21.080000000000002,
+          "adaptive_action": "stay",
+          "frozen_action": "stay"
+        },
+        {
+          "pit_loss": 32,
+          "adaptive_cost": 21.080000000000005,
+          "frozen_policy_cost": 21.080000000000005,
+          "oracle_cost": 21.080000000000002,
+          "policy_gain": 0.0,
+          "adaptive_regret": 3.552713678800501e-15,
+          "planning_information_value": -3.552713678800501e-15,
+          "pit_cost": 33.68,
+          "stay_adaptive": 21.080000000000005,
+          "stay_frozen": 21.080000000000002,
+          "adaptive_action": "stay",
+          "frozen_action": "stay"
+        },
+        {
+          "pit_loss": 40,
+          "adaptive_cost": 21.080000000000005,
+          "frozen_policy_cost": 21.080000000000005,
+          "oracle_cost": 21.080000000000002,
+          "policy_gain": 0.0,
+          "adaptive_regret": 3.552713678800501e-15,
+          "planning_information_value": -3.552713678800501e-15,
+          "pit_cost": 41.68,
+          "stay_adaptive": 21.080000000000005,
+          "stay_frozen": 21.080000000000002,
+          "adaptive_action": "stay",
+          "frozen_action": "stay"
+        }
+      ],
+      "recovery": [
+        {
+          "offset_sd": 0,
+          "trials": 20000,
+          "seed": 20260924,
+          "by_lap": [
+            {
+              "observations": 1,
+              "brier": 0.24683904416541286,
+              "posterior_theta_variance": 0.0003950340823955619,
+              "accuracy": 0.54065,
+              "ignored_offset_brier": 0.24683904416541286
+            },
+            {
+              "observations": 2,
+              "brier": 0.24378925890530817,
+              "posterior_theta_variance": 0.00038941060004220416,
+              "accuracy": 0.5663,
+              "ignored_offset_brier": 0.24378925890530817
+            },
+            {
+              "observations": 3,
+              "brier": 0.2399688046980933,
+              "posterior_theta_variance": 0.0003830162050574504,
+              "accuracy": 0.5813,
+              "ignored_offset_brier": 0.2399688046980933
+            },
+            {
+              "observations": 4,
+              "brier": 0.23568421919835186,
+              "posterior_theta_variance": 0.00037581292286217866,
+              "accuracy": 0.598,
+              "ignored_offset_brier": 0.23568421919835186
+            },
+            {
+              "observations": 5,
+              "brier": 0.2310384260821265,
+              "posterior_theta_variance": 0.00036821745938007467,
+              "accuracy": 0.61385,
+              "ignored_offset_brier": 0.2310384260821265
+            },
+            {
+              "observations": 6,
+              "brier": 0.22551329933984707,
+              "posterior_theta_variance": 0.0003598239691243707,
+              "accuracy": 0.62785,
+              "ignored_offset_brier": 0.22551329933984707
+            },
+            {
+              "observations": 7,
+              "brier": 0.2201325769883907,
+              "posterior_theta_variance": 0.0003511394055503442,
+              "accuracy": 0.6447,
+              "ignored_offset_brier": 0.2201325769883907
+            },
+            {
+              "observations": 8,
+              "brier": 0.2148468079649417,
+              "posterior_theta_variance": 0.0003416153432247849,
+              "accuracy": 0.656,
+              "ignored_offset_brier": 0.2148468079649417
+            }
+          ]
+        },
+        {
+          "offset_sd": 6,
+          "trials": 20000,
+          "seed": 20260924,
+          "by_lap": [
+            {
+              "observations": 1,
+              "brier": 0.2497262161296291,
+              "posterior_theta_variance": 0.00039944148481936044,
+              "accuracy": 0.513,
+              "ignored_offset_brier": 0.2674507755311162
+            },
+            {
+              "observations": 2,
+              "brier": 0.24973249452969104,
+              "posterior_theta_variance": 0.0003993361783187064,
+              "accuracy": 0.51015,
+              "ignored_offset_brier": 0.3053197101877852
+            },
+            {
+              "observations": 3,
+              "brier": 0.24965880207212077,
+              "posterior_theta_variance": 0.0003992132399515979,
+              "accuracy": 0.51205,
+              "ignored_offset_brier": 0.3403332060339363
+            },
+            {
+              "observations": 4,
+              "brier": 0.24954485092316095,
+              "posterior_theta_variance": 0.00039903509110873466,
+              "accuracy": 0.51335,
+              "ignored_offset_brier": 0.3678761806337538
+            },
+            {
+              "observations": 5,
+              "brier": 0.24944017916751549,
+              "posterior_theta_variance": 0.000398797489592253,
+              "accuracy": 0.51145,
+              "ignored_offset_brier": 0.38836921397940616
+            },
+            {
+              "observations": 6,
+              "brier": 0.2491479413669333,
+              "posterior_theta_variance": 0.0003984917798769203,
+              "accuracy": 0.5227,
+              "ignored_offset_brier": 0.4032895854601553
+            },
+            {
+              "observations": 7,
+              "brier": 0.2489767268818086,
+              "posterior_theta_variance": 0.00039808056230228306,
+              "accuracy": 0.52405,
+              "ignored_offset_brier": 0.4148499435523775
+            },
+            {
+              "observations": 8,
+              "brier": 0.24881309980980768,
+              "posterior_theta_variance": 0.00039750930935876613,
+              "accuracy": 0.5251,
+              "ignored_offset_brier": 0.4241366991305533
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.09000000000000001,
+        "high": 0.25,
+        "prior_high": 0.5,
+        "noise_sd": 1.9395875850293538,
+        "pit_loss": 18.0,
+        "fresh_degradation": 0.06
+      },
+      "learnable_variance": 0.9216,
+      "noise_variance": 3.762000000000001,
+      "total_variance": 4.6836,
+      "report": {
+        "adaptive_cost": 19.278016998619385,
+        "frozen_policy_cost": 19.68,
+        "oracle_cost": 15.42,
+        "policy_gain": 0.40198300138061427,
+        "adaptive_regret": 3.8580169986193855,
+        "planning_information_value": 0.40198300138061427,
+        "pit_cost": 19.68,
+        "stay_adaptive": 19.278016998619385,
+        "stay_frozen": 21.080000000000002,
+        "adaptive_action": "stay",
+        "frozen_action": "pit"
+      },
+      "refined_report": {
+        "adaptive_cost": 19.277379717718283,
+        "frozen_policy_cost": 19.68,
+        "oracle_cost": 15.42,
+        "policy_gain": 0.40262028228171687,
+        "adaptive_regret": 3.857379717718283,
+        "planning_information_value": 0.40262028228171687,
+        "pit_cost": 19.68,
+        "stay_adaptive": 19.277379717718283,
+        "stay_frozen": 21.080000000000002,
+        "adaptive_action": "stay",
+        "frozen_action": "pit"
+      },
+      "rollout": {
+        "trials": 30000,
+        "seed": 20260922,
+        "gain": 0.39843233333333156,
+        "paired_standard_error": 0.04000543265068832,
+        "gain_95_ci": [
+          0.3200216853379825,
+          0.47684298132868064
+        ],
+        "adaptive_cost": 19.281567666666668,
+        "frozen_cost": 19.680000000000003,
+        "actual_noise_sd": 1.9395875850293538
+      },
+      "sweep": [
+        {
+          "pit_loss": 8,
+          "adaptive_cost": 9.68,
+          "frozen_policy_cost": 9.68,
+          "oracle_cost": 9.68,
+          "policy_gain": 0.0,
+          "adaptive_regret": 0.0,
+          "planning_information_value": 0.0,
+          "pit_cost": 9.68,
+          "stay_adaptive": 11.3,
+          "stay_frozen": 11.3,
+          "adaptive_action": "pit",
+          "frozen_action": "pit"
+        },
+        {
+          "pit_loss": 12,
+          "adaptive_cost": 13.68,
+          "frozen_policy_cost": 13.68,
+          "oracle_cost": 12.42,
+          "policy_gain": 0.0,
+          "adaptive_regret": 1.2599999999999998,
+          "planning_information_value": 0.0,
+          "pit_cost": 13.68,
+          "stay_adaptive": 15.154023750928001,
+          "stay_frozen": 15.3,
+          "adaptive_action": "pit",
+          "frozen_action": "pit"
+        },
+        {
+          "pit_loss": 18,
+          "adaptive_cost": 19.278016998619385,
+          "frozen_policy_cost": 19.68,
+          "oracle_cost": 15.42,
+          "policy_gain": 0.40198300138061427,
+          "adaptive_regret": 3.8580169986193855,
+          "planning_information_value": 0.40198300138061427,
+          "pit_cost": 19.68,
+          "stay_adaptive": 19.278016998619385,
+          "stay_frozen": 21.080000000000002,
+          "adaptive_action": "stay",
+          "frozen_action": "pit"
+        },
+        {
+          "pit_loss": 24,
+          "adaptive_cost": 21.027949687779834,
+          "frozen_policy_cost": 21.027949687779834,
+          "oracle_cost": 18.42,
+          "policy_gain": 0.0,
+          "adaptive_regret": 2.6079496877798327,
+          "planning_information_value": 0.05205031222016743,
+          "pit_cost": 25.68,
+          "stay_adaptive": 21.027949687779834,
+          "stay_frozen": 21.080000000000002,
+          "adaptive_action": "stay",
+          "frozen_action": "stay"
+        },
+        {
+          "pit_loss": 32,
+          "adaptive_cost": 21.080000000000002,
+          "frozen_policy_cost": 21.080000000000002,
+          "oracle_cost": 21.08,
+          "policy_gain": 0.0,
+          "adaptive_regret": 3.552713678800501e-15,
+          "planning_information_value": 0.0,
+          "pit_cost": 33.68,
+          "stay_adaptive": 21.080000000000002,
+          "stay_frozen": 21.080000000000002,
+          "adaptive_action": "stay",
+          "frozen_action": "stay"
+        },
+        {
+          "pit_loss": 40,
+          "adaptive_cost": 21.080000000000002,
+          "frozen_policy_cost": 21.080000000000002,
+          "oracle_cost": 21.08,
+          "policy_gain": 0.0,
+          "adaptive_regret": 3.552713678800501e-15,
+          "planning_information_value": 0.0,
+          "pit_cost": 41.68,
+          "stay_adaptive": 21.080000000000002,
+          "stay_frozen": 21.080000000000002,
+          "adaptive_action": "stay",
+          "frozen_action": "stay"
+        }
+      ],
+      "recovery": [
+        {
+          "offset_sd": 0,
+          "trials": 20000,
+          "seed": 20260924,
+          "by_lap": [
+            {
+              "observations": 1,
+              "brier": 0.20008238209352536,
+              "posterior_theta_variance": 0.005111710745746815,
+              "accuracy": 0.6847,
+              "ignored_offset_brier": 0.20008238209352536
+            },
+            {
+              "observations": 2,
+              "brier": 0.1592205558572669,
+              "posterior_theta_variance": 0.004063790565661352,
+              "accuracy": 0.76705,
+              "ignored_offset_brier": 0.1592205558572669
+            },
+            {
+              "observations": 3,
+              "brier": 0.12513572287680028,
+              "posterior_theta_variance": 0.0031686036672759206,
+              "accuracy": 0.8201,
+              "ignored_offset_brier": 0.12513572287680028
+            },
+            {
+              "observations": 4,
+              "brier": 0.09605697879317904,
+              "posterior_theta_variance": 0.0024386008832001063,
+              "accuracy": 0.8659,
+              "ignored_offset_brier": 0.09605697879317904
+            },
+            {
+              "observations": 5,
+              "brier": 0.07226700609341864,
+              "posterior_theta_variance": 0.0018209083098693246,
+              "accuracy": 0.9005,
+              "ignored_offset_brier": 0.07226700609341864
+            },
+            {
+              "observations": 6,
+              "brier": 0.05188141943051589,
+              "posterior_theta_variance": 0.0013365998764094309,
+              "accuracy": 0.9296,
+              "ignored_offset_brier": 0.05188141943051589
+            },
+            {
+              "observations": 7,
+              "brier": 0.03709436501581343,
+              "posterior_theta_variance": 0.0009445542424658495,
+              "accuracy": 0.9511,
+              "ignored_offset_brier": 0.03709436501581343
+            },
+            {
+              "observations": 8,
+              "brier": 0.025893015569432565,
+              "posterior_theta_variance": 0.0006579983071970237,
+              "accuracy": 0.9658,
+              "ignored_offset_brier": 0.025893015569432565
+            }
+          ]
+        },
+        {
+          "offset_sd": 6,
+          "trials": 20000,
+          "seed": 20260924,
+          "by_lap": [
+            {
+              "observations": 1,
+              "brier": 0.24459588372081909,
+              "posterior_theta_variance": 0.0062568923869442674,
+              "accuracy": 0.5587,
+              "ignored_offset_brier": 0.33941693193557876
+            },
+            {
+              "observations": 2,
+              "brier": 0.24392277084668176,
+              "posterior_theta_variance": 0.006231528928184589,
+              "accuracy": 0.5602,
+              "ignored_offset_brier": 0.38211992557175456
+            },
+            {
+              "observations": 3,
+              "brier": 0.24272821730993704,
+              "posterior_theta_variance": 0.0061991525039551435,
+              "accuracy": 0.5664,
+              "ignored_offset_brier": 0.3977762521789892
+            },
+            {
+              "observations": 4,
+              "brier": 0.2410007261619467,
+              "posterior_theta_variance": 0.006151243747000994,
+              "accuracy": 0.57425,
+              "ignored_offset_brier": 0.405400733435657
+            },
+            {
+              "observations": 5,
+              "brier": 0.2386658535441585,
+              "posterior_theta_variance": 0.006086260276852174,
+              "accuracy": 0.58055,
+              "ignored_offset_brier": 0.4076457579505385
+            },
+            {
+              "observations": 6,
+              "brier": 0.23470070969330217,
+              "posterior_theta_variance": 0.006001882820366041,
+              "accuracy": 0.59775,
+              "ignored_offset_brier": 0.40808967602425245
+            },
+            {
+              "observations": 7,
+              "brier": 0.23050631598901095,
+              "posterior_theta_variance": 0.0058915900691364174,
+              "accuracy": 0.61215,
+              "ignored_offset_brier": 0.4076928016254113
+            },
+            {
+              "observations": 8,
+              "brier": 0.22573931170845418,
+              "posterior_theta_variance": 0.005745140236219353,
+              "accuracy": 0.6274,
+              "ignored_offset_brier": 0.40765722349147776
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04000000000000001,
+        "high": 0.30000000000000004,
+        "prior_high": 0.5,
+        "noise_sd": 1.5,
+        "pit_loss": 18.0,
+        "fresh_degradation": 0.06
+      },
+      "learnable_variance": 2.4336,
+      "noise_variance": 2.25,
+      "total_variance": 4.6836,
+      "report": {
+        "adaptive_cost": 15.306854768241083,
+        "frozen_policy_cost": 19.68,
+        "oracle_cost": 12.32,
+        "policy_gain": 4.373145231758917,
+        "adaptive_regret": 2.9868547682410824,
+        "planning_information_value": 4.373145231758917,
+        "pit_cost": 19.68,
+        "stay_adaptive": 15.306854768241083,
+        "stay_frozen": 21.080000000000005,
+        "adaptive_action": "stay",
+        "frozen_action": "pit"
+      },
+      "refined_report": {
+        "adaptive_cost": 15.283806964177254,
+        "frozen_policy_cost": 19.68,
+        "oracle_cost": 12.32,
+        "policy_gain": 4.396193035822746,
+        "adaptive_regret": 2.9638069641772535,
+        "planning_information_value": 4.396193035822746,
+        "pit_cost": 19.68,
+        "stay_adaptive": 15.283806964177254,
+        "stay_frozen": 21.080000000000005,
+        "adaptive_action": "stay",
+        "frozen_action": "pit"
+      },
+      "rollout": {
+        "trials": 30000,
+        "seed": 20260922,
+        "gain": 4.373866666666665,
+        "paired_standard_error": 0.056614733201282214,
+        "gain_95_ci": [
+          4.262901789592151,
+          4.484831543741178
+        ],
+        "adaptive_cost": 15.306133333333339,
+        "frozen_cost": 19.680000000000003,
+        "actual_noise_sd": 1.5
+      },
+      "sweep": [
+        {
+          "pit_loss": 8,
+          "adaptive_cost": 9.68,
+          "frozen_policy_cost": 9.68,
+          "oracle_cost": 7.32,
+          "policy_gain": 0.0,
+          "adaptive_regret": 2.3599999999999994,
+          "planning_information_value": 0.0,
+          "pit_cost": 9.68,
+          "stay_adaptive": 9.727696429346263,
+          "stay_frozen": 11.3,
+          "adaptive_action": "pit",
+          "frozen_action": "pit"
+        },
+        {
+          "pit_loss": 12,
+          "adaptive_cost": 12.003103556955727,
+          "frozen_policy_cost": 13.68,
+          "oracle_cost": 9.32,
+          "policy_gain": 1.6768964430442725,
+          "adaptive_regret": 2.683103556955727,
+          "planning_information_value": 1.6768964430442725,
+          "pit_cost": 13.68,
+          "stay_adaptive": 12.003103556955727,
+          "stay_frozen": 15.3,
+          "adaptive_action": "stay",
+          "frozen_action": "pit"
+        },
+        {
+          "pit_loss": 18,
+          "adaptive_cost": 15.306854768241083,
+          "frozen_policy_cost": 19.68,
+          "oracle_cost": 12.32,
+          "policy_gain": 4.373145231758917,
+          "adaptive_regret": 2.9868547682410824,
+          "planning_information_value": 4.373145231758917,
+          "pit_cost": 19.68,
+          "stay_adaptive": 15.306854768241083,
+          "stay_frozen": 21.080000000000005,
+          "adaptive_action": "stay",
+          "frozen_action": "pit"
+        },
+        {
+          "pit_loss": 24,
+          "adaptive_cost": 18.377162838611508,
+          "frozen_policy_cost": 18.48505018706506,
+          "oracle_cost": 15.32,
+          "policy_gain": 0.10788734845355208,
+          "adaptive_regret": 3.0571628386115073,
+          "planning_information_value": 2.702837161388498,
+          "pit_cost": 25.68,
+          "stay_adaptive": 18.377162838611508,
+          "stay_frozen": 21.080000000000005,
+          "adaptive_action": "stay",
+          "frozen_action": "stay"
+        },
+        {
+          "pit_loss": 32,
+          "adaptive_cost": 21.067670086043563,
+          "frozen_policy_cost": 21.067670086043563,
+          "oracle_cost": 19.32,
+          "policy_gain": 0.0,
+          "adaptive_regret": 1.7476700860435628,
+          "planning_information_value": 0.01232991395644234,
+          "pit_cost": 33.68,
+          "stay_adaptive": 21.067670086043563,
+          "stay_frozen": 21.080000000000005,
+          "adaptive_action": "stay",
+          "frozen_action": "stay"
+        },
+        {
+          "pit_loss": 40,
+          "adaptive_cost": 21.080000000000005,
+          "frozen_policy_cost": 21.080000000000005,
+          "oracle_cost": 21.080000000000002,
+          "policy_gain": 0.0,
+          "adaptive_regret": 3.552713678800501e-15,
+          "planning_information_value": 0.0,
+          "pit_cost": 41.68,
+          "stay_adaptive": 21.080000000000005,
+          "stay_frozen": 21.080000000000005,
+          "adaptive_action": "stay",
+          "frozen_action": "stay"
+        }
+      ],
+      "recovery": [
+        {
+          "offset_sd": 0,
+          "trials": 20000,
+          "seed": 20260924,
+          "by_lap": [
+            {
+              "observations": 1,
+              "brier": 0.10595386448940829,
+              "posterior_theta_variance": 0.007230537808253618,
+              "accuracy": 0.85185,
+              "ignored_offset_brier": 0.10595386448940829
+            },
+            {
+              "observations": 2,
+              "brier": 0.04675675734440149,
+              "posterior_theta_variance": 0.003132619997350899,
+              "accuracy": 0.9377,
+              "ignored_offset_brier": 0.04675675734440149
+            },
+            {
+              "observations": 3,
+              "brier": 0.019139739712833323,
+              "posterior_theta_variance": 0.0013103639860633748,
+              "accuracy": 0.9751,
+              "ignored_offset_brier": 0.019139739712833323
+            },
+            {
+              "observations": 4,
+              "brier": 0.007524058404760308,
+              "posterior_theta_variance": 0.0004867732672041165,
+              "accuracy": 0.98995,
+              "ignored_offset_brier": 0.007524058404760308
+            },
+            {
+              "observations": 5,
+              "brier": 0.002650187196741423,
+              "posterior_theta_variance": 0.00016646015149086396,
+              "accuracy": 0.99655,
+              "ignored_offset_brier": 0.002650187196741423
+            },
+            {
+              "observations": 6,
+              "brier": 0.0008269795354158326,
+              "posterior_theta_variance": 5.478908799801836e-05,
+              "accuracy": 0.99905,
+              "ignored_offset_brier": 0.0008269795354158326
+            },
+            {
+              "observations": 7,
+              "brier": 0.00026997222938657603,
+              "posterior_theta_variance": 1.3603359017373873e-05,
+              "accuracy": 0.9996,
+              "ignored_offset_brier": 0.00026997222938657603
+            },
+            {
+              "observations": 8,
+              "brier": 6.760570958363103e-05,
+              "posterior_theta_variance": 2.364416389374462e-06,
+              "accuracy": 0.9999,
+              "ignored_offset_brier": 6.760570958363103e-05
+            }
+          ]
+        },
+        {
+          "offset_sd": 6,
+          "trials": 20000,
+          "seed": 20260924,
+          "by_lap": [
+            {
+              "observations": 1,
+              "brier": 0.23538420436268248,
+              "posterior_theta_variance": 0.01589859554467897,
+              "accuracy": 0.59765,
+              "ignored_offset_brier": 0.3585156788967037
+            },
+            {
+              "observations": 2,
+              "brier": 0.23340617171624536,
+              "posterior_theta_variance": 0.015728542075527194,
+              "accuracy": 0.60205,
+              "ignored_offset_brier": 0.37589003256963643
+            },
+            {
+              "observations": 3,
+              "brier": 0.22967759815548966,
+              "posterior_theta_variance": 0.01546023725487405,
+              "accuracy": 0.6132,
+              "ignored_offset_brier": 0.37863105770579625
+            },
+            {
+              "observations": 4,
+              "brier": 0.22388483960117342,
+              "posterior_theta_variance": 0.015042211013029215,
+              "accuracy": 0.6276,
+              "ignored_offset_brier": 0.3776093919601621
+            },
+            {
+              "observations": 5,
+              "brier": 0.21559253477974136,
+              "posterior_theta_variance": 0.014461792371227543,
+              "accuracy": 0.6494,
+              "ignored_offset_brier": 0.3753163380562375
+            },
+            {
+              "observations": 6,
+              "brier": 0.20290868911576332,
+              "posterior_theta_variance": 0.013709367951281332,
+              "accuracy": 0.6816,
+              "ignored_offset_brier": 0.3710606501845719
+            },
+            {
+              "observations": 7,
+              "brier": 0.18902087341078763,
+              "posterior_theta_variance": 0.012778284370847498,
+              "accuracy": 0.71055,
+              "ignored_offset_brier": 0.3682428432674729
+            },
+            {
+              "observations": 8,
+              "brier": 0.17383320247267028,
+              "posterior_theta_variance": 0.01165483067104785,
+              "accuracy": 0.7403,
+              "ignored_offset_brier": 0.36460625447021183
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "design": "Same initial predictive mean and variance, different variance decomposition. Full predictive distributions differ.",
+  "caveat": "Decision solver assumes known baseline. Offset recovery is a separate diagnostic, not a nuisance-aware policy evaluation."
+}

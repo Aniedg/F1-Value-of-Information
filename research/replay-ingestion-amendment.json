@@ -1,0 +1,9 @@
+{
+  "reason": "FastF1 fuzzy event lookup mapped Great Britain to Austrian Grand Prix. Incorrectly labelled duplicate of development Austria was quarantined before historical evaluation. Use explicit rounds 12,13,14 and assert event names. No held-out outcomes had been evaluated or model settings changed.",
+  "files": {
+    "src/pitvoi/strict_ingestion.py": "4293a4e2800c2f4b21a7412c7b189994d67744d6c19c20b5173a2074efbd7d3a",
+    "research/selection-replay-great-britain.json": "9e0cc2dfcf5322a018d89f4e4ae3f94f69a1544e4abe8e95f1467931a0fac1eb",
+    "research/selection-replay-hungary.json": "5a2feb4a37c8d5c14f29d3d5efc3d8f089a17b6539ab246c6d07ee785d15c764",
+    "research/selection-replay-belgium.json": "6305a96b658aa04dca5ed1ac21fabb58b80342490b6261566871a95742b4e4b1"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "selected_before_download": true,
+  "year": 2024,
+  "event": "Bahrain",
+  "session": "R",
+  "drivers": "all",
+  "purpose": "Data-ingestion feasibility and observation-model development only; not held-out evaluation",
+  "rationale": "One fixed season-opening event to avoid selecting races by strategy improvement",
+  "online_validity": "Historical timing and quality flags can be revised; this pilot does not establish as-of availability"
+}

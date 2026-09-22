@@ -1,0 +1,42 @@
+{
+  "experiment": "robust-forecast-v0.5",
+  "selected_utc": "2026-09-22T05:36:04.907582+00:00",
+  "development": [
+    "Bahrain",
+    "Saudi Arabia",
+    "Australia",
+    "Japan",
+    "China"
+  ],
+  "heldout": [
+    "Miami",
+    "Emilia Romagna",
+    "Monaco"
+  ],
+  "year": 2024,
+  "session": "R",
+  "selection": "Next three chronological Grands Prix; all earlier inspected races now development data",
+  "warmup": 3,
+  "noise_sd": [
+    0.3,
+    0.6,
+    1.2
+  ],
+  "level_sd": [
+    0.1,
+    0.3,
+    0.6
+  ],
+  "clip": [
+    2.5,
+    4.0,
+    1000000.0
+  ],
+  "reset_gap": [
+    false,
+    true
+  ],
+  "selection_metric": "Equal-race mean absolute error",
+  "interval_calibration": "Equal-race weighted development 90th percentile of absolute standardized residuals; empirical, no exchangeability guarantee",
+  "limitations": "Median warm-start, clipped updates and gap resets are robust heuristics, not exact Bayesian inference; gaps are not proof of race interruptions; retrospective quality filters retained"
+}

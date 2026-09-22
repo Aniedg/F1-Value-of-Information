@@ -1,0 +1,10 @@
+{
+  "selected_before_download": true,
+  "year": 2024,
+  "event": "Monaco",
+  "session": "R",
+  "drivers": "all",
+  "purpose": "robust-forecast-v0.5",
+  "rationale": "Next three chronological Grands Prix; all earlier inspected races now development data",
+  "online_validity": "Retrospective quality control, not proven as-of"
+}

@@ -1,0 +1,991 @@
+{
+  "experiment": "historical-forecast-v0.3",
+  "frozen_utc": "2026-09-21T20:28:35.591429+00:00",
+  "protocol": {
+    "experiment": "historical-forecast-v0.3",
+    "development_event": "2024-bahrain",
+    "heldout_event": "2024-saudi-arabia",
+    "selection_reason": "Next event chronologically after the fixed Bahrain development pilot; selected before download or scoring",
+    "warmup_observations": 3,
+    "scoring": "One-step prediction of each next eligible observation within driver/stint, accounting for lap gaps. Not necessarily the immediately next race lap.",
+    "primary_selection_metric": "Mean Gaussian negative log predictive density on Bahrain after warmup",
+    "noise_sd_candidates": [
+      0.3,
+      0.6,
+      1.2,
+      2.0
+    ],
+    "level_process_sd_candidates": [
+      0.0,
+      0.1,
+      0.3,
+      0.6
+    ],
+    "slope_process_sd_candidates": [
+      0.0,
+      0.01,
+      0.03
+    ],
+    "initial_slope_mean": 0.0,
+    "initial_slope_sd": 0.15,
+    "initial_level_variance": 1000000.0,
+    "baselines": [
+      "last_observation",
+      "expanding_mean"
+    ],
+    "baseline_interval_fit": "Gaussian residual RMS estimated only from Bahrain forecasts after warmup",
+    "nuisance_pace_improvement_assumptions_seconds_per_lap": [
+      0.0,
+      0.04,
+      0.08,
+      0.12
+    ],
+    "nuisance_interpretation": "Conditional tyre slope = net slope + assumed fuel/track pace improvement. Assumptions are illustrative, not measured.",
+    "quality_control": "Use existing retrospective eligibility flags without pace-based outlier removal. As-of flag availability is not established.",
+    "no_test_tuning": true,
+    "scope": "Single held-out race feasibility test, not broad generalisation or causal strategy evaluation"
+  },
+  "protocol_sha256": "409b9afcc633102f2c366d01a175b694bf07ce579231b329ab5413f7588bcb5c",
+  "development_sha256": "331392a482648e2e4bb1f6dd111d8b095499224d6fbcf4287aace123123c6589",
+  "source_sha256": {
+    "forecast.py": "c0b4cd40240b2323a32a0daba3c7c4bd05e6300c3f716c71c50e70e4670de62d",
+    "forecast_experiment.py": "d3c1fa6526ec944982b25abc312cfaf109f074002aa8fc809e694b971f43996d"
+  },
+  "selected": {
+    "config": {
+      "noise_sd": 0.3,
+      "level_process_sd": 0.3,
+      "slope_process_sd": 0.0,
+      "initial_slope_mean": 0.0,
+      "initial_slope_sd": 0.15,
+      "initial_level_variance": 1000000.0
+    },
+    "development_scores": {
+      "n": 820,
+      "mae": 0.2789892874176098,
+      "rmse": 0.46934943315381905,
+      "bias": 0.026475252711517298,
+      "nll": 0.6694883243900492,
+      "coverage90": 0.9341463414634147,
+      "mean_interval_width": 1.6801045544644406
+    }
+  },
+  "baseline_sd": {
+    "last_observation": 0.5122061715707087,
+    "expanding_mean": 0.5341431143752311
+  },
+  "candidates": [
+    {
+      "config": {
+        "noise_sd": 0.3,
+        "level_process_sd": 0.0,
+        "slope_process_sd": 0.0,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.30580167394013635,
+        "rmse": 0.4796361958672003,
+        "bias": 0.039993207393781344,
+        "nll": 0.7665022504417432,
+        "coverage90": 0.8792682926829268,
+        "mean_interval_width": 1.2216114752723797
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 0.3,
+        "level_process_sd": 0.0,
+        "slope_process_sd": 0.01,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.30262159900284746,
+        "rmse": 0.4764291398343737,
+        "bias": 0.0331134116315988,
+        "nll": 0.7438053494497859,
+        "coverage90": 0.8792682926829268,
+        "mean_interval_width": 1.234240085637485
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 0.3,
+        "level_process_sd": 0.0,
+        "slope_process_sd": 0.03,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.2967003520016629,
+        "rmse": 0.4744082208255756,
+        "bias": 0.016739107086201577,
+        "nll": 0.7084186615085645,
+        "coverage90": 0.8878048780487805,
+        "mean_interval_width": 1.2897334429518583
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 0.3,
+        "level_process_sd": 0.1,
+        "slope_process_sd": 0.0,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.2931125160563444,
+        "rmse": 0.4682216151920612,
+        "bias": 0.0297936754422579,
+        "nll": 0.6886035191266371,
+        "coverage90": 0.901219512195122,
+        "mean_interval_width": 1.3001455696664357
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 0.3,
+        "level_process_sd": 0.1,
+        "slope_process_sd": 0.01,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.292356095089348,
+        "rmse": 0.46820184634270606,
+        "bias": 0.02712920556191247,
+        "nll": 0.685480935869329,
+        "coverage90": 0.9036585365853659,
+        "mean_interval_width": 1.3080358369038105
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 0.3,
+        "level_process_sd": 0.1,
+        "slope_process_sd": 0.03,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.2907156147544716,
+        "rmse": 0.47117572410684233,
+        "bias": 0.017256767539290837,
+        "nll": 0.6820258334428458,
+        "coverage90": 0.9,
+        "mean_interval_width": 1.3516382261350888
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 0.3,
+        "level_process_sd": 0.3,
+        "slope_process_sd": 0.0,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.2789892874176098,
+        "rmse": 0.46934943315381905,
+        "bias": 0.026475252711517298,
+        "nll": 0.6694883243900492,
+        "coverage90": 0.9341463414634147,
+        "mean_interval_width": 1.6801045544644406
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 0.3,
+        "level_process_sd": 0.3,
+        "slope_process_sd": 0.01,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.279206315519654,
+        "rmse": 0.4699241796366775,
+        "bias": 0.025890713127222433,
+        "nll": 0.6708441492781289,
+        "coverage90": 0.9341463414634147,
+        "mean_interval_width": 1.6834656326847734
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 0.3,
+        "level_process_sd": 0.3,
+        "slope_process_sd": 0.03,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.28088909046948235,
+        "rmse": 0.4740455072031395,
+        "bias": 0.022270422962230273,
+        "nll": 0.6806421477919524,
+        "coverage90": 0.9329268292682927,
+        "mean_interval_width": 1.7069854772923716
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 0.3,
+        "level_process_sd": 0.6,
+        "slope_process_sd": 0.0,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.2820503522600929,
+        "rmse": 0.48739488943409354,
+        "bias": 0.03310845018611725,
+        "nll": 0.8383179334897215,
+        "coverage90": 0.9670731707317073,
+        "mean_interval_width": 2.446279364407687
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 0.3,
+        "level_process_sd": 0.6,
+        "slope_process_sd": 0.01,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.28220619821639564,
+        "rmse": 0.4877018388168384,
+        "bias": 0.032807097338684935,
+        "nll": 0.8390608719714947,
+        "coverage90": 0.9670731707317073,
+        "mean_interval_width": 2.4483109712072726
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 0.3,
+        "level_process_sd": 0.6,
+        "slope_process_sd": 0.03,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.2833722086683448,
+        "rmse": 0.48999956738019657,
+        "bias": 0.030672762212929236,
+        "nll": 0.8446236533939124,
+        "coverage90": 0.9670731707317073,
+        "mean_interval_width": 2.463501881081485
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 0.6,
+        "level_process_sd": 0.0,
+        "slope_process_sd": 0.0,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.28706716693470496,
+        "rmse": 0.45770393170263285,
+        "bias": 0.07139284710587135,
+        "nll": 0.7879743013006538,
+        "coverage90": 0.975609756097561,
+        "mean_interval_width": 2.3440717466224843
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 0.6,
+        "level_process_sd": 0.0,
+        "slope_process_sd": 0.01,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.28604615726987537,
+        "rmse": 0.4565765526979687,
+        "bias": 0.06857201390315222,
+        "nll": 0.7888427876077225,
+        "coverage90": 0.9768292682926829,
+        "mean_interval_width": 2.3525761097808373
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 0.6,
+        "level_process_sd": 0.0,
+        "slope_process_sd": 0.03,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.28315963125699534,
+        "rmse": 0.453667309958413,
+        "bias": 0.05520462589810585,
+        "nll": 0.7985368042342182,
+        "coverage90": 0.9768292682926829,
+        "mean_interval_width": 2.40307930644408
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 0.6,
+        "level_process_sd": 0.1,
+        "slope_process_sd": 0.0,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.28269629208234365,
+        "rmse": 0.45310346639734567,
+        "bias": 0.06699616745625868,
+        "nll": 0.7946504243139965,
+        "coverage90": 0.9768292682926829,
+        "mean_interval_width": 2.3888859115640266
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 0.6,
+        "level_process_sd": 0.1,
+        "slope_process_sd": 0.01,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.282240235940701,
+        "rmse": 0.4525902063355917,
+        "bias": 0.06487370771598139,
+        "nll": 0.7959582729733276,
+        "coverage90": 0.9768292682926829,
+        "mean_interval_width": 2.396130607499916
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 0.6,
+        "level_process_sd": 0.1,
+        "slope_process_sd": 0.03,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.2804540030976061,
+        "rmse": 0.45154175114801154,
+        "bias": 0.05384080512463493,
+        "nll": 0.806528509249795,
+        "coverage90": 0.9792682926829268,
+        "mean_interval_width": 2.441642337781928
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 0.6,
+        "level_process_sd": 0.3,
+        "slope_process_sd": 0.0,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.27048988006985203,
+        "rmse": 0.4456754419681269,
+        "bias": 0.055633719709558875,
+        "nll": 0.8588625801270823,
+        "coverage90": 0.9817073170731707,
+        "mean_interval_width": 2.6604851961751392
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 0.6,
+        "level_process_sd": 0.3,
+        "slope_process_sd": 0.01,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.27055767178826123,
+        "rmse": 0.4458955280049888,
+        "bias": 0.054772762763755395,
+        "nll": 0.8601236967107112,
+        "coverage90": 0.9817073170731707,
+        "mean_interval_width": 2.6647212435596317
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 0.6,
+        "level_process_sd": 0.3,
+        "slope_process_sd": 0.03,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.27138395679655064,
+        "rmse": 0.44771757085426306,
+        "bias": 0.049248946513948254,
+        "nll": 0.8692174769932195,
+        "coverage90": 0.9829268292682927,
+        "mean_interval_width": 2.6946743007772267
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 0.6,
+        "level_process_sd": 0.6,
+        "slope_process_sd": 0.0,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.26985924211955153,
+        "rmse": 0.4558815941559079,
+        "bias": 0.04949586288052938,
+        "nll": 1.0191502300581234,
+        "coverage90": 0.9878048780487805,
+        "mean_interval_width": 3.2735755902329347
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 0.6,
+        "level_process_sd": 0.6,
+        "slope_process_sd": 0.01,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.2699678084916776,
+        "rmse": 0.45609057474704473,
+        "bias": 0.04910153844009611,
+        "nll": 1.0198509002885798,
+        "coverage90": 0.9878048780487805,
+        "mean_interval_width": 3.2760827683936653
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 0.6,
+        "level_process_sd": 0.6,
+        "slope_process_sd": 0.03,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.27076138817312184,
+        "rmse": 0.4576869066624764,
+        "bias": 0.04629563184405102,
+        "nll": 1.0251004940820247,
+        "coverage90": 0.9878048780487805,
+        "mean_interval_width": 3.2948445165939453
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 1.2,
+        "level_process_sd": 0.0,
+        "slope_process_sd": 0.0,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.28228707027282524,
+        "rmse": 0.45363166800019905,
+        "bias": 0.11274045633975063,
+        "nll": 1.2860550264835402,
+        "coverage90": 0.9939024390243902,
+        "mean_interval_width": 4.494609949473156
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 1.2,
+        "level_process_sd": 0.0,
+        "slope_process_sd": 0.01,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.2817675758639036,
+        "rmse": 0.4530868225808662,
+        "bias": 0.11114327968097613,
+        "nll": 1.287274203412564,
+        "coverage90": 0.9939024390243902,
+        "mean_interval_width": 4.501411578754905
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 1.2,
+        "level_process_sd": 0.0,
+        "slope_process_sd": 0.03,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.2794514057869852,
+        "rmse": 0.45034468577051795,
+        "bias": 0.10105903143963205,
+        "nll": 1.295965008448349,
+        "coverage90": 0.9939024390243902,
+        "mean_interval_width": 4.5485530626527115
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 1.2,
+        "level_process_sd": 0.1,
+        "slope_process_sd": 0.0,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.280903481234085,
+        "rmse": 0.4520917838562006,
+        "bias": 0.11092446468969297,
+        "nll": 1.2907351119596646,
+        "coverage90": 0.9939024390243902,
+        "mean_interval_width": 4.520156453747662
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 1.2,
+        "level_process_sd": 0.1,
+        "slope_process_sd": 0.01,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.28052493995206296,
+        "rmse": 0.451624796463409,
+        "bias": 0.10942332053966573,
+        "nll": 1.2919164962009761,
+        "coverage90": 0.9939024390243902,
+        "mean_interval_width": 4.526682706488387
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 1.2,
+        "level_process_sd": 0.1,
+        "slope_process_sd": 0.03,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.2785737016709251,
+        "rmse": 0.449259796859903,
+        "bias": 0.09984362211684553,
+        "nll": 1.3003635843676864,
+        "coverage90": 0.9939024390243902,
+        "mean_interval_width": 4.572248517949263
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 1.2,
+        "level_process_sd": 0.3,
+        "slope_process_sd": 0.0,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.2742856451646656,
+        "rmse": 0.444782254040195,
+        "bias": 0.10047742441424098,
+        "nll": 1.3245882613911824,
+        "coverage90": 0.9951219512195122,
+        "mean_interval_width": 4.702429632426225
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 1.2,
+        "level_process_sd": 0.3,
+        "slope_process_sd": 0.01,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.2741257197530927,
+        "rmse": 0.4446187074201499,
+        "bias": 0.09943441681214034,
+        "nll": 1.3255423272448807,
+        "coverage90": 0.9951219512195122,
+        "mean_interval_width": 4.707557867478332
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 1.2,
+        "level_process_sd": 0.3,
+        "slope_process_sd": 0.03,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.27317938509173995,
+        "rmse": 0.4438315408344572,
+        "bias": 0.09242032194468351,
+        "nll": 1.3324934035602838,
+        "coverage90": 0.9951219512195122,
+        "mean_interval_width": 4.744581119856264
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 1.2,
+        "level_process_sd": 0.6,
+        "slope_process_sd": 0.0,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.2665928741461922,
+        "rmse": 0.44012728632201903,
+        "bias": 0.08376359521382623,
+        "nll": 1.411507081473471,
+        "coverage90": 0.9963414634146341,
+        "mean_interval_width": 5.1772123580829055
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 1.2,
+        "level_process_sd": 0.6,
+        "slope_process_sd": 0.01,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.2665662925547095,
+        "rmse": 0.44015721317595313,
+        "bias": 0.08322360783392854,
+        "nll": 1.4121063358556363,
+        "coverage90": 0.9963414634146341,
+        "mean_interval_width": 5.180544255983544
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 1.2,
+        "level_process_sd": 0.6,
+        "slope_process_sd": 0.03,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.266435450900441,
+        "rmse": 0.44047706384456764,
+        "bias": 0.0793470168358315,
+        "nll": 1.4166090634162196,
+        "coverage90": 0.9963414634146341,
+        "mean_interval_width": 5.205550073177208
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 2.0,
+        "level_process_sd": 0.0,
+        "slope_process_sd": 0.0,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.29409899986944044,
+        "rmse": 0.4635935904911333,
+        "bias": 0.1473877137045764,
+        "nll": 1.7373426929908984,
+        "coverage90": 0.998780487804878,
+        "mean_interval_width": 7.298038968273194
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 2.0,
+        "level_process_sd": 0.0,
+        "slope_process_sd": 0.01,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.29341998128567304,
+        "rmse": 0.4629644945359358,
+        "bias": 0.1460402717501668,
+        "nll": 1.7381614431944545,
+        "coverage90": 0.998780487804878,
+        "mean_interval_width": 7.304695582498807
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 2.0,
+        "level_process_sd": 0.0,
+        "slope_process_sd": 0.03,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.2894728366376834,
+        "rmse": 0.45910372166092,
+        "bias": 0.13691651209175107,
+        "nll": 1.7441210272301344,
+        "coverage90": 1.0,
+        "mean_interval_width": 7.352776244259505
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 2.0,
+        "level_process_sd": 0.1,
+        "slope_process_sd": 0.0,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.29310615409304064,
+        "rmse": 0.4626707789775146,
+        "bias": 0.1461936594782041,
+        "nll": 1.7395890781288772,
+        "coverage90": 0.998780487804878,
+        "mean_interval_width": 7.315799276434031
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 2.0,
+        "level_process_sd": 0.1,
+        "slope_process_sd": 0.01,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.2924578580592885,
+        "rmse": 0.4620724563475333,
+        "bias": 0.14488544007755946,
+        "nll": 1.7403920370256654,
+        "coverage90": 0.998780487804878,
+        "mean_interval_width": 7.322325357974919
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 2.0,
+        "level_process_sd": 0.1,
+        "slope_process_sd": 0.03,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.28876370349099434,
+        "rmse": 0.45838677008982515,
+        "bias": 0.1359969041495829,
+        "nll": 1.7462466290145997,
+        "coverage90": 1.0,
+        "mean_interval_width": 7.369566396285751
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 2.0,
+        "level_process_sd": 0.3,
+        "slope_process_sd": 0.0,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.28685140528293285,
+        "rmse": 0.4566683803292534,
+        "bias": 0.1378617539144411,
+        "nll": 1.7564963904159163,
+        "coverage90": 1.0,
+        "mean_interval_width": 7.449905287513875
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 2.0,
+        "level_process_sd": 0.3,
+        "slope_process_sd": 0.01,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.28645667927331225,
+        "rmse": 0.4562541371477583,
+        "bias": 0.13680326538269805,
+        "nll": 1.757193564970796,
+        "coverage90": 1.0,
+        "mean_interval_width": 7.4555749340334785
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 2.0,
+        "level_process_sd": 0.3,
+        "slope_process_sd": 0.03,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.284118794881069,
+        "rmse": 0.4536409476411639,
+        "bias": 0.129447002699368,
+        "nll": 1.7623352098652636,
+        "coverage90": 1.0,
+        "mean_interval_width": 7.497204331174652
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 2.0,
+        "level_process_sd": 0.6,
+        "slope_process_sd": 0.0,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.27660998201445813,
+        "rmse": 0.44623233168676046,
+        "bias": 0.11925623235940057,
+        "nll": 1.803916061927576,
+        "coverage90": 1.0,
+        "mean_interval_width": 7.832675290717699
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 2.0,
+        "level_process_sd": 0.6,
+        "slope_process_sd": 0.01,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.2764764079911296,
+        "rmse": 0.4460790908752982,
+        "bias": 0.11862542538054102,
+        "nll": 1.804404039185689,
+        "coverage90": 1.0,
+        "mean_interval_width": 7.836722444518072
+      }
+    },
+    {
+      "config": {
+        "noise_sd": 2.0,
+        "level_process_sd": 0.6,
+        "slope_process_sd": 0.03,
+        "initial_slope_mean": 0.0,
+        "initial_slope_sd": 0.15,
+        "initial_level_variance": 1000000.0
+      },
+      "development_scores": {
+        "n": 820,
+        "mae": 0.27551208372170977,
+        "rmse": 0.4450780537634689,
+        "bias": 0.1140469277482761,
+        "nll": 1.8080871887909602,
+        "coverage90": 1.0,
+        "mean_interval_width": 7.867242971046349
+      }
+    }
+  ]
+}

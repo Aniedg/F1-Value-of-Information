@@ -1,0 +1,40 @@
+{
+  "status": "Synthetic model and misspecification checks, fixed before executing this script",
+  "seed": 20261002,
+  "trials": 20000,
+  "observations": [
+    4,
+    8,
+    16,
+    24
+  ],
+  "rates": [
+    0.04,
+    0.3
+  ],
+  "assumed_noise": 1.2,
+  "scenarios": [
+    {
+      "name": "matched",
+      "unmodelled_drift": 0.0,
+      "outlier_probability": 0.0
+    },
+    {
+      "name": "drift_0.05",
+      "unmodelled_drift": 0.05,
+      "outlier_probability": 0.0
+    },
+    {
+      "name": "drift_0.15",
+      "unmodelled_drift": 0.15,
+      "outlier_probability": 0.0
+    },
+    {
+      "name": "traffic_contamination",
+      "unmodelled_drift": 0.0,
+      "outlier_probability": 0.1
+    }
+  ],
+  "outlier_seconds": 6.0,
+  "source_sha256": "767e77b0a54da90206ecafdd4ce70fe07e57d1a0a332b7bde6113b22f088718a"
+}

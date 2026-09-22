@@ -1,0 +1,36 @@
+{
+  "experiment": "adaptive-intervals-v0.6",
+  "selected_utc": "2026-09-22T06:46:52.772614+00:00",
+  "development": [
+    "Bahrain",
+    "Saudi Arabia",
+    "Australia",
+    "Japan",
+    "China",
+    "Miami",
+    "Emilia Romagna",
+    "Monaco"
+  ],
+  "heldout": [
+    "Canada",
+    "Spain",
+    "Austria"
+  ],
+  "year": 2024,
+  "window_candidates": [
+    20,
+    40
+  ],
+  "prior_mass_candidates": [
+    5,
+    15,
+    30
+  ],
+  "prior_support_size": 201,
+  "selection": "Minimum equal-race 90% interval score using leave-one-development-race-out residual priors; point estimator remains v0.5",
+  "target": "Same retrospective eligible within-stint targets; dry-compound only, including any qualifying subset of wet events",
+  "prior": "Equal race weighted standardized absolute residual distribution, discretized at 201 midpoint quantiles",
+  "adaptation": "Only earlier scored errors from same driver in current race, retained across stints; no cross-driver pooling",
+  "interval_score": "Width + 20 times distance outside interval (alpha=0.1)",
+  "limitations": "Empirical adaptive predictive intervals; no exchangeability/coverage guarantee; not epistemic tyre uncertainty"
+}

@@ -1,0 +1,180 @@
+{
+  "status": "Post-test largest-gain numerical check, conditional synthetic rewards only",
+  "source_sha256": "65e48447efa42b6258f06a60a01151ab4d0f34007488ca7d09784ea34f0f6010",
+  "cases": [
+    {
+      "event": "great-britain",
+      "state": {
+        "driver": "ZHO",
+        "stint": 5,
+        "lap": 41,
+        "time": 7673.884,
+        "laps": 11,
+        "age": 5,
+        "prior_high": 0.4201173528755597,
+        "history_count": 3,
+        "history_sum_age": 9.0,
+        "observed_compounds": [
+          "MEDIUM",
+          "SOFT"
+        ],
+        "adaptive_cost": 16.414859077951846,
+        "frozen_policy_cost": 16.4148630592874,
+        "policy_gain": 3.9813355527940075e-06,
+        "old_regime_oracle_cost": 14.020687380850315,
+        "joint_oracle_cost": 14.020687380850315,
+        "adaptive_regret_old_oracle": 2.3941716971015303,
+        "adaptive_regret_joint_oracle": 2.3941716971015303,
+        "prior_replacement_mean": 0.06,
+        "pit_cost": 27.3,
+        "planning_information_value": 0.0004972142891617182,
+        "waiting_margin": -10.884643707758993,
+        "continuation_learning_benefit": 0.0004972142891617182,
+        "adaptive_wait_advantage": 10.885140922048155,
+        "adaptive_action": "stay",
+        "frozen_action": "stay"
+      },
+      "refined": {
+        "adaptive_cost": 16.4148597732348,
+        "frozen_policy_cost": 16.41486327980345,
+        "policy_gain": 3.5065686496693615e-06,
+        "old_regime_oracle_cost": 14.020687380850315,
+        "joint_oracle_cost": 14.020687380850315,
+        "adaptive_regret_old_oracle": 2.3941723923844833,
+        "adaptive_regret_joint_oracle": 2.3941723923844833,
+        "prior_replacement_mean": 0.06,
+        "pit_cost": 27.3,
+        "planning_information_value": 0.0004965190062087288,
+        "waiting_margin": -10.884643707758993,
+        "continuation_learning_benefit": 0.0004965190062087288,
+        "adaptive_wait_advantage": 10.885140226765202,
+        "adaptive_action": "stay",
+        "frozen_action": "stay"
+      },
+      "trials": 100000,
+      "seed": 20261003,
+      "gain": -6.879999999999995e-05,
+      "se": 5.010287185958192e-05,
+      "ci": [
+        -0.0001670016288447805,
+        2.940162884478061e-05
+      ]
+    },
+    {
+      "event": "hungary",
+      "state": {
+        "driver": "PER",
+        "stint": 3,
+        "lap": 58,
+        "time": 8230.487,
+        "laps": 12,
+        "age": 11,
+        "prior_high": 0.40369556835501447,
+        "history_count": 10,
+        "history_sum_age": 55.0,
+        "observed_compounds": [
+          "HARD",
+          "MEDIUM"
+        ],
+        "adaptive_cost": 20.917103891980194,
+        "frozen_policy_cost": 27.96,
+        "policy_gain": 7.042896108019807,
+        "old_regime_oracle_cost": 16.01005918983449,
+        "joint_oracle_cost": 16.01005918983449,
+        "adaptive_regret_old_oracle": 4.907044702145704,
+        "adaptive_regret_joint_oracle": 4.907044702145704,
+        "prior_replacement_mean": 0.06,
+        "pit_cost": 27.96,
+        "planning_information_value": 7.042896108019807,
+        "waiting_margin": 0.7422478589161443,
+        "continuation_learning_benefit": 7.7851439669359515,
+        "adaptive_wait_advantage": 7.042896108019807,
+        "adaptive_action": "stay",
+        "frozen_action": "pit"
+      },
+      "refined": {
+        "adaptive_cost": 20.917257659310415,
+        "frozen_policy_cost": 27.96,
+        "policy_gain": 7.0427423406895855,
+        "old_regime_oracle_cost": 16.01005918983449,
+        "joint_oracle_cost": 16.01005918983449,
+        "adaptive_regret_old_oracle": 4.907198469475926,
+        "adaptive_regret_joint_oracle": 4.907198469475926,
+        "prior_replacement_mean": 0.06,
+        "pit_cost": 27.96,
+        "planning_information_value": 7.0427423406895855,
+        "waiting_margin": 0.7422478589161443,
+        "continuation_learning_benefit": 7.78499019960573,
+        "adaptive_wait_advantage": 7.0427423406895855,
+        "adaptive_action": "stay",
+        "frozen_action": "pit"
+      },
+      "trials": 100000,
+      "seed": 20261004,
+      "gain": 7.121328599999999,
+      "se": 0.04592294223277134,
+      "ci": [
+        7.0313196332237675,
+        7.211337566776231
+      ]
+    },
+    {
+      "event": "belgium",
+      "state": {
+        "driver": "PER",
+        "stint": 3,
+        "lap": 32,
+        "time": 6841.628,
+        "laps": 12,
+        "age": 11,
+        "prior_high": 0.39600504626521904,
+        "history_count": 10,
+        "history_sum_age": 55.0,
+        "observed_compounds": [
+          "HARD",
+          "MEDIUM"
+        ],
+        "adaptive_cost": 20.71332133611491,
+        "frozen_policy_cost": 27.96,
+        "policy_gain": 7.246678663885092,
+        "old_regime_oracle_cost": 15.85594112715499,
+        "joint_oracle_cost": 15.855941127154992,
+        "adaptive_regret_old_oracle": 4.857380208959919,
+        "adaptive_regret_joint_oracle": 4.857380208959917,
+        "prior_replacement_mean": 0.06,
+        "pit_cost": 27.96,
+        "planning_information_value": 7.246678663885092,
+        "waiting_margin": 0.346339781733473,
+        "continuation_learning_benefit": 7.593018445618565,
+        "adaptive_wait_advantage": 7.246678663885092,
+        "adaptive_action": "stay",
+        "frozen_action": "pit"
+      },
+      "refined": {
+        "adaptive_cost": 20.713475875956384,
+        "frozen_policy_cost": 27.96,
+        "policy_gain": 7.246524124043617,
+        "old_regime_oracle_cost": 15.85594112715499,
+        "joint_oracle_cost": 15.855941127154992,
+        "adaptive_regret_old_oracle": 4.857534748801394,
+        "adaptive_regret_joint_oracle": 4.857534748801392,
+        "prior_replacement_mean": 0.06,
+        "pit_cost": 27.96,
+        "planning_information_value": 7.246524124043617,
+        "waiting_margin": 0.346339781733473,
+        "continuation_learning_benefit": 7.59286390577709,
+        "adaptive_wait_advantage": 7.246524124043617,
+        "adaptive_action": "stay",
+        "frozen_action": "pit"
+      },
+      "trials": 100000,
+      "seed": 20261005,
+      "gain": 7.311187199999998,
+      "se": 0.045982876137041925,
+      "ci": [
+        7.221060762771396,
+        7.401313637228601
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+# Additional manuscript building and QA dependencies
+reportlab==4.4.0
+Markdown==3.8
+beautifulsoup4==4.13.4
+Pillow==12.3.0
+PyMuPDF==1.28.0

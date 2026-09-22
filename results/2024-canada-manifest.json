@@ -1,0 +1,284 @@
+{
+  "selection": {
+    "selected_before_download": true,
+    "year": 2024,
+    "event": "Canada",
+    "session": "R",
+    "drivers": "all",
+    "purpose": "adaptive-intervals-v0.6",
+    "rationale": "Next three chronological races; no performance selection",
+    "online_validity": "Retrospective quality flags; not proven as-of"
+  },
+  "retrieved_utc": "2026-09-22T06:48:19.323440+00:00",
+  "fastf1_version": "3.8.3",
+  "source": "FastF1 / F1 timing feeds",
+  "raw_sha256": "e0220a598524768ed82caf295394b1dc6347656305f9802c221e5a73c3e46b71",
+  "processed_sha256": "53b1e4288968c3337ea01e080f33d30592fb83af13e877b56fe130c8a2e83312",
+  "total_laps": 1272,
+  "eligible_laps": 257,
+  "drivers": 20,
+  "eligible_stints": 23,
+  "exclusion_counts_overlapping": {
+    "missing_lap_or_age": 5,
+    "nonpositive_lap_or_age": 0,
+    "pit_in_or_out": 89,
+    "not_green": 317,
+    "not_dry_compound": 846,
+    "inaccurate": 250,
+    "generated": 2,
+    "first_race_lap": 20
+  },
+  "stints": [
+    {
+      "driver": "ALB",
+      "stint": 3,
+      "compound": "MEDIUM",
+      "eligible_laps": 5,
+      "first_lap": 46,
+      "last_lap": 51,
+      "median_lap_seconds": 81.247
+    },
+    {
+      "driver": "ALO",
+      "stint": 3,
+      "compound": "HARD",
+      "eligible_laps": 16,
+      "first_lap": 46,
+      "last_lap": 70,
+      "median_lap_seconds": 77.67750000000001
+    },
+    {
+      "driver": "BOT",
+      "stint": 2,
+      "compound": "MEDIUM",
+      "eligible_laps": 17,
+      "first_lap": 44,
+      "last_lap": 70,
+      "median_lap_seconds": 79.259
+    },
+    {
+      "driver": "GAS",
+      "stint": 3,
+      "compound": "HARD",
+      "eligible_laps": 20,
+      "first_lap": 42,
+      "last_lap": 70,
+      "median_lap_seconds": 78.898
+    },
+    {
+      "driver": "HAM",
+      "stint": 3,
+      "compound": "MEDIUM",
+      "eligible_laps": 6,
+      "first_lap": 45,
+      "last_lap": 51,
+      "median_lap_seconds": 80.4145
+    },
+    {
+      "driver": "HAM",
+      "stint": 4,
+      "compound": "HARD",
+      "eligible_laps": 10,
+      "first_lap": 59,
+      "last_lap": 70,
+      "median_lap_seconds": 76.322
+    },
+    {
+      "driver": "HUL",
+      "stint": 4,
+      "compound": "MEDIUM",
+      "eligible_laps": 16,
+      "first_lap": 46,
+      "last_lap": 70,
+      "median_lap_seconds": 78.41499999999999
+    },
+    {
+      "driver": "LEC",
+      "stint": 3,
+      "compound": "HARD",
+      "eligible_laps": 1,
+      "first_lap": 30,
+      "last_lap": 30,
+      "median_lap_seconds": 104.706
+    },
+    {
+      "driver": "MAG",
+      "stint": 4,
+      "compound": "MEDIUM",
+      "eligible_laps": 8,
+      "first_lap": 43,
+      "last_lap": 51,
+      "median_lap_seconds": 82.4625
+    },
+    {
+      "driver": "MAG",
+      "stint": 5,
+      "compound": "MEDIUM",
+      "eligible_laps": 11,
+      "first_lap": 59,
+      "last_lap": 70,
+      "median_lap_seconds": 77.324
+    },
+    {
+      "driver": "NOR",
+      "stint": 3,
+      "compound": "MEDIUM",
+      "eligible_laps": 12,
+      "first_lap": 50,
+      "last_lap": 70,
+      "median_lap_seconds": 76.452
+    },
+    {
+      "driver": "OCO",
+      "stint": 2,
+      "compound": "MEDIUM",
+      "eligible_laps": 16,
+      "first_lap": 46,
+      "last_lap": 70,
+      "median_lap_seconds": 78.4925
+    },
+    {
+      "driver": "PER",
+      "stint": 3,
+      "compound": "MEDIUM",
+      "eligible_laps": 6,
+      "first_lap": 45,
+      "last_lap": 51,
+      "median_lap_seconds": 81.28999999999999
+    },
+    {
+      "driver": "PIA",
+      "stint": 3,
+      "compound": "MEDIUM",
+      "eligible_laps": 15,
+      "first_lap": 46,
+      "last_lap": 70,
+      "median_lap_seconds": 77.239
+    },
+    {
+      "driver": "RIC",
+      "stint": 3,
+      "compound": "MEDIUM",
+      "eligible_laps": 17,
+      "first_lap": 45,
+      "last_lap": 70,
+      "median_lap_seconds": 78.796
+    },
+    {
+      "driver": "RUS",
+      "stint": 3,
+      "compound": "HARD",
+      "eligible_laps": 4,
+      "first_lap": 47,
+      "last_lap": 51,
+      "median_lap_seconds": 80.64349999999999
+    },
+    {
+      "driver": "RUS",
+      "stint": 4,
+      "compound": "MEDIUM",
+      "eligible_laps": 10,
+      "first_lap": 59,
+      "last_lap": 70,
+      "median_lap_seconds": 76.508
+    },
+    {
+      "driver": "SAI",
+      "stint": 3,
+      "compound": "MEDIUM",
+      "eligible_laps": 6,
+      "first_lap": 45,
+      "last_lap": 51,
+      "median_lap_seconds": 81.6275
+    },
+    {
+      "driver": "STR",
+      "stint": 3,
+      "compound": "HARD",
+      "eligible_laps": 16,
+      "first_lap": 46,
+      "last_lap": 70,
+      "median_lap_seconds": 78.47
+    },
+    {
+      "driver": "TSU",
+      "stint": 2,
+      "compound": "MEDIUM",
+      "eligible_laps": 16,
+      "first_lap": 46,
+      "last_lap": 70,
+      "median_lap_seconds": 78.91149999999999
+    },
+    {
+      "driver": "VER",
+      "stint": 3,
+      "compound": "MEDIUM",
+      "eligible_laps": 14,
+      "first_lap": 47,
+      "last_lap": 70,
+      "median_lap_seconds": 76.47149999999999
+    },
+    {
+      "driver": "ZHO",
+      "stint": 3,
+      "compound": "MEDIUM",
+      "eligible_laps": 4,
+      "first_lap": 46,
+      "last_lap": 50,
+      "median_lap_seconds": 85.691
+    },
+    {
+      "driver": "ZHO",
+      "stint": 4,
+      "compound": "MEDIUM",
+      "eligible_laps": 11,
+      "first_lap": 58,
+      "last_lap": 69,
+      "median_lap_seconds": 78.762
+    }
+  ],
+  "display_driver": "ALB",
+  "display_laps": [
+    {
+      "lap": 46,
+      "seconds": 84.215,
+      "stint": 3,
+      "compound": "MEDIUM",
+      "age": 1.0
+    },
+    {
+      "lap": 47,
+      "seconds": 83.231,
+      "stint": 3,
+      "compound": "MEDIUM",
+      "age": 2.0
+    },
+    {
+      "lap": 48,
+      "seconds": 81.247,
+      "stint": 3,
+      "compound": "MEDIUM",
+      "age": 3.0
+    },
+    {
+      "lap": 50,
+      "seconds": 79.939,
+      "stint": 3,
+      "compound": "MEDIUM",
+      "age": 5.0
+    },
+    {
+      "lap": 51,
+      "seconds": 79.359,
+      "stint": 3,
+      "compound": "MEDIUM",
+      "age": 6.0
+    }
+  ],
+  "limitations": [
+    "Retrospective quality flags; as-of availability not established",
+    "Traffic, fuel load, track evolution and warmup not estimated",
+    "No causal strategy evaluation or fitted degradation",
+    "Raw source data remains local; redistribution rights not assessed"
+  ]
+}

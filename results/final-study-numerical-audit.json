@@ -1,0 +1,207 @@
+{
+  "status": "Post-run diagnostic, not a change to the locked grid",
+  "cases": [
+    {
+      "index": 1788,
+      "parameters": {
+        "laps": 12,
+        "age": 12,
+        "pit_loss": 18,
+        "noise_sd": 0.75,
+        "prior_high": 0.2,
+        "offset_sd": 0,
+        "dependence": 0.75
+      },
+      "report": {
+        "adaptive_cost": 12.109331452543916,
+        "frozen_policy_cost": 12.18537385284537,
+        "policy_gain": 0.07604240030145348,
+        "old_regime_oracle_cost": 11.508,
+        "joint_oracle_cost": 11.508000000000001,
+        "adaptive_regret_old_oracle": 0.6013314525439171,
+        "adaptive_regret_joint_oracle": 0.6013314525439153,
+        "prior_replacement_mean": 0.042,
+        "pit_cost": 20.772,
+        "planning_information_value": 7.210668547456084,
+        "waiting_margin": -1.4519999999999982,
+        "continuation_learning_benefit": 7.210668547456084,
+        "adaptive_wait_advantage": 8.662668547456082,
+        "adaptive_action": "stay",
+        "frozen_action": "stay"
+      },
+      "previous": {
+        "adaptive_cost": 12.109366696334718,
+        "frozen_policy_cost": 12.213723757856087,
+        "policy_gain": 0.10435706152136959,
+        "old_regime_oracle_cost": 11.508,
+        "joint_oracle_cost": 11.508000000000001,
+        "adaptive_regret_old_oracle": 0.6013666963347184,
+        "adaptive_regret_joint_oracle": 0.6013666963347166,
+        "prior_replacement_mean": 0.042,
+        "pit_cost": 20.772,
+        "planning_information_value": 7.210633303665283,
+        "waiting_margin": -1.4519999999999982,
+        "continuation_learning_benefit": 7.210633303665283,
+        "adaptive_wait_advantage": 8.662633303665281,
+        "adaptive_action": "stay",
+        "frozen_action": "stay"
+      },
+      "grid_size": 12801,
+      "quadrature": 321,
+      "rollout": {
+        "trials": 200000,
+        "seed": 20260929,
+        "gain": 0.08727840000000003,
+        "paired_standard_error": 0.0027984645292527485,
+        "gain_95_ci": [
+          0.08179340952266465,
+          0.09276339047733542
+        ],
+        "adaptive_cost": 12.092419900000003,
+        "frozen_cost": 12.1796983,
+        "adaptive_regret_joint_oracle": 0.5974615000000002,
+        "actual_replacement": {
+          "low": 0.02,
+          "high": 0.1,
+          "high_given_old_low": 0.125,
+          "high_given_old_high": 0.875
+        },
+        "assumed_replacement": {
+          "low": 0.02,
+          "high": 0.1,
+          "high_given_old_low": 0.125,
+          "high_given_old_high": 0.875
+        },
+        "stop_time_disagreement": 0.021925,
+        "stop_counts": {
+          "frozen_belief": [
+            0,
+            41554,
+            850,
+            25,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            157571
+          ],
+          "adaptive": [
+            0,
+            37281,
+            2930,
+            131,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            159658
+          ]
+        }
+      }
+    },
+    {
+      "index": 1192,
+      "parameters": {
+        "laps": 8,
+        "age": 12,
+        "pit_loss": 24,
+        "noise_sd": 3,
+        "prior_high": 0.5,
+        "offset_sd": 0,
+        "dependence": 0
+      },
+      "report": {
+        "adaptive_cost": 20.218548097223028,
+        "frozen_policy_cost": 20.236553627493272,
+        "policy_gain": 0.018005530270244208,
+        "old_regime_oracle_cost": 15.32,
+        "joint_oracle_cost": 15.32,
+        "adaptive_regret_old_oracle": 4.898548097223028,
+        "adaptive_regret_joint_oracle": 4.898548097223028,
+        "prior_replacement_mean": 0.06,
+        "pit_cost": 25.68,
+        "planning_information_value": 0.8614519027769703,
+        "waiting_margin": -4.600000000000001,
+        "continuation_learning_benefit": 0.8614519027769703,
+        "adaptive_wait_advantage": 5.461451902776972,
+        "adaptive_action": "stay",
+        "frozen_action": "stay"
+      },
+      "previous": {
+        "adaptive_cost": 20.217607532454068,
+        "frozen_policy_cost": 20.23945326253832,
+        "policy_gain": 0.021845730084251613,
+        "old_regime_oracle_cost": 15.32,
+        "joint_oracle_cost": 15.32,
+        "adaptive_regret_old_oracle": 4.897607532454067,
+        "adaptive_regret_joint_oracle": 4.897607532454067,
+        "prior_replacement_mean": 0.06,
+        "pit_cost": 25.68,
+        "planning_information_value": 0.8623924675459307,
+        "waiting_margin": -4.600000000000001,
+        "continuation_learning_benefit": 0.8623924675459307,
+        "adaptive_wait_advantage": 5.462392467545932,
+        "adaptive_action": "stay",
+        "frozen_action": "stay"
+      },
+      "grid_size": 12801,
+      "quadrature": 321
+    },
+    {
+      "index": 993,
+      "parameters": {
+        "laps": 8,
+        "age": 12,
+        "pit_loss": 12,
+        "noise_sd": 0.75,
+        "prior_high": 0.2,
+        "offset_sd": 6,
+        "dependence": 0
+      },
+      "report": {
+        "adaptive_cost": 11.138692056548113,
+        "frozen_policy_cost": 11.149077755451241,
+        "policy_gain": 0.01038569890312857,
+        "old_regime_oracle_cost": 6.704000000000001,
+        "joint_oracle_cost": 6.704000000000001,
+        "adaptive_regret_old_oracle": 4.434692056548112,
+        "adaptive_regret_joint_oracle": 4.434692056548112,
+        "prior_replacement_mean": 0.06,
+        "pit_cost": 13.68,
+        "planning_information_value": 0.269307943451885,
+        "waiting_margin": -2.272000000000002,
+        "continuation_learning_benefit": 0.269307943451885,
+        "adaptive_wait_advantage": 2.541307943451887,
+        "adaptive_action": "stay",
+        "frozen_action": "stay"
+      },
+      "previous": {
+        "adaptive_cost": 11.14053022913432,
+        "frozen_policy_cost": 11.14531087117885,
+        "policy_gain": 0.00478064204452977,
+        "old_regime_oracle_cost": 6.704000000000001,
+        "joint_oracle_cost": 6.704000000000001,
+        "adaptive_regret_old_oracle": 4.43653022913432,
+        "adaptive_regret_joint_oracle": 4.43653022913432,
+        "prior_replacement_mean": 0.06,
+        "pit_cost": 13.68,
+        "planning_information_value": 0.26746977086567725,
+        "waiting_margin": -2.272000000000002,
+        "continuation_learning_benefit": 0.26746977086567725,
+        "adaptive_wait_advantage": 2.5394697708656793,
+        "adaptive_action": "stay",
+        "frozen_action": "stay"
+      },
+      "grid_size": 12801,
+      "quadrature": 321
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "name": "manuscript-v1-synthetic",
+  "locked_at": "2026-09-22T10:48:57.608915+00:00",
+  "status": "Locked after exploratory experiments 01-09; not external preregistration or independent empirical validation",
+  "laps": [
+    4,
+    8,
+    12
+  ],
+  "ages": [
+    8,
+    12,
+    16
+  ],
+  "pit_losses": [
+    12,
+    18,
+    24
+  ],
+  "priors": [
+    0.2,
+    0.5,
+    0.8
+  ],
+  "noise_sds": [
+    0.75,
+    1.5,
+    3
+  ],
+  "offset_sds": [
+    0,
+    3,
+    6
+  ],
+  "dependence": [
+    -0.75,
+    0,
+    0.75
+  ],
+  "old_rates": [
+    0.04,
+    0.3
+  ],
+  "replacement_rates": [
+    0.02,
+    0.1
+  ],
+  "grid_size": 1601,
+  "quadrature": 81,
+  "refinement": {
+    "grid_size": 6401,
+    "quadrature": 161
+  },
+  "trials": 50000,
+  "seed": 20260927,
+  "meaningful_gain_seconds": 0.05,
+  "near_margin_seconds": 1.0,
+  "validation_selection": "12 evenly spaced state indices including endpoints; add six largest gains not selected; add six smallest absolute adaptive wait advantages not selected; deterministic index tiebreak",
+  "weighting": "Equal weight per enumerated initial state, not race-frequency weighting",
+  "source_sha256": {
+    "src/pitvoi/final_study.py": "35a57fdd35bd9292c8abca56d58fd6186fc6ce67e5edd33cfc1c3d69ff78472d",
+    "src/pitvoi/replacement.py": "e8b25473d5230b609aafc3a2bda13ca97fd74301f25f572f62ab49eb92297188",
+    "src/pitvoi/nuisance.py": "fd5532e920d33d0c011872cfddcab00c28fd332a60805b168ce571f6b24e262b",
+    "src/pitvoi/gaussian.py": "43c0e01608a7f2c0293d25eee0736b91ab2a0cbade160d32f0a91e57e73b3b76"
+  }
+}

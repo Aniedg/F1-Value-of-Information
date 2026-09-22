@@ -1,0 +1,678 @@
+{
+  "selection": {
+    "year": 2024,
+    "event": "Great Britain",
+    "session": "R",
+    "purpose": "Held-out conditional replay after eleven development events",
+    "selected_before_download": true,
+    "round_number": 12,
+    "expected_event_name": "British Grand Prix"
+  },
+  "retrieved_utc": "2026-09-22T12:11:39.365237+00:00",
+  "fastf1_version": "3.8.3",
+  "source": "FastF1 / F1 timing feeds",
+  "resolved_event": "British Grand Prix",
+  "resolved_round": 12,
+  "raw_sha256": "1f98ed0f9fa61ee9d13cdffbe9b6c50f0ab0ae3839af3d2b14d324c41e62cbdd",
+  "processed_sha256": "ac2171adaec22265e728bd7a3f25582835c70d8e27cc401cdb2d3af018f64106",
+  "total_laps": 960,
+  "eligible_laps": 662,
+  "drivers": 19,
+  "eligible_stints": 41,
+  "exclusion_counts_overlapping": {
+    "missing_lap_or_age": 0,
+    "nonpositive_lap_or_age": 0,
+    "pit_in_or_out": 92,
+    "not_green": 0,
+    "not_dry_compound": 234,
+    "inaccurate": 110,
+    "generated": 0,
+    "first_race_lap": 19
+  },
+  "stints": [
+    {
+      "driver": "ALB",
+      "stint": 1,
+      "compound": "MEDIUM",
+      "eligible_laps": 25,
+      "first_lap": 2,
+      "last_lap": 26,
+      "median_lap_seconds": 93.073
+    },
+    {
+      "driver": "ALB",
+      "stint": 3,
+      "compound": "MEDIUM",
+      "eligible_laps": 13,
+      "first_lap": 40,
+      "last_lap": 52,
+      "median_lap_seconds": 90.148
+    },
+    {
+      "driver": "ALO",
+      "stint": 1,
+      "compound": "MEDIUM",
+      "eligible_laps": 25,
+      "first_lap": 2,
+      "last_lap": 26,
+      "median_lap_seconds": 92.712
+    },
+    {
+      "driver": "ALO",
+      "stint": 3,
+      "compound": "MEDIUM",
+      "eligible_laps": 13,
+      "first_lap": 40,
+      "last_lap": 52,
+      "median_lap_seconds": 90.167
+    },
+    {
+      "driver": "BOT",
+      "stint": 1,
+      "compound": "MEDIUM",
+      "eligible_laps": 24,
+      "first_lap": 2,
+      "last_lap": 25,
+      "median_lap_seconds": 93.9985
+    },
+    {
+      "driver": "BOT",
+      "stint": 3,
+      "compound": "SOFT",
+      "eligible_laps": 13,
+      "first_lap": 39,
+      "last_lap": 51,
+      "median_lap_seconds": 92.217
+    },
+    {
+      "driver": "HAM",
+      "stint": 1,
+      "compound": "MEDIUM",
+      "eligible_laps": 25,
+      "first_lap": 2,
+      "last_lap": 26,
+      "median_lap_seconds": 91.716
+    },
+    {
+      "driver": "HAM",
+      "stint": 3,
+      "compound": "SOFT",
+      "eligible_laps": 13,
+      "first_lap": 40,
+      "last_lap": 52,
+      "median_lap_seconds": 89.682
+    },
+    {
+      "driver": "HUL",
+      "stint": 1,
+      "compound": "MEDIUM",
+      "eligible_laps": 24,
+      "first_lap": 2,
+      "last_lap": 25,
+      "median_lap_seconds": 92.6845
+    },
+    {
+      "driver": "HUL",
+      "stint": 3,
+      "compound": "SOFT",
+      "eligible_laps": 12,
+      "first_lap": 41,
+      "last_lap": 52,
+      "median_lap_seconds": 90.38149999999999
+    },
+    {
+      "driver": "LEC",
+      "stint": 1,
+      "compound": "MEDIUM",
+      "eligible_laps": 17,
+      "first_lap": 2,
+      "last_lap": 18,
+      "median_lap_seconds": 92.697
+    },
+    {
+      "driver": "LEC",
+      "stint": 4,
+      "compound": "SOFT",
+      "eligible_laps": 13,
+      "first_lap": 39,
+      "last_lap": 51,
+      "median_lap_seconds": 90.204
+    },
+    {
+      "driver": "MAG",
+      "stint": 1,
+      "compound": "MEDIUM",
+      "eligible_laps": 25,
+      "first_lap": 2,
+      "last_lap": 26,
+      "median_lap_seconds": 93.278
+    },
+    {
+      "driver": "MAG",
+      "stint": 3,
+      "compound": "SOFT",
+      "eligible_laps": 14,
+      "first_lap": 39,
+      "last_lap": 52,
+      "median_lap_seconds": 91.137
+    },
+    {
+      "driver": "NOR",
+      "stint": 1,
+      "compound": "MEDIUM",
+      "eligible_laps": 25,
+      "first_lap": 2,
+      "last_lap": 26,
+      "median_lap_seconds": 91.896
+    },
+    {
+      "driver": "NOR",
+      "stint": 3,
+      "compound": "SOFT",
+      "eligible_laps": 12,
+      "first_lap": 41,
+      "last_lap": 52,
+      "median_lap_seconds": 89.983
+    },
+    {
+      "driver": "OCO",
+      "stint": 1,
+      "compound": "SOFT",
+      "eligible_laps": 17,
+      "first_lap": 2,
+      "last_lap": 18,
+      "median_lap_seconds": 93.898
+    },
+    {
+      "driver": "OCO",
+      "stint": 3,
+      "compound": "MEDIUM",
+      "eligible_laps": 3,
+      "first_lap": 23,
+      "last_lap": 25,
+      "median_lap_seconds": 98.005
+    },
+    {
+      "driver": "OCO",
+      "stint": 5,
+      "compound": "MEDIUM",
+      "eligible_laps": 11,
+      "first_lap": 40,
+      "last_lap": 50,
+      "median_lap_seconds": 91.114
+    },
+    {
+      "driver": "PER",
+      "stint": 1,
+      "compound": "HARD",
+      "eligible_laps": 17,
+      "first_lap": 2,
+      "last_lap": 18,
+      "median_lap_seconds": 92.709
+    },
+    {
+      "driver": "PER",
+      "stint": 4,
+      "compound": "MEDIUM",
+      "eligible_laps": 8,
+      "first_lap": 39,
+      "last_lap": 46,
+      "median_lap_seconds": 90.5535
+    },
+    {
+      "driver": "PER",
+      "stint": 5,
+      "compound": "SOFT",
+      "eligible_laps": 2,
+      "first_lap": 49,
+      "last_lap": 50,
+      "median_lap_seconds": 93.5335
+    },
+    {
+      "driver": "PIA",
+      "stint": 1,
+      "compound": "MEDIUM",
+      "eligible_laps": 26,
+      "first_lap": 2,
+      "last_lap": 27,
+      "median_lap_seconds": 91.926
+    },
+    {
+      "driver": "PIA",
+      "stint": 3,
+      "compound": "MEDIUM",
+      "eligible_laps": 13,
+      "first_lap": 40,
+      "last_lap": 52,
+      "median_lap_seconds": 89.283
+    },
+    {
+      "driver": "RIC",
+      "stint": 1,
+      "compound": "MEDIUM",
+      "eligible_laps": 24,
+      "first_lap": 2,
+      "last_lap": 25,
+      "median_lap_seconds": 93.346
+    },
+    {
+      "driver": "RIC",
+      "stint": 3,
+      "compound": "SOFT",
+      "eligible_laps": 13,
+      "first_lap": 39,
+      "last_lap": 51,
+      "median_lap_seconds": 91.198
+    },
+    {
+      "driver": "RUS",
+      "stint": 1,
+      "compound": "MEDIUM",
+      "eligible_laps": 25,
+      "first_lap": 2,
+      "last_lap": 26,
+      "median_lap_seconds": 91.639
+    },
+    {
+      "driver": "SAI",
+      "stint": 1,
+      "compound": "MEDIUM",
+      "eligible_laps": 24,
+      "first_lap": 2,
+      "last_lap": 25,
+      "median_lap_seconds": 92.3605
+    },
+    {
+      "driver": "SAI",
+      "stint": 3,
+      "compound": "HARD",
+      "eligible_laps": 9,
+      "first_lap": 41,
+      "last_lap": 49,
+      "median_lap_seconds": 89.589
+    },
+    {
+      "driver": "SAI",
+      "stint": 4,
+      "compound": "SOFT",
+      "eligible_laps": 1,
+      "first_lap": 52,
+      "last_lap": 52,
+      "median_lap_seconds": 88.293
+    },
+    {
+      "driver": "SAR",
+      "stint": 1,
+      "compound": "MEDIUM",
+      "eligible_laps": 25,
+      "first_lap": 2,
+      "last_lap": 26,
+      "median_lap_seconds": 93.139
+    },
+    {
+      "driver": "SAR",
+      "stint": 3,
+      "compound": "SOFT",
+      "eligible_laps": 13,
+      "first_lap": 40,
+      "last_lap": 52,
+      "median_lap_seconds": 91.175
+    },
+    {
+      "driver": "STR",
+      "stint": 1,
+      "compound": "MEDIUM",
+      "eligible_laps": 24,
+      "first_lap": 2,
+      "last_lap": 25,
+      "median_lap_seconds": 92.752
+    },
+    {
+      "driver": "STR",
+      "stint": 3,
+      "compound": "MEDIUM",
+      "eligible_laps": 12,
+      "first_lap": 41,
+      "last_lap": 52,
+      "median_lap_seconds": 90.03
+    },
+    {
+      "driver": "TSU",
+      "stint": 1,
+      "compound": "MEDIUM",
+      "eligible_laps": 25,
+      "first_lap": 2,
+      "last_lap": 26,
+      "median_lap_seconds": 93.106
+    },
+    {
+      "driver": "TSU",
+      "stint": 3,
+      "compound": "SOFT",
+      "eligible_laps": 13,
+      "first_lap": 40,
+      "last_lap": 52,
+      "median_lap_seconds": 91.367
+    },
+    {
+      "driver": "VER",
+      "stint": 1,
+      "compound": "MEDIUM",
+      "eligible_laps": 24,
+      "first_lap": 2,
+      "last_lap": 25,
+      "median_lap_seconds": 91.9865
+    },
+    {
+      "driver": "VER",
+      "stint": 3,
+      "compound": "HARD",
+      "eligible_laps": 13,
+      "first_lap": 40,
+      "last_lap": 52,
+      "median_lap_seconds": 89.411
+    },
+    {
+      "driver": "ZHO",
+      "stint": 1,
+      "compound": "SOFT",
+      "eligible_laps": 10,
+      "first_lap": 2,
+      "last_lap": 11,
+      "median_lap_seconds": 94.149
+    },
+    {
+      "driver": "ZHO",
+      "stint": 2,
+      "compound": "MEDIUM",
+      "eligible_laps": 5,
+      "first_lap": 14,
+      "last_lap": 18,
+      "median_lap_seconds": 95.202
+    },
+    {
+      "driver": "ZHO",
+      "stint": 5,
+      "compound": "SOFT",
+      "eligible_laps": 12,
+      "first_lap": 39,
+      "last_lap": 50,
+      "median_lap_seconds": 91.404
+    }
+  ],
+  "display_driver": "ALB",
+  "display_laps": [
+    {
+      "lap": 2,
+      "seconds": 93.158,
+      "stint": 1,
+      "compound": "MEDIUM",
+      "age": 1.0
+    },
+    {
+      "lap": 3,
+      "seconds": 93.373,
+      "stint": 1,
+      "compound": "MEDIUM",
+      "age": 2.0
+    },
+    {
+      "lap": 4,
+      "seconds": 93.059,
+      "stint": 1,
+      "compound": "MEDIUM",
+      "age": 3.0
+    },
+    {
+      "lap": 5,
+      "seconds": 92.846,
+      "stint": 1,
+      "compound": "MEDIUM",
+      "age": 4.0
+    },
+    {
+      "lap": 6,
+      "seconds": 93.014,
+      "stint": 1,
+      "compound": "MEDIUM",
+      "age": 5.0
+    },
+    {
+      "lap": 7,
+      "seconds": 92.939,
+      "stint": 1,
+      "compound": "MEDIUM",
+      "age": 6.0
+    },
+    {
+      "lap": 8,
+      "seconds": 92.798,
+      "stint": 1,
+      "compound": "MEDIUM",
+      "age": 7.0
+    },
+    {
+      "lap": 9,
+      "seconds": 92.933,
+      "stint": 1,
+      "compound": "MEDIUM",
+      "age": 8.0
+    },
+    {
+      "lap": 10,
+      "seconds": 93.073,
+      "stint": 1,
+      "compound": "MEDIUM",
+      "age": 9.0
+    },
+    {
+      "lap": 11,
+      "seconds": 92.981,
+      "stint": 1,
+      "compound": "MEDIUM",
+      "age": 10.0
+    },
+    {
+      "lap": 12,
+      "seconds": 92.567,
+      "stint": 1,
+      "compound": "MEDIUM",
+      "age": 11.0
+    },
+    {
+      "lap": 13,
+      "seconds": 92.769,
+      "stint": 1,
+      "compound": "MEDIUM",
+      "age": 12.0
+    },
+    {
+      "lap": 14,
+      "seconds": 92.538,
+      "stint": 1,
+      "compound": "MEDIUM",
+      "age": 13.0
+    },
+    {
+      "lap": 15,
+      "seconds": 92.265,
+      "stint": 1,
+      "compound": "MEDIUM",
+      "age": 14.0
+    },
+    {
+      "lap": 16,
+      "seconds": 93.178,
+      "stint": 1,
+      "compound": "MEDIUM",
+      "age": 15.0
+    },
+    {
+      "lap": 17,
+      "seconds": 94.873,
+      "stint": 1,
+      "compound": "MEDIUM",
+      "age": 16.0
+    },
+    {
+      "lap": 18,
+      "seconds": 95.323,
+      "stint": 1,
+      "compound": "MEDIUM",
+      "age": 17.0
+    },
+    {
+      "lap": 19,
+      "seconds": 104.619,
+      "stint": 1,
+      "compound": "MEDIUM",
+      "age": 18.0
+    },
+    {
+      "lap": 20,
+      "seconds": 96.53,
+      "stint": 1,
+      "compound": "MEDIUM",
+      "age": 19.0
+    },
+    {
+      "lap": 21,
+      "seconds": 93.646,
+      "stint": 1,
+      "compound": "MEDIUM",
+      "age": 20.0
+    },
+    {
+      "lap": 22,
+      "seconds": 93.086,
+      "stint": 1,
+      "compound": "MEDIUM",
+      "age": 21.0
+    },
+    {
+      "lap": 23,
+      "seconds": 92.891,
+      "stint": 1,
+      "compound": "MEDIUM",
+      "age": 22.0
+    },
+    {
+      "lap": 24,
+      "seconds": 93.96,
+      "stint": 1,
+      "compound": "MEDIUM",
+      "age": 23.0
+    },
+    {
+      "lap": 25,
+      "seconds": 95.612,
+      "stint": 1,
+      "compound": "MEDIUM",
+      "age": 24.0
+    },
+    {
+      "lap": 26,
+      "seconds": 103.771,
+      "stint": 1,
+      "compound": "MEDIUM",
+      "age": 25.0
+    },
+    {
+      "lap": 40,
+      "seconds": 90.889,
+      "stint": 3,
+      "compound": "MEDIUM",
+      "age": 1.0
+    },
+    {
+      "lap": 41,
+      "seconds": 90.715,
+      "stint": 3,
+      "compound": "MEDIUM",
+      "age": 2.0
+    },
+    {
+      "lap": 42,
+      "seconds": 90.458,
+      "stint": 3,
+      "compound": "MEDIUM",
+      "age": 3.0
+    },
+    {
+      "lap": 43,
+      "seconds": 90.126,
+      "stint": 3,
+      "compound": "MEDIUM",
+      "age": 4.0
+    },
+    {
+      "lap": 44,
+      "seconds": 90.74,
+      "stint": 3,
+      "compound": "MEDIUM",
+      "age": 5.0
+    },
+    {
+      "lap": 45,
+      "seconds": 90.406,
+      "stint": 3,
+      "compound": "MEDIUM",
+      "age": 6.0
+    },
+    {
+      "lap": 46,
+      "seconds": 90.234,
+      "stint": 3,
+      "compound": "MEDIUM",
+      "age": 7.0
+    },
+    {
+      "lap": 47,
+      "seconds": 90.148,
+      "stint": 3,
+      "compound": "MEDIUM",
+      "age": 8.0
+    },
+    {
+      "lap": 48,
+      "seconds": 90.068,
+      "stint": 3,
+      "compound": "MEDIUM",
+      "age": 9.0
+    },
+    {
+      "lap": 49,
+      "seconds": 89.96,
+      "stint": 3,
+      "compound": "MEDIUM",
+      "age": 10.0
+    },
+    {
+      "lap": 50,
+      "seconds": 89.828,
+      "stint": 3,
+      "compound": "MEDIUM",
+      "age": 11.0
+    },
+    {
+      "lap": 51,
+      "seconds": 89.916,
+      "stint": 3,
+      "compound": "MEDIUM",
+      "age": 12.0
+    },
+    {
+      "lap": 52,
+      "seconds": 89.718,
+      "stint": 3,
+      "compound": "MEDIUM",
+      "age": 13.0
+    }
+  ],
+  "limitations": [
+    "Retrospective quality flags; as-of availability not established",
+    "Traffic, fuel load, track evolution and warmup not estimated",
+    "No causal strategy evaluation or fitted degradation",
+    "Raw source data remains local; redistribution rights not assessed"
+  ]
+}

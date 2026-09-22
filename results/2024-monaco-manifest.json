@@ -1,0 +1,767 @@
+{
+  "selection": {
+    "selected_before_download": true,
+    "year": 2024,
+    "event": "Monaco",
+    "session": "R",
+    "drivers": "all",
+    "purpose": "robust-forecast-v0.5",
+    "rationale": "Next three chronological Grands Prix; all earlier inspected races now development data",
+    "online_validity": "Retrospective quality control, not proven as-of"
+  },
+  "retrieved_utc": "2026-09-22T05:40:00.016318+00:00",
+  "fastf1_version": "3.8.3",
+  "source": "FastF1 / F1 timing feeds",
+  "raw_sha256": "de1faef450b9fe2c887db4006224c9ec9853d7eadae15c87c40b93ca28a31b59",
+  "processed_sha256": "596fe0e755b6f63ccfba22c9f3ad012a5a0ae4b331e1caf6443f729ef051d8ff",
+  "total_laps": 1237,
+  "eligible_laps": 1171,
+  "drivers": 20,
+  "eligible_stints": 23,
+  "exclusion_counts_overlapping": {
+    "missing_lap_or_age": 11,
+    "nonpositive_lap_or_age": 0,
+    "pit_in_or_out": 46,
+    "not_green": 54,
+    "not_dry_compound": 0,
+    "inaccurate": 50,
+    "generated": 4,
+    "first_race_lap": 20
+  },
+  "stints": [
+    {
+      "driver": "ALB",
+      "stint": 2,
+      "compound": "HARD",
+      "eligible_laps": 74,
+      "first_lap": 3,
+      "last_lap": 77,
+      "median_lap_seconds": 80.185
+    },
+    {
+      "driver": "ALO",
+      "stint": 2,
+      "compound": "MEDIUM",
+      "eligible_laps": 73,
+      "first_lap": 3,
+      "last_lap": 76,
+      "median_lap_seconds": 80.636
+    },
+    {
+      "driver": "BOT",
+      "stint": 2,
+      "compound": "MEDIUM",
+      "eligible_laps": 12,
+      "first_lap": 3,
+      "last_lap": 14,
+      "median_lap_seconds": 82.098
+    },
+    {
+      "driver": "BOT",
+      "stint": 3,
+      "compound": "HARD",
+      "eligible_laps": 59,
+      "first_lap": 17,
+      "last_lap": 76,
+      "median_lap_seconds": 80.23
+    },
+    {
+      "driver": "GAS",
+      "stint": 2,
+      "compound": "MEDIUM",
+      "eligible_laps": 74,
+      "first_lap": 3,
+      "last_lap": 77,
+      "median_lap_seconds": 80.233
+    },
+    {
+      "driver": "HAM",
+      "stint": 2,
+      "compound": "MEDIUM",
+      "eligible_laps": 48,
+      "first_lap": 3,
+      "last_lap": 50,
+      "median_lap_seconds": 79.43
+    },
+    {
+      "driver": "HAM",
+      "stint": 3,
+      "compound": "HARD",
+      "eligible_laps": 26,
+      "first_lap": 53,
+      "last_lap": 78,
+      "median_lap_seconds": 75.6405
+    },
+    {
+      "driver": "LEC",
+      "stint": 2,
+      "compound": "HARD",
+      "eligible_laps": 75,
+      "first_lap": 3,
+      "last_lap": 78,
+      "median_lap_seconds": 78.506
+    },
+    {
+      "driver": "NOR",
+      "stint": 2,
+      "compound": "HARD",
+      "eligible_laps": 75,
+      "first_lap": 3,
+      "last_lap": 78,
+      "median_lap_seconds": 78.403
+    },
+    {
+      "driver": "PIA",
+      "stint": 2,
+      "compound": "HARD",
+      "eligible_laps": 75,
+      "first_lap": 3,
+      "last_lap": 78,
+      "median_lap_seconds": 78.523
+    },
+    {
+      "driver": "RIC",
+      "stint": 2,
+      "compound": "HARD",
+      "eligible_laps": 72,
+      "first_lap": 3,
+      "last_lap": 76,
+      "median_lap_seconds": 80.84450000000001
+    },
+    {
+      "driver": "RUS",
+      "stint": 2,
+      "compound": "MEDIUM",
+      "eligible_laps": 74,
+      "first_lap": 3,
+      "last_lap": 78,
+      "median_lap_seconds": 78.63749999999999
+    },
+    {
+      "driver": "SAI",
+      "stint": 2,
+      "compound": "HARD",
+      "eligible_laps": 75,
+      "first_lap": 3,
+      "last_lap": 78,
+      "median_lap_seconds": 78.568
+    },
+    {
+      "driver": "SAR",
+      "stint": 2,
+      "compound": "HARD",
+      "eligible_laps": 53,
+      "first_lap": 3,
+      "last_lap": 56,
+      "median_lap_seconds": 81.134
+    },
+    {
+      "driver": "SAR",
+      "stint": 3,
+      "compound": "MEDIUM",
+      "eligible_laps": 18,
+      "first_lap": 59,
+      "last_lap": 76,
+      "median_lap_seconds": 76.386
+    },
+    {
+      "driver": "STR",
+      "stint": 2,
+      "compound": "MEDIUM",
+      "eligible_laps": 39,
+      "first_lap": 3,
+      "last_lap": 41,
+      "median_lap_seconds": 80.781
+    },
+    {
+      "driver": "STR",
+      "stint": 3,
+      "compound": "HARD",
+      "eligible_laps": 4,
+      "first_lap": 44,
+      "last_lap": 47,
+      "median_lap_seconds": 78.4235
+    },
+    {
+      "driver": "STR",
+      "stint": 4,
+      "compound": "SOFT",
+      "eligible_laps": 26,
+      "first_lap": 50,
+      "last_lap": 76,
+      "median_lap_seconds": 78.4445
+    },
+    {
+      "driver": "TSU",
+      "stint": 2,
+      "compound": "HARD",
+      "eligible_laps": 74,
+      "first_lap": 3,
+      "last_lap": 77,
+      "median_lap_seconds": 80.164
+    },
+    {
+      "driver": "VER",
+      "stint": 2,
+      "compound": "MEDIUM",
+      "eligible_laps": 49,
+      "first_lap": 3,
+      "last_lap": 51,
+      "median_lap_seconds": 79.38
+    },
+    {
+      "driver": "VER",
+      "stint": 3,
+      "compound": "HARD",
+      "eligible_laps": 25,
+      "first_lap": 54,
+      "last_lap": 78,
+      "median_lap_seconds": 75.543
+    },
+    {
+      "driver": "ZHO",
+      "stint": 2,
+      "compound": "HARD",
+      "eligible_laps": 66,
+      "first_lap": 3,
+      "last_lap": 69,
+      "median_lap_seconds": 80.9825
+    },
+    {
+      "driver": "ZHO",
+      "stint": 3,
+      "compound": "SOFT",
+      "eligible_laps": 5,
+      "first_lap": 72,
+      "last_lap": 76,
+      "median_lap_seconds": 77.173
+    }
+  ],
+  "display_driver": "ALB",
+  "display_laps": [
+    {
+      "lap": 3,
+      "seconds": 87.834,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 1.0
+    },
+    {
+      "lap": 4,
+      "seconds": 83.286,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 2.0
+    },
+    {
+      "lap": 5,
+      "seconds": 83.369,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 3.0
+    },
+    {
+      "lap": 6,
+      "seconds": 83.416,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 4.0
+    },
+    {
+      "lap": 7,
+      "seconds": 81.913,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 5.0
+    },
+    {
+      "lap": 8,
+      "seconds": 81.536,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 6.0
+    },
+    {
+      "lap": 9,
+      "seconds": 82.004,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 7.0
+    },
+    {
+      "lap": 10,
+      "seconds": 81.562,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 8.0
+    },
+    {
+      "lap": 11,
+      "seconds": 81.514,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 9.0
+    },
+    {
+      "lap": 12,
+      "seconds": 80.821,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 10.0
+    },
+    {
+      "lap": 13,
+      "seconds": 81.42,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 11.0
+    },
+    {
+      "lap": 14,
+      "seconds": 80.591,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 12.0
+    },
+    {
+      "lap": 15,
+      "seconds": 80.591,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 13.0
+    },
+    {
+      "lap": 16,
+      "seconds": 80.793,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 14.0
+    },
+    {
+      "lap": 17,
+      "seconds": 81.137,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 15.0
+    },
+    {
+      "lap": 18,
+      "seconds": 80.042,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 16.0
+    },
+    {
+      "lap": 19,
+      "seconds": 80.245,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 17.0
+    },
+    {
+      "lap": 20,
+      "seconds": 80.36,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 18.0
+    },
+    {
+      "lap": 21,
+      "seconds": 80.937,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 19.0
+    },
+    {
+      "lap": 22,
+      "seconds": 80.542,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 20.0
+    },
+    {
+      "lap": 23,
+      "seconds": 80.143,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 21.0
+    },
+    {
+      "lap": 24,
+      "seconds": 80.517,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 22.0
+    },
+    {
+      "lap": 25,
+      "seconds": 80.323,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 23.0
+    },
+    {
+      "lap": 26,
+      "seconds": 80.463,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 24.0
+    },
+    {
+      "lap": 27,
+      "seconds": 80.509,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 25.0
+    },
+    {
+      "lap": 28,
+      "seconds": 79.51,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 26.0
+    },
+    {
+      "lap": 29,
+      "seconds": 80.271,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 27.0
+    },
+    {
+      "lap": 30,
+      "seconds": 81.439,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 28.0
+    },
+    {
+      "lap": 31,
+      "seconds": 80.941,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 29.0
+    },
+    {
+      "lap": 32,
+      "seconds": 80.148,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 30.0
+    },
+    {
+      "lap": 33,
+      "seconds": 79.491,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 31.0
+    },
+    {
+      "lap": 34,
+      "seconds": 79.134,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 32.0
+    },
+    {
+      "lap": 35,
+      "seconds": 78.816,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 33.0
+    },
+    {
+      "lap": 36,
+      "seconds": 81.628,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 34.0
+    },
+    {
+      "lap": 37,
+      "seconds": 80.775,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 35.0
+    },
+    {
+      "lap": 38,
+      "seconds": 80.314,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 36.0
+    },
+    {
+      "lap": 39,
+      "seconds": 80.389,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 37.0
+    },
+    {
+      "lap": 40,
+      "seconds": 79.812,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 38.0
+    },
+    {
+      "lap": 41,
+      "seconds": 79.329,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 39.0
+    },
+    {
+      "lap": 42,
+      "seconds": 80.084,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 40.0
+    },
+    {
+      "lap": 43,
+      "seconds": 79.496,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 41.0
+    },
+    {
+      "lap": 44,
+      "seconds": 79.683,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 42.0
+    },
+    {
+      "lap": 45,
+      "seconds": 81.748,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 43.0
+    },
+    {
+      "lap": 46,
+      "seconds": 80.594,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 44.0
+    },
+    {
+      "lap": 47,
+      "seconds": 80.462,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 45.0
+    },
+    {
+      "lap": 48,
+      "seconds": 79.321,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 46.0
+    },
+    {
+      "lap": 49,
+      "seconds": 79.378,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 47.0
+    },
+    {
+      "lap": 50,
+      "seconds": 79.268,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 48.0
+    },
+    {
+      "lap": 51,
+      "seconds": 78.863,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 49.0
+    },
+    {
+      "lap": 53,
+      "seconds": 80.7,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 51.0
+    },
+    {
+      "lap": 54,
+      "seconds": 83.647,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 52.0
+    },
+    {
+      "lap": 55,
+      "seconds": 79.085,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 53.0
+    },
+    {
+      "lap": 56,
+      "seconds": 78.796,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 54.0
+    },
+    {
+      "lap": 57,
+      "seconds": 78.271,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 55.0
+    },
+    {
+      "lap": 58,
+      "seconds": 78.69,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 56.0
+    },
+    {
+      "lap": 59,
+      "seconds": 78.201,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 57.0
+    },
+    {
+      "lap": 60,
+      "seconds": 79.533,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 58.0
+    },
+    {
+      "lap": 61,
+      "seconds": 80.222,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 59.0
+    },
+    {
+      "lap": 62,
+      "seconds": 79.506,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 60.0
+    },
+    {
+      "lap": 63,
+      "seconds": 83.085,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 61.0
+    },
+    {
+      "lap": 64,
+      "seconds": 77.911,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 62.0
+    },
+    {
+      "lap": 65,
+      "seconds": 77.261,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 63.0
+    },
+    {
+      "lap": 66,
+      "seconds": 78.003,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 64.0
+    },
+    {
+      "lap": 67,
+      "seconds": 77.874,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 65.0
+    },
+    {
+      "lap": 68,
+      "seconds": 78.385,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 66.0
+    },
+    {
+      "lap": 69,
+      "seconds": 79.921,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 67.0
+    },
+    {
+      "lap": 70,
+      "seconds": 79.37,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 68.0
+    },
+    {
+      "lap": 71,
+      "seconds": 78.957,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 69.0
+    },
+    {
+      "lap": 72,
+      "seconds": 78.165,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 70.0
+    },
+    {
+      "lap": 73,
+      "seconds": 78.432,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 71.0
+    },
+    {
+      "lap": 74,
+      "seconds": 78.014,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 72.0
+    },
+    {
+      "lap": 75,
+      "seconds": 77.85,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 73.0
+    },
+    {
+      "lap": 76,
+      "seconds": 77.279,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 74.0
+    },
+    {
+      "lap": 77,
+      "seconds": 77.06,
+      "stint": 2,
+      "compound": "HARD",
+      "age": 75.0
+    }
+  ],
+  "limitations": [
+    "Retrospective quality flags; as-of availability not established",
+    "Traffic, fuel load, track evolution and warmup not estimated",
+    "No causal strategy evaluation or fitted degradation",
+    "Raw source data remains local; redistribution rights not assessed"
+  ]
+}

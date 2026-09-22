@@ -1,0 +1,571 @@
+{
+  "name": "conditional-historical-decision-replay-v1",
+  "frozen_at": "2026-09-22T12:07:06.033254+00:00",
+  "status": "New events reserved before ingestion; retrospective feed, conditional model, no causal reward",
+  "events": {
+    "great-britain": 52,
+    "hungary": 70,
+    "belgium": 44
+  },
+  "low": 0.04,
+  "high": 0.3,
+  "prior_high": 0.5,
+  "noise_sd": 1.2,
+  "nuisance_improvement": 0.05,
+  "nuisance_sensitivity": [
+    0,
+    0.05,
+    0.1
+  ],
+  "pit_loss": 24.0,
+  "pit_loss_sensitivity": [
+    18.0,
+    24.0,
+    30.0
+  ],
+  "fresh_degradation": 0.06,
+  "grid_size": 401,
+  "refinement_grid_size": 1601,
+  "refinement_selection": "first 12 central states in each event ordered by driver and lap",
+  "warmup": 3,
+  "candidates": [
+    {
+      "noise_sd": 0.3,
+      "equal_event_nll": 7.100080031840005,
+      "events": [
+        {
+          "event": "2024-australia-audited",
+          "count": 688,
+          "mae": 0.41239396147090057,
+          "rmse": 0.62589061519897,
+          "nll": 1.6027225567078522,
+          "coverage90": 0.7761627906976745,
+          "width": 1.08200518742452,
+          "interval_score": 3.3494782059378716,
+          "last_observation_mae": 0.3635377906976744
+        },
+        {
+          "event": "2024-austria-audited",
+          "count": 1063,
+          "mae": 0.45055069420923965,
+          "rmse": 0.628014303363005,
+          "nll": 1.6658444761963127,
+          "coverage90": 0.6886171213546566,
+          "width": 1.1036886330717819,
+          "interval_score": 3.5545976975127305,
+          "last_observation_mae": 0.3339059266227661
+        },
+        {
+          "event": "2024-bahrain-audited",
+          "count": 820,
+          "mae": 0.41893050141265087,
+          "rmse": 0.5851294891911771,
+          "nll": 1.3912890494839794,
+          "coverage90": 0.7548780487804878,
+          "width": 1.135142089441695,
+          "interval_score": 3.131484770406107,
+          "last_observation_mae": 0.2922012195121949
+        },
+        {
+          "event": "2024-canada-audited",
+          "count": 190,
+          "mae": 2.4516104871947673,
+          "rmse": 2.6489551096734356,
+          "nll": 33.28045012981001,
+          "coverage90": 0.015789473684210527,
+          "width": 1.065869289068957,
+          "interval_score": 39.51057259211763,
+          "last_observation_mae": 0.8140631578947372
+        },
+        {
+          "event": "2024-china-audited",
+          "count": 573,
+          "mae": 0.3877398871640704,
+          "rmse": 0.510662993192697,
+          "nll": 1.0680348243846944,
+          "coverage90": 0.7801047120418848,
+          "width": 1.1866311130701184,
+          "interval_score": 2.6854626537398554,
+          "last_observation_mae": 0.286891797556719
+        },
+        {
+          "event": "2024-emilia-romagna-audited",
+          "count": 1027,
+          "mae": 0.4662328259619141,
+          "rmse": 0.713096584230105,
+          "nll": 2.309196012006149,
+          "coverage90": 0.7351509250243428,
+          "width": 1.084163318096186,
+          "interval_score": 4.179595129909614,
+          "last_observation_mae": 0.40877020447906537
+        },
+        {
+          "event": "2024-japan-audited",
+          "count": 608,
+          "mae": 0.9056599686041092,
+          "rmse": 1.808874449647429,
+          "nll": 14.505644561448754,
+          "coverage90": 0.6019736842105263,
+          "width": 1.1486303222863168,
+          "interval_score": 12.035626335301494,
+          "last_observation_mae": 0.4536167763157892
+        },
+        {
+          "event": "2024-miami-audited",
+          "count": 793,
+          "mae": 0.40289088955805813,
+          "rmse": 0.520800717264489,
+          "nll": 1.0323538220316888,
+          "coverage90": 0.7137452711223203,
+          "width": 1.0665121542147984,
+          "interval_score": 2.664446908998081,
+          "last_observation_mae": 0.31737074401008813
+        },
+        {
+          "event": "2024-monaco-audited",
+          "count": 1102,
+          "mae": 1.3975256815766197,
+          "rmse": 1.6204258838660446,
+          "nll": 13.47066785545211,
+          "coverage90": 0.1588021778584392,
+          "width": 1.0175997403180714,
+          "interval_score": 19.631762692815297,
+          "last_observation_mae": 0.6299491833030854
+        },
+        {
+          "event": "2024-saudi-arabia-audited",
+          "count": 688,
+          "mae": 0.8166250920368968,
+          "rmse": 1.024001237721438,
+          "nll": 5.213380363532958,
+          "coverage90": 0.35319767441860467,
+          "width": 1.03983195947891,
+          "interval_score": 8.754133188822971,
+          "last_observation_mae": 0.3720683139534881
+        },
+        {
+          "event": "2024-spain-audited",
+          "count": 1020,
+          "mae": 0.5093911178782563,
+          "rmse": 0.7833381161489525,
+          "nll": 2.5612966991855384,
+          "coverage90": 0.7068627450980393,
+          "width": 1.1274733879351433,
+          "interval_score": 4.538611418744266,
+          "last_observation_mae": 0.4391705882352942
+        }
+      ]
+    },
+    {
+      "noise_sd": 0.6,
+      "equal_event_nll": 2.315885432635133,
+      "events": [
+        {
+          "event": "2024-australia-audited",
+          "count": 688,
+          "mae": 0.42678165425396236,
+          "rmse": 0.628502642027863,
+          "nll": 0.954604688388812,
+          "coverage90": 0.934593023255814,
+          "width": 2.1707552091166313,
+          "interval_score": 3.035731665330046,
+          "last_observation_mae": 0.3635377906976744
+        },
+        {
+          "event": "2024-austria-audited",
+          "count": 1063,
+          "mae": 0.4324623311702623,
+          "rmse": 0.6085641981969266,
+          "nll": 0.9625228287555588,
+          "coverage90": 0.9332079021636877,
+          "width": 2.226942368390519,
+          "interval_score": 2.9682270886268,
+          "last_observation_mae": 0.3339059266227661
+        },
+        {
+          "event": "2024-bahrain-audited",
+          "count": 820,
+          "mae": 0.40166921345279294,
+          "rmse": 0.5639994896129877,
+          "nll": 0.9041767261092691,
+          "coverage90": 0.948780487804878,
+          "width": 2.2649578021510397,
+          "interval_score": 2.798273649634601,
+          "last_observation_mae": 0.2922012195121949
+        },
+        {
+          "event": "2024-canada-audited",
+          "count": 190,
+          "mae": 2.4605537099940324,
+          "rmse": 2.6585559965320766,
+          "nll": 8.866982272906233,
+          "coverage90": 0.07894736842105263,
+          "width": 2.1407166252247105,
+          "interval_score": 30.521732014912992,
+          "last_observation_mae": 0.8140631578947372
+        },
+        {
+          "event": "2024-china-audited",
+          "count": 573,
+          "mae": 0.35334148600041787,
+          "rmse": 0.4716513205391209,
+          "nll": 0.8225189942395387,
+          "coverage90": 0.9703315881326352,
+          "width": 2.318366036170013,
+          "interval_score": 2.4679161840174237,
+          "last_observation_mae": 0.286891797556719
+        },
+        {
+          "event": "2024-emilia-romagna-audited",
+          "count": 1027,
+          "mae": 0.4594413290951323,
+          "rmse": 0.7033152969083913,
+          "nll": 1.1085603434112457,
+          "coverage90": 0.9026290165530672,
+          "width": 2.157569190907893,
+          "interval_score": 3.544349484885219,
+          "last_observation_mae": 0.40877020447906537
+        },
+        {
+          "event": "2024-japan-audited",
+          "count": 608,
+          "mae": 0.8870134508900174,
+          "rmse": 1.8002573372543804,
+          "nll": 4.182292075333106,
+          "coverage90": 0.8125,
+          "width": 2.284916873599532,
+          "interval_score": 9.888083202501123,
+          "last_observation_mae": 0.4536167763157892
+        },
+        {
+          "event": "2024-miami-audited",
+          "count": 793,
+          "mae": 0.4080405400893771,
+          "rmse": 0.5200337820705251,
+          "nll": 0.7975752899863335,
+          "coverage90": 0.9596469104665826,
+          "width": 2.1432222062796633,
+          "interval_score": 2.33581843841811,
+          "last_observation_mae": 0.31737074401008813
+        },
+        {
+          "event": "2024-monaco-audited",
+          "count": 1102,
+          "mae": 1.3982838903033208,
+          "rmse": 1.6212641776731294,
+          "nll": 3.8628107078443827,
+          "coverage90": 0.3248638838475499,
+          "width": 2.033633141077459,
+          "interval_score": 12.87497717669625,
+          "last_observation_mae": 0.6299491833030854
+        },
+        {
+          "event": "2024-saudi-arabia-audited",
+          "count": 688,
+          "mae": 0.8257431397619647,
+          "rmse": 1.0296037993575544,
+          "nll": 1.8246366374553853,
+          "coverage90": 0.7078488372093024,
+          "width": 2.084322590240176,
+          "interval_score": 5.041210770053788,
+          "last_observation_mae": 0.3720683139534881
+        },
+        {
+          "event": "2024-spain-audited",
+          "count": 1020,
+          "mae": 0.4805456911350957,
+          "rmse": 0.7546721174726698,
+          "nll": 1.188059194556599,
+          "coverage90": 0.9107843137254902,
+          "width": 2.2605947654406617,
+          "interval_score": 3.5940683452429134,
+          "last_observation_mae": 0.4391705882352942
+        }
+      ]
+    },
+    {
+      "noise_sd": 1.2,
+      "equal_event_nll": 1.643552647899636,
+      "events": [
+        {
+          "event": "2024-australia-audited",
+          "count": 688,
+          "mae": 0.4709573741710466,
+          "rmse": 0.6577201709667064,
+          "nll": 1.3126962527804604,
+          "coverage90": 0.9869186046511628,
+          "width": 4.313299249712334,
+          "interval_score": 4.556397272043208,
+          "last_observation_mae": 0.3635377906976744
+        },
+        {
+          "event": "2024-austria-audited",
+          "count": 1063,
+          "mae": 0.4106490156926667,
+          "rmse": 0.5727202874970374,
+          "nll": 1.3067789718007607,
+          "coverage90": 0.9924741298212606,
+          "width": 4.403716379670413,
+          "interval_score": 4.501460581091097,
+          "last_observation_mae": 0.3339059266227661
+        },
+        {
+          "event": "2024-bahrain-audited",
+          "count": 820,
+          "mae": 0.38436638782086313,
+          "rmse": 0.5401922476951398,
+          "nll": 1.3006609645514267,
+          "coverage90": 0.9926829268292683,
+          "width": 4.430245390092364,
+          "interval_score": 4.524021825817446,
+          "last_observation_mae": 0.2922012195121949
+        },
+        {
+          "event": "2024-canada-audited",
+          "count": 190,
+          "mae": 2.499592611802372,
+          "rmse": 2.6974096260092346,
+          "nll": 3.3140591870808627,
+          "coverage90": 0.3684210526315789,
+          "width": 4.294597930303733,
+          "interval_score": 16.468809279191273,
+          "last_observation_mae": 0.8140631578947372
+        },
+        {
+          "event": "2024-china-audited",
+          "count": 573,
+          "mae": 0.3366919878311868,
+          "rmse": 0.44738127573616343,
+          "nll": 1.276170529113255,
+          "coverage90": 0.9982547993019197,
+          "width": 4.438978608046899,
+          "interval_score": 4.453211556832418,
+          "last_observation_mae": 0.286891797556719
+        },
+        {
+          "event": "2024-emilia-romagna-audited",
+          "count": 1027,
+          "mae": 0.4546425496286238,
+          "rmse": 0.6891285028249772,
+          "nll": 1.328189906978481,
+          "coverage90": 0.9844206426484907,
+          "width": 4.278928579458941,
+          "interval_score": 4.588328084897216,
+          "last_observation_mae": 0.40877020447906537
+        },
+        {
+          "event": "2024-japan-audited",
+          "count": 608,
+          "mae": 0.8691935144485156,
+          "rmse": 1.7855712057010789,
+          "nll": 2.1181673865984614,
+          "coverage90": 0.9046052631578947,
+          "width": 4.449820404222681,
+          "interval_score": 9.380432900421107,
+          "last_observation_mae": 0.4536167763157892
+        },
+        {
+          "event": "2024-miami-audited",
+          "count": 793,
+          "mae": 0.43050755436515814,
+          "rmse": 0.5352099508181649,
+          "nll": 1.2626722306059617,
+          "coverage90": 1.0,
+          "width": 4.2851881999919605,
+          "interval_score": 4.2851881999919605,
+          "last_observation_mae": 0.31737074401008813
+        },
+        {
+          "event": "2024-monaco-audited",
+          "count": 1102,
+          "mae": 1.4051305726541718,
+          "rmse": 1.628354493318926,
+          "nll": 1.992918990525005,
+          "coverage90": 0.8194192377495463,
+          "width": 4.073041125877804,
+          "interval_score": 6.219500332163325,
+          "last_observation_mae": 0.6299491833030854
+        },
+        {
+          "event": "2024-saudi-arabia-audited",
+          "count": 688,
+          "mae": 0.8464854506757216,
+          "rmse": 1.0463780985501694,
+          "nll": 1.5016983162377384,
+          "coverage90": 0.9636627906976745,
+          "width": 4.161401865621546,
+          "interval_score": 4.517377985028345,
+          "last_observation_mae": 0.3720683139534881
+        },
+        {
+          "event": "2024-spain-audited",
+          "count": 1020,
+          "mae": 0.465819020481298,
+          "rmse": 0.7325052609033568,
+          "nll": 1.3650663906235874,
+          "coverage90": 0.9852941176470589,
+          "width": 4.409530043080849,
+          "interval_score": 4.797986754735144,
+          "last_observation_mae": 0.4391705882352942
+        }
+      ]
+    },
+    {
+      "noise_sd": 2.4,
+      "equal_event_nll": 1.991228335265589,
+      "events": [
+        {
+          "event": "2024-australia-audited",
+          "count": 688,
+          "mae": 0.5673365483231138,
+          "rmse": 0.7314372635293112,
+          "nll": 1.915918991924353,
+          "coverage90": 1.0,
+          "width": 8.582035124135247,
+          "interval_score": 8.582035124135247,
+          "last_observation_mae": 0.3635377906976744
+        },
+        {
+          "event": "2024-austria-audited",
+          "count": 1063,
+          "mae": 0.3774542933100841,
+          "rmse": 0.5201329595488646,
+          "nll": 1.906990388845356,
+          "coverage90": 1.0,
+          "width": 8.665361931107746,
+          "interval_score": 8.665361931107746,
+          "last_observation_mae": 0.3339059266227661
+        },
+        {
+          "event": "2024-bahrain-audited",
+          "count": 820,
+          "mae": 0.39452346328814925,
+          "rmse": 0.5284703267134788,
+          "nll": 1.9095181028839499,
+          "coverage90": 1.0,
+          "width": 8.680520410825695,
+          "interval_score": 8.680520410825695,
+          "last_observation_mae": 0.2922012195121949
+        },
+        {
+          "event": "2024-canada-audited",
+          "count": 190,
+          "mae": 2.621196432277051,
+          "rmse": 2.8077407077381875,
+          "nll": 2.4494055249808784,
+          "coverage90": 0.968421052631579,
+          "width": 8.6164865477305,
+          "interval_score": 9.011052900547117,
+          "last_observation_mae": 0.8140631578947372
+        },
+        {
+          "event": "2024-china-audited",
+          "count": 573,
+          "mae": 0.3442300575298212,
+          "rmse": 0.454320515561195,
+          "nll": 1.902152462179699,
+          "coverage90": 1.0,
+          "width": 8.66579188728234,
+          "interval_score": 8.66579188728234,
+          "last_observation_mae": 0.286891797556719
+        },
+        {
+          "event": "2024-emilia-romagna-audited",
+          "count": 1027,
+          "mae": 0.46445687619432224,
+          "rmse": 0.6821036977143473,
+          "nll": 1.900327275498795,
+          "coverage90": 0.9980525803310614,
+          "width": 8.474959224105655,
+          "interval_score": 8.488888023398925,
+          "last_observation_mae": 0.40877020447906537
+        },
+        {
+          "event": "2024-japan-audited",
+          "count": 608,
+          "mae": 0.9009788226847143,
+          "rmse": 1.7986845995745369,
+          "nll": 2.1137199049903694,
+          "coverage90": 0.9638157894736842,
+          "width": 8.651168738529705,
+          "interval_score": 10.976170309581956,
+          "last_observation_mae": 0.4536167763157892
+        },
+        {
+          "event": "2024-miami-audited",
+          "count": 793,
+          "mae": 0.5388447143446299,
+          "rmse": 0.6354164588402266,
+          "nll": 1.8960943962504992,
+          "coverage90": 1.0,
+          "width": 8.502695508375751,
+          "interval_score": 8.502695508375751,
+          "last_observation_mae": 0.31737074401008813
+        },
+        {
+          "event": "2024-monaco-audited",
+          "count": 1102,
+          "mae": 1.4307473934830228,
+          "rmse": 1.6524025939719436,
+          "nll": 2.0471248326139375,
+          "coverage90": 0.9909255898366606,
+          "width": 8.158317391558551,
+          "interval_score": 8.254008950070233,
+          "last_observation_mae": 0.6299491833030854
+        },
+        {
+          "event": "2024-saudi-arabia-audited",
+          "count": 688,
+          "mae": 0.9048250825042115,
+          "rmse": 1.0959559555405287,
+          "nll": 1.9404526045341841,
+          "coverage90": 0.998546511627907,
+          "width": 8.318086779073173,
+          "interval_score": 8.453931594289987,
+          "last_observation_mae": 0.3720683139534881
+        },
+        {
+          "event": "2024-spain-audited",
+          "count": 1020,
+          "mae": 0.5130708851243688,
+          "rmse": 0.7425034800368726,
+          "nll": 1.9218072032194597,
+          "coverage90": 0.9990196078431373,
+          "width": 8.61551965092079,
+          "interval_score": 8.69970397439886,
+          "last_observation_mae": 0.4391705882352942
+        }
+      ]
+    }
+  ],
+  "development_sha256": {
+    "data/processed/2024-australia-audited.csv": "5b2a0b68344446cc701cdc3f379a988e97082e6d801ec8c15dc82effd04b5fae",
+    "data/processed/2024-austria-audited.csv": "1d904d1acb2a7cff0b81b3dfa52d5c80a8fa0aa3fe4c5270b445f6200fc2f315",
+    "data/processed/2024-bahrain-audited.csv": "331392a482648e2e4bb1f6dd111d8b095499224d6fbcf4287aace123123c6589",
+    "data/processed/2024-canada-audited.csv": "53b1e4288968c3337ea01e080f33d30592fb83af13e877b56fe130c8a2e83312",
+    "data/processed/2024-china-audited.csv": "a0933a6153bebc5ee3cb4dc5a913d71ca15c8163d6edf6a665a759ac36150177",
+    "data/processed/2024-emilia-romagna-audited.csv": "ea9509df72cb2d3351703deaea0b9c4f764d0e219b223247d1999ec310b2bd12",
+    "data/processed/2024-japan-audited.csv": "ffc451d3f02ca6ed5cd638675144a034194edc84c533a620837ad8cb9147432c",
+    "data/processed/2024-miami-audited.csv": "bad7b9f20affb0ac71c55a15c8b08797d562860e13c6d79e870afc7b70460f7e",
+    "data/processed/2024-monaco-audited.csv": "596fe0e755b6f63ccfba22c9f3ad012a5a0ae4b331e1caf6443f729ef051d8ff",
+    "data/processed/2024-saudi-arabia-audited.csv": "0384da60fd4794882e14c2a0c3163f6530b52c0acdad418823a80f313fbffdc8",
+    "data/processed/2024-spain-audited.csv": "da7fb9db42f89aaf2ecc22846a797918eccb01c5e25c5cbd9ebd2741b1e04a5e"
+  },
+  "source_sha256": {
+    "src/pitvoi/historical_decisions.py": "c172356cc1f08ece71b4c49d012e58ecd4ec229acf8fa835de8972d734cc5fce",
+    "src/pitvoi/segmented.py": "1d820c05d37278173f83d7baeb3e9920e52837ea3826aa238c4fb305439a2f13",
+    "src/pitvoi/replacement.py": "e8b25473d5230b609aafc3a2bda13ca97fd74301f25f572f62ab49eb92297188",
+    "src/pitvoi/nuisance.py": "fd5532e920d33d0c011872cfddcab00c28fd332a60805b168ce571f6b24e262b",
+    "src/pitvoi/gaussian.py": "43c0e01608a7f2c0293d25eee0736b91ab2a0cbade160d32f0a91e57e73b3b76",
+    "src/pitvoi/historical.py": "ea8d198f26587e08c32061ec8a00ab60ba0c0eb15c5b7f807efd22c19a5c0619"
+  },
+  "limitations": [
+    "Fixed two-point tyre support is assumed, not physically identified",
+    "Fuel and track improvement is a declared sensitivity, not telemetry-estimated",
+    "Retrospective quality flags are not guaranteed available live",
+    "End-of-lap decision abstraction omits physical pit-entry commitment timing",
+    "Fresh same-baseline equivalent replacement, no measured compound offset, inventory or warm-up",
+    "Late-race optional-stop scope after two observed dry compounds; no wet-weather strategy",
+    "No counterfactual actual race reward or pit-lap imitation score"
+  ]
+}

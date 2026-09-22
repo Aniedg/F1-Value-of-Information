@@ -1,0 +1,929 @@
+{
+  "protocol": {
+    "status": "Synthetic model and misspecification checks, fixed before executing this script",
+    "seed": 20261002,
+    "trials": 20000,
+    "observations": [
+      4,
+      8,
+      16,
+      24
+    ],
+    "rates": [
+      0.04,
+      0.3
+    ],
+    "assumed_noise": 1.2,
+    "scenarios": [
+      {
+        "name": "matched",
+        "unmodelled_drift": 0.0,
+        "outlier_probability": 0.0
+      },
+      {
+        "name": "drift_0.05",
+        "unmodelled_drift": 0.05,
+        "outlier_probability": 0.0
+      },
+      {
+        "name": "drift_0.15",
+        "unmodelled_drift": 0.15,
+        "outlier_probability": 0.0
+      },
+      {
+        "name": "traffic_contamination",
+        "unmodelled_drift": 0.0,
+        "outlier_probability": 0.1
+      }
+    ],
+    "outlier_seconds": 6.0,
+    "source_sha256": "767e77b0a54da90206ecafdd4ce70fe07e57d1a0a332b7bde6113b22f088718a"
+  },
+  "results": [
+    {
+      "scenario": "matched",
+      "observations": 4,
+      "accuracy": 0.5916,
+      "brier": 0.2366801735618143,
+      "confidently_wrong": 0.0,
+      "calibration_bins": [
+        {
+          "count": 63,
+          "predicted": 0.18146061797228646,
+          "observed": 0.1746031746031746
+        },
+        {
+          "count": 821,
+          "predicted": 0.265372350220724,
+          "observed": 0.26674786845310594
+        },
+        {
+          "count": 3301,
+          "predicted": 0.3580232391440379,
+          "observed": 0.3644350196910027
+        },
+        {
+          "count": 5821,
+          "predicted": 0.4523076131860529,
+          "observed": 0.4494073183301838
+        },
+        {
+          "count": 5913,
+          "predicted": 0.5472448173239539,
+          "observed": 0.5384745476069677
+        },
+        {
+          "count": 3183,
+          "predicted": 0.6423293441444143,
+          "observed": 0.6393339616713792
+        },
+        {
+          "count": 848,
+          "predicted": 0.7344814987001441,
+          "observed": 0.7287735849056604
+        },
+        {
+          "count": 50,
+          "predicted": 0.8163964793858117,
+          "observed": 0.76
+        }
+      ]
+    },
+    {
+      "scenario": "matched",
+      "observations": 8,
+      "accuracy": 0.75605,
+      "brier": 0.1638937700146524,
+      "confidently_wrong": 0.00305,
+      "calibration_bins": [
+        {
+          "count": 2082,
+          "predicted": 0.05599646363205763,
+          "observed": 0.05811719500480307
+        },
+        {
+          "count": 2287,
+          "predicted": 0.14896763258084358,
+          "observed": 0.15828596414516835
+        },
+        {
+          "count": 1988,
+          "predicted": 0.2488594940047349,
+          "observed": 0.24295774647887325
+        },
+        {
+          "count": 1849,
+          "predicted": 0.3486634230353109,
+          "observed": 0.3347755543537047
+        },
+        {
+          "count": 1823,
+          "predicted": 0.45015955605298497,
+          "observed": 0.455842018650576
+        },
+        {
+          "count": 1816,
+          "predicted": 0.5508162686683488,
+          "observed": 0.5302863436123348
+        },
+        {
+          "count": 1865,
+          "predicted": 0.6506876993507704,
+          "observed": 0.6273458445040214
+        },
+        {
+          "count": 1996,
+          "predicted": 0.7502885894268929,
+          "observed": 0.7705410821643287
+        },
+        {
+          "count": 2213,
+          "predicted": 0.8502659387034788,
+          "observed": 0.850881156800723
+        },
+        {
+          "count": 2081,
+          "predicted": 0.942765556210277,
+          "observed": 0.9389716482460355
+        }
+      ]
+    },
+    {
+      "scenario": "matched",
+      "observations": 16,
+      "accuracy": 0.9785,
+      "brier": 0.016545062057731392,
+      "confidently_wrong": 0.00315,
+      "calibration_bins": [
+        {
+          "count": 9404,
+          "predicted": 0.005891047215907051,
+          "observed": 0.0054232241599319435
+        },
+        {
+          "count": 269,
+          "predicted": 0.14792814188910347,
+          "observed": 0.12267657992565056
+        },
+        {
+          "count": 141,
+          "predicted": 0.2489824397650362,
+          "observed": 0.2198581560283688
+        },
+        {
+          "count": 126,
+          "predicted": 0.34937174926225295,
+          "observed": 0.29365079365079366
+        },
+        {
+          "count": 102,
+          "predicted": 0.44922185662059283,
+          "observed": 0.45098039215686275
+        },
+        {
+          "count": 118,
+          "predicted": 0.5528245820062596,
+          "observed": 0.5847457627118644
+        },
+        {
+          "count": 109,
+          "predicted": 0.6463899613174203,
+          "observed": 0.6513761467889908
+        },
+        {
+          "count": 159,
+          "predicted": 0.7540812295760008,
+          "observed": 0.7484276729559748
+        },
+        {
+          "count": 298,
+          "predicted": 0.8528232358738234,
+          "observed": 0.8523489932885906
+        },
+        {
+          "count": 9274,
+          "predicted": 0.9940306030660931,
+          "observed": 0.9934224714254907
+        }
+      ]
+    },
+    {
+      "scenario": "matched",
+      "observations": 24,
+      "accuracy": 0.99995,
+      "brier": 6.298085787111937e-05,
+      "confidently_wrong": 5e-05,
+      "calibration_bins": [
+        {
+          "count": 10073,
+          "predicted": 2.897639980566581e-05,
+          "observed": 0.0
+        },
+        {
+          "count": 2,
+          "predicted": 0.1308940432265139,
+          "observed": 0.0
+        },
+        {
+          "count": 1,
+          "predicted": 0.5365865607467015,
+          "observed": 1.0
+        },
+        {
+          "count": 9924,
+          "predicted": 0.9999671391281225,
+          "observed": 0.9998992341797662
+        }
+      ]
+    },
+    {
+      "scenario": "drift_0.05",
+      "observations": 4,
+      "accuracy": 0.59075,
+      "brier": 0.23686636999996466,
+      "confidently_wrong": 0.0,
+      "calibration_bins": [
+        {
+          "count": 48,
+          "predicted": 0.18328355482809203,
+          "observed": 0.14583333333333334
+        },
+        {
+          "count": 686,
+          "predicted": 0.26604797509301575,
+          "observed": 0.26239067055393583
+        },
+        {
+          "count": 2926,
+          "predicted": 0.3585127569793814,
+          "observed": 0.3537252221462748
+        },
+        {
+          "count": 5605,
+          "predicted": 0.4524416148002449,
+          "observed": 0.43978590544157004
+        },
+        {
+          "count": 6084,
+          "predicted": 0.5475736283379516,
+          "observed": 0.5281065088757396
+        },
+        {
+          "count": 3562,
+          "predicted": 0.6422438656690855,
+          "observed": 0.6249298147108366
+        },
+        {
+          "count": 1024,
+          "predicted": 0.7350462877968413,
+          "observed": 0.728515625
+        },
+        {
+          "count": 65,
+          "predicted": 0.8186573762869656,
+          "observed": 0.8
+        }
+      ]
+    },
+    {
+      "scenario": "drift_0.05",
+      "observations": 8,
+      "accuracy": 0.74895,
+      "brier": 0.1689532955953231,
+      "confidently_wrong": 0.0041,
+      "calibration_bins": [
+        {
+          "count": 1401,
+          "predicted": 0.05974541849070482,
+          "observed": 0.047109207708779445
+        },
+        {
+          "count": 1769,
+          "predicted": 0.15047263909149777,
+          "observed": 0.10853589598643301
+        },
+        {
+          "count": 1781,
+          "predicted": 0.24988696839076138,
+          "observed": 0.19764177428411006
+        },
+        {
+          "count": 1666,
+          "predicted": 0.35095346410373884,
+          "observed": 0.2581032412965186
+        },
+        {
+          "count": 1714,
+          "predicted": 0.44971481423661785,
+          "observed": 0.34889148191365227
+        },
+        {
+          "count": 1824,
+          "predicted": 0.5512080120522481,
+          "observed": 0.4605263157894737
+        },
+        {
+          "count": 1948,
+          "predicted": 0.6513186384884779,
+          "observed": 0.5385010266940452
+        },
+        {
+          "count": 2242,
+          "predicted": 0.7510537235082974,
+          "observed": 0.6623550401427297
+        },
+        {
+          "count": 2708,
+          "predicted": 0.8521631973548677,
+          "observed": 0.8116691285081241
+        },
+        {
+          "count": 2947,
+          "predicted": 0.9468238135303501,
+          "observed": 0.9209365456396336
+        }
+      ]
+    },
+    {
+      "scenario": "drift_0.05",
+      "observations": 16,
+      "accuracy": 0.94355,
+      "brier": 0.042451554674265216,
+      "confidently_wrong": 0.0123,
+      "calibration_bins": [
+        {
+          "count": 7581,
+          "predicted": 0.012386766932168869,
+          "observed": 0.0006595435958316845
+        },
+        {
+          "count": 615,
+          "predicted": 0.14304161052758094,
+          "observed": 0.011382113821138212
+        },
+        {
+          "count": 332,
+          "predicted": 0.24581616263447947,
+          "observed": 0.012048192771084338
+        },
+        {
+          "count": 256,
+          "predicted": 0.34879195166699395,
+          "observed": 0.01953125
+        },
+        {
+          "count": 217,
+          "predicted": 0.4491204434445225,
+          "observed": 0.027649769585253458
+        },
+        {
+          "count": 203,
+          "predicted": 0.5443385238715259,
+          "observed": 0.04926108374384237
+        },
+        {
+          "count": 188,
+          "predicted": 0.6482039734396514,
+          "observed": 0.07446808510638298
+        },
+        {
+          "count": 171,
+          "predicted": 0.7526489922265145,
+          "observed": 0.12280701754385964
+        },
+        {
+          "count": 240,
+          "predicted": 0.849676291169588,
+          "observed": 0.175
+        },
+        {
+          "count": 10197,
+          "predicted": 0.9969393203589301,
+          "observed": 0.9620476610767873
+        }
+      ]
+    },
+    {
+      "scenario": "drift_0.05",
+      "observations": 24,
+      "accuracy": 0.9942,
+      "brier": 0.004549734448355498,
+      "confidently_wrong": 0.00215,
+      "calibration_bins": [
+        {
+          "count": 9816,
+          "predicted": 0.0011937367727897275,
+          "observed": 0.0
+        },
+        {
+          "count": 63,
+          "predicted": 0.14363578926216267,
+          "observed": 0.0
+        },
+        {
+          "count": 37,
+          "predicted": 0.24565768162857687,
+          "observed": 0.0
+        },
+        {
+          "count": 28,
+          "predicted": 0.3477213944631045,
+          "observed": 0.0
+        },
+        {
+          "count": 16,
+          "predicted": 0.4515279042882625,
+          "observed": 0.0
+        },
+        {
+          "count": 22,
+          "predicted": 0.5444299347854109,
+          "observed": 0.0
+        },
+        {
+          "count": 12,
+          "predicted": 0.6368092993153783,
+          "observed": 0.0
+        },
+        {
+          "count": 16,
+          "predicted": 0.7413589114509004,
+          "observed": 0.0
+        },
+        {
+          "count": 10,
+          "predicted": 0.8346847552922483,
+          "observed": 0.0
+        },
+        {
+          "count": 9980,
+          "predicted": 0.9998424463569703,
+          "observed": 0.9943887775551102
+        }
+      ]
+    },
+    {
+      "scenario": "drift_0.15",
+      "observations": 4,
+      "accuracy": 0.5906,
+      "brier": 0.23792063778508032,
+      "confidently_wrong": 0.0,
+      "calibration_bins": [
+        {
+          "count": 22,
+          "predicted": 0.18467353731438088,
+          "observed": 0.22727272727272727
+        },
+        {
+          "count": 472,
+          "predicted": 0.26638262235105226,
+          "observed": 0.2521186440677966
+        },
+        {
+          "count": 2304,
+          "predicted": 0.3601149959551223,
+          "observed": 0.3333333333333333
+        },
+        {
+          "count": 5068,
+          "predicted": 0.454035875272126,
+          "observed": 0.4137726913970008
+        },
+        {
+          "count": 6360,
+          "predicted": 0.5496949492885321,
+          "observed": 0.5157232704402516
+        },
+        {
+          "count": 4230,
+          "predicted": 0.643842358547299,
+          "observed": 0.6004728132387707
+        },
+        {
+          "count": 1427,
+          "predicted": 0.736381336891569,
+          "observed": 0.7203924316748423
+        },
+        {
+          "count": 117,
+          "predicted": 0.8209126755964522,
+          "observed": 0.7435897435897436
+        }
+      ]
+    },
+    {
+      "scenario": "drift_0.15",
+      "observations": 8,
+      "accuracy": 0.6905,
+      "brier": 0.20398094886765103,
+      "confidently_wrong": 0.01205,
+      "calibration_bins": [
+        {
+          "count": 484,
+          "predicted": 0.062316655583595365,
+          "observed": 0.022727272727272728
+        },
+        {
+          "count": 996,
+          "predicted": 0.15139924446076183,
+          "observed": 0.05923694779116466
+        },
+        {
+          "count": 1097,
+          "predicted": 0.2512170568983606,
+          "observed": 0.09298085688240657
+        },
+        {
+          "count": 1275,
+          "predicted": 0.3512989891804921,
+          "observed": 0.1584313725490196
+        },
+        {
+          "count": 1416,
+          "predicted": 0.45050929677183177,
+          "observed": 0.22387005649717515
+        },
+        {
+          "count": 1572,
+          "predicted": 0.5525870491524638,
+          "observed": 0.2633587786259542
+        },
+        {
+          "count": 1891,
+          "predicted": 0.6515181403353992,
+          "observed": 0.37123215230037016
+        },
+        {
+          "count": 2380,
+          "predicted": 0.7523680920669007,
+          "observed": 0.48865546218487393
+        },
+        {
+          "count": 3452,
+          "predicted": 0.8531908606699075,
+          "observed": 0.6404982618771726
+        },
+        {
+          "count": 5437,
+          "predicted": 0.9525429768560769,
+          "observed": 0.8723560787198823
+        }
+      ]
+    },
+    {
+      "scenario": "drift_0.15",
+      "observations": 16,
+      "accuracy": 0.68605,
+      "brier": 0.2641568291697342,
+      "confidently_wrong": 0.16685,
+      "calibration_bins": [
+        {
+          "count": 1920,
+          "predicted": 0.029628365300076173,
+          "observed": 0.0
+        },
+        {
+          "count": 630,
+          "predicted": 0.14503484775760062,
+          "observed": 0.0
+        },
+        {
+          "count": 473,
+          "predicted": 0.24988443583404613,
+          "observed": 0.0
+        },
+        {
+          "count": 404,
+          "predicted": 0.3489491342869738,
+          "observed": 0.0
+        },
+        {
+          "count": 370,
+          "predicted": 0.45166635347198747,
+          "observed": 0.0
+        },
+        {
+          "count": 401,
+          "predicted": 0.5495700159962353,
+          "observed": 0.0
+        },
+        {
+          "count": 442,
+          "predicted": 0.6517234206739417,
+          "observed": 0.0
+        },
+        {
+          "count": 524,
+          "predicted": 0.752023956390275,
+          "observed": 0.0019083969465648854
+        },
+        {
+          "count": 855,
+          "predicted": 0.8553286981550023,
+          "observed": 0.0
+        },
+        {
+          "count": 13981,
+          "predicted": 0.9933801749217241,
+          "observed": 0.7097489449967813
+        }
+      ]
+    },
+    {
+      "scenario": "drift_0.15",
+      "observations": 24,
+      "accuracy": 0.63755,
+      "brier": 0.3376666364552211,
+      "confidently_wrong": 0.2897,
+      "calibration_bins": [
+        {
+          "count": 1876,
+          "predicted": 0.01765865276471787,
+          "observed": 0.0
+        },
+        {
+          "count": 319,
+          "predicted": 0.14593811656041505,
+          "observed": 0.0
+        },
+        {
+          "count": 241,
+          "predicted": 0.24966868076322093,
+          "observed": 0.0
+        },
+        {
+          "count": 205,
+          "predicted": 0.35080806242231294,
+          "observed": 0.0
+        },
+        {
+          "count": 186,
+          "predicted": 0.4475507713164301,
+          "observed": 0.0
+        },
+        {
+          "count": 189,
+          "predicted": 0.5496443746601081,
+          "observed": 0.0
+        },
+        {
+          "count": 216,
+          "predicted": 0.6536151752725722,
+          "observed": 0.0
+        },
+        {
+          "count": 269,
+          "predicted": 0.7545110362063621,
+          "observed": 0.0
+        },
+        {
+          "count": 384,
+          "predicted": 0.8542737287403009,
+          "observed": 0.0
+        },
+        {
+          "count": 16115,
+          "predicted": 0.9965558820318736,
+          "observed": 0.615823766677009
+        }
+      ]
+    },
+    {
+      "scenario": "traffic_contamination",
+      "observations": 4,
+      "accuracy": 0.57075,
+      "brier": 0.2577312412678918,
+      "confidently_wrong": 0.00025,
+      "calibration_bins": [
+        {
+          "count": 265,
+          "predicted": 0.07953882433733854,
+          "observed": 0.30943396226415093
+        },
+        {
+          "count": 1068,
+          "predicted": 0.15055363931360013,
+          "observed": 0.448501872659176
+        },
+        {
+          "count": 1331,
+          "predicted": 0.2537324194029061,
+          "observed": 0.391435011269722
+        },
+        {
+          "count": 2840,
+          "predicted": 0.3555837714808271,
+          "observed": 0.3947183098591549
+        },
+        {
+          "count": 4413,
+          "predicted": 0.45202200579243784,
+          "observed": 0.4554724677090415
+        },
+        {
+          "count": 4604,
+          "predicted": 0.5481649137958668,
+          "observed": 0.5295395308427454
+        },
+        {
+          "count": 2855,
+          "predicted": 0.6438278727655473,
+          "observed": 0.610507880910683
+        },
+        {
+          "count": 1365,
+          "predicted": 0.7452447316544364,
+          "observed": 0.5904761904761905
+        },
+        {
+          "count": 1031,
+          "predicted": 0.8485575965912867,
+          "observed": 0.5557710960232783
+        },
+        {
+          "count": 228,
+          "predicted": 0.9219890012489673,
+          "observed": 0.6622807017543859
+        }
+      ]
+    },
+    {
+      "scenario": "traffic_contamination",
+      "observations": 8,
+      "accuracy": 0.67645,
+      "brier": 0.23610214194899096,
+      "confidently_wrong": 0.05925,
+      "calibration_bins": [
+        {
+          "count": 3907,
+          "predicted": 0.03755580758924084,
+          "observed": 0.2495520859994881
+        },
+        {
+          "count": 1968,
+          "predicted": 0.14754941816873862,
+          "observed": 0.3053861788617886
+        },
+        {
+          "count": 1473,
+          "predicted": 0.24793633337217277,
+          "observed": 0.33536999321113375
+        },
+        {
+          "count": 1392,
+          "predicted": 0.3486619673732309,
+          "observed": 0.3936781609195402
+        },
+        {
+          "count": 1293,
+          "predicted": 0.4496839026916774,
+          "observed": 0.4609435421500387
+        },
+        {
+          "count": 1290,
+          "predicted": 0.5506580938993305,
+          "observed": 0.5263565891472868
+        },
+        {
+          "count": 1420,
+          "predicted": 0.6503063320591376,
+          "observed": 0.576056338028169
+        },
+        {
+          "count": 1513,
+          "predicted": 0.7512207306485187,
+          "observed": 0.6563119629874422
+        },
+        {
+          "count": 1891,
+          "predicted": 0.8524160987120577,
+          "observed": 0.698572184029614
+        },
+        {
+          "count": 3853,
+          "predicted": 0.9619358241833268,
+          "observed": 0.7524007267064625
+        }
+      ]
+    },
+    {
+      "scenario": "traffic_contamination",
+      "observations": 16,
+      "accuracy": 0.87075,
+      "brier": 0.10791260483935218,
+      "confidently_wrong": 0.0645,
+      "calibration_bins": [
+        {
+          "count": 8809,
+          "predicted": 0.007259874338135147,
+          "observed": 0.08525371778862527
+        },
+        {
+          "count": 464,
+          "predicted": 0.14710744334518872,
+          "observed": 0.35344827586206895
+        },
+        {
+          "count": 310,
+          "predicted": 0.24875964460845285,
+          "observed": 0.43870967741935485
+        },
+        {
+          "count": 246,
+          "predicted": 0.35054256008602386,
+          "observed": 0.43089430894308944
+        },
+        {
+          "count": 200,
+          "predicted": 0.4489440292690534,
+          "observed": 0.56
+        },
+        {
+          "count": 255,
+          "predicted": 0.5464512939501682,
+          "observed": 0.5137254901960784
+        },
+        {
+          "count": 250,
+          "predicted": 0.6529227392698145,
+          "observed": 0.568
+        },
+        {
+          "count": 305,
+          "predicted": 0.751668410291321,
+          "observed": 0.6065573770491803
+        },
+        {
+          "count": 454,
+          "predicted": 0.8554548660712409,
+          "observed": 0.6365638766519823
+        },
+        {
+          "count": 8707,
+          "predicted": 0.9934734259386059,
+          "observed": 0.9082347536464913
+        }
+      ]
+    },
+    {
+      "scenario": "traffic_contamination",
+      "observations": 24,
+      "accuracy": 0.9766,
+      "brier": 0.02021060253642394,
+      "confidently_wrong": 0.0132,
+      "calibration_bins": [
+        {
+          "count": 9898,
+          "predicted": 0.0008426912264919461,
+          "observed": 0.014952515659729238
+        },
+        {
+          "count": 60,
+          "predicted": 0.1525906456616725,
+          "observed": 0.55
+        },
+        {
+          "count": 42,
+          "predicted": 0.2425897964036595,
+          "observed": 0.5238095238095238
+        },
+        {
+          "count": 41,
+          "predicted": 0.3482950214625111,
+          "observed": 0.34146341463414637
+        },
+        {
+          "count": 23,
+          "predicted": 0.4422475304555231,
+          "observed": 0.4782608695652174
+        },
+        {
+          "count": 28,
+          "predicted": 0.553308357132295,
+          "observed": 0.4642857142857143
+        },
+        {
+          "count": 32,
+          "predicted": 0.6523013803322821,
+          "observed": 0.46875
+        },
+        {
+          "count": 56,
+          "predicted": 0.7490009694090246,
+          "observed": 0.6964285714285714
+        },
+        {
+          "count": 60,
+          "predicted": 0.8528282117490266,
+          "observed": 0.5333333333333333
+        },
+        {
+          "count": 9760,
+          "predicted": 0.9991224196952564,
+          "observed": 0.9832991803278689
+        }
+      ]
+    }
+  ],
+  "completed_at": "2026-09-22T12:16:19.035408+00:00"
+}

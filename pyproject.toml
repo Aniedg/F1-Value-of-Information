@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pitvoi"
+version = "0.1.0"
+description = "Reproducible experiments on information-aware pit-stop timing"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+research = ["numpy>=1.26,<3", "scipy>=1.11,<2", "fastf1>=3.6,<4"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,91 @@
+{
+  "name": "full-grid-analytic-segments-v2",
+  "locked_at": "2026-09-22T12:03:13.985903+00:00",
+  "status": "Post-development numerical replacement study; synthetic, not empirical confirmation",
+  "laps": [
+    4,
+    8,
+    12
+  ],
+  "ages": [
+    8,
+    12,
+    16
+  ],
+  "pit_losses": [
+    12,
+    18,
+    24
+  ],
+  "priors": [
+    0.2,
+    0.5,
+    0.8
+  ],
+  "noise_sds": [
+    0.75,
+    1.5,
+    3
+  ],
+  "offset_sds": [
+    0,
+    3,
+    6
+  ],
+  "dependence": [
+    -0.75,
+    0,
+    0.75
+  ],
+  "old_rates": [
+    0.04,
+    0.3
+  ],
+  "replacement_rates": [
+    0.02,
+    0.1
+  ],
+  "grid_size": 1601,
+  "refinement": {
+    "grid_size": 3201
+  },
+  "trials": 50000,
+  "seed": 20261001,
+  "meaningful_gain_seconds": 0.05,
+  "near_margin_seconds": 1.0,
+  "validation_selection": "Same 24 state indices as v1, fixed before new integration results",
+  "weighting": "Equal weight per enumerated initial state, not race-frequency weighting",
+  "source_sha256": {
+    "src/pitvoi/segmented_study.py": "87b55b8c0ab1178933fb119db8cbe6c73d6b3ec2ae2508633844fa6bfc06bc70",
+    "src/pitvoi/segmented.py": "1d820c05d37278173f83d7baeb3e9920e52837ea3826aa238c4fb305439a2f13",
+    "src/pitvoi/replacement.py": "e8b25473d5230b609aafc3a2bda13ca97fd74301f25f572f62ab49eb92297188",
+    "src/pitvoi/nuisance.py": "fd5532e920d33d0c011872cfddcab00c28fd332a60805b168ce571f6b24e262b",
+    "src/pitvoi/gaussian.py": "43c0e01608a7f2c0293d25eee0736b91ab2a0cbade160d32f0a91e57e73b3b76"
+  },
+  "validation_indices": [
+    0,
+    198,
+    397,
+    596,
+    794,
+    993,
+    1192,
+    1391,
+    1589,
+    1788,
+    1987,
+    2186,
+    2025,
+    2052,
+    1864,
+    2028,
+    1867,
+    2055,
+    1075,
+    1558,
+    1099,
+    1574,
+    745,
+    1603
+  ]
+}

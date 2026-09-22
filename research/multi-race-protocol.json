@@ -1,0 +1,17 @@
+{
+  "experiment": "multi-race-forecast-v0.4",
+  "selected_utc": "2026-09-22T05:06:01.001235+00:00",
+  "events": [
+    "Australia",
+    "Japan",
+    "China"
+  ],
+  "year": 2024,
+  "session": "R",
+  "reason": "Next three chronological Grands Prix after Saudi Arabia; no selection by performance",
+  "frozen_sha256": "87bc5bf78e6b4639defa152e723b9b467a58c229cac60f3b6b6ea49413cdc619",
+  "historical_source_sha256": "ea8d198f26587e08c32061ec8a00ab60ba0c0eb15c5b7f807efd22c19a5c0619",
+  "aggregation": "Report every race separately; equal-race average of metrics is primary, pooled-lap scores secondary",
+  "uncertainty": "Only three new races; descriptive results without iid-lap significance claims",
+  "no_tuning": true
+}

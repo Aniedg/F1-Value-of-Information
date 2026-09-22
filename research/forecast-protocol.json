@@ -1,0 +1,22 @@
+{
+  "experiment": "historical-forecast-v0.3",
+  "development_event": "2024-bahrain",
+  "heldout_event": "2024-saudi-arabia",
+  "selection_reason": "Next event chronologically after the fixed Bahrain development pilot; selected before download or scoring",
+  "warmup_observations": 3,
+  "scoring": "One-step prediction of each next eligible observation within driver/stint, accounting for lap gaps. Not necessarily the immediately next race lap.",
+  "primary_selection_metric": "Mean Gaussian negative log predictive density on Bahrain after warmup",
+  "noise_sd_candidates": [0.3, 0.6, 1.2, 2.0],
+  "level_process_sd_candidates": [0.0, 0.1, 0.3, 0.6],
+  "slope_process_sd_candidates": [0.0, 0.01, 0.03],
+  "initial_slope_mean": 0.0,
+  "initial_slope_sd": 0.15,
+  "initial_level_variance": 1000000.0,
+  "baselines": ["last_observation", "expanding_mean"],
+  "baseline_interval_fit": "Gaussian residual RMS estimated only from Bahrain forecasts after warmup",
+  "nuisance_pace_improvement_assumptions_seconds_per_lap": [0.0, 0.04, 0.08, 0.12],
+  "nuisance_interpretation": "Conditional tyre slope = net slope + assumed fuel/track pace improvement. Assumptions are illustrative, not measured.",
+  "quality_control": "Use existing retrospective eligibility flags without pace-based outlier removal. As-of flag availability is not established.",
+  "no_test_tuning": true,
+  "scope": "Single held-out race feasibility test, not broad generalisation or causal strategy evaluation"
+}

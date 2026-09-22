@@ -1,0 +1,9 @@
+{
+  "forecasts": 2173,
+  "decision_states": 526,
+  "initial_changes": 11,
+  "equal_event_mae": 0.8089468877652507,
+  "last_lap_equal_event_mae": 0.6146693422776616,
+  "equal_event_coverage": 0.9192222035856722,
+  "main_refinement_max": 2.4547400613528225e-05
+}

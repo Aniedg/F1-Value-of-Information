@@ -1,0 +1,10 @@
+{
+  "selected_before_download": true,
+  "year": 2024,
+  "event": "Saudi Arabia",
+  "session": "R",
+  "drivers": "all",
+  "purpose": "Single held-out race for the frozen historical-forecast-v0.3 model",
+  "rationale": "Next event chronologically after Bahrain; no selection by prediction or strategy results",
+  "online_validity": "Retrospective quality-control availability is not proven as-of; evaluation is conditional on eligible continuing-stint observations"
+}

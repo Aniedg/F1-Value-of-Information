@@ -1,0 +1,5302 @@
+{
+  "experiment": "synthetic-v0.1",
+  "python": "3.13.3",
+  "evaluation": "exact enumeration; no Monte Carlo randomness",
+  "selection": "largest adaptive gain among initial-action disagreements with 80% signal accuracy",
+  "scenarios": 125,
+  "initial_action_disagreements": 21,
+  "example": {
+    "scenario": {
+      "laps": 8,
+      "age": 12,
+      "low": 0.04,
+      "high": 0.3,
+      "prior_high": 0.5,
+      "accuracy": 0.8,
+      "pit_loss": 18,
+      "fresh_degradation": 0.06
+    },
+    "policies": {
+      "fixed": {
+        "action": "pit",
+        "expected_excess_seconds": 19.68,
+        "regret_seconds": 7.359999999999999
+      },
+      "certainty_equivalent": {
+        "action": "pit",
+        "expected_excess_seconds": 19.68,
+        "regret_seconds": 7.359999999999999
+      },
+      "frozen_belief": {
+        "action": "pit",
+        "expected_excess_seconds": 19.68,
+        "regret_seconds": 7.359999999999999
+      },
+      "adaptive": {
+        "action": "stay",
+        "expected_excess_seconds": 16.6236,
+        "regret_seconds": 4.303599999999999
+      }
+    },
+    "oracle_seconds": 12.32,
+    "planning_information_value_seconds": 3.0564,
+    "realized_policy_gain_seconds": 3.0564,
+    "action_values": {
+      "pit_seconds": 19.68,
+      "stay_frozen_seconds": 21.08,
+      "stay_adaptive_seconds": 16.6236
+    }
+  },
+  "grid": [
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.1,
+        "accuracy": 0.5,
+        "pit_loss": 10,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 2.5519999999999996
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 2.5519999999999996
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 2.5519999999999996
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 2.5519999999999996
+        }
+      },
+      "oracle_seconds": 5.6320000000000014,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 11.68,
+        "stay_frozen_seconds": 8.184000000000001,
+        "stay_adaptive_seconds": 8.184000000000001
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.1,
+        "accuracy": 0.5,
+        "pit_loss": 14,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 2.1519999999999992
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 2.1519999999999992
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 2.1519999999999992
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 2.1519999999999992
+        }
+      },
+      "oracle_seconds": 6.032000000000002,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 15.68,
+        "stay_frozen_seconds": 8.184000000000001,
+        "stay_adaptive_seconds": 8.184000000000001
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.1,
+        "accuracy": 0.5,
+        "pit_loss": 18,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 1.7519999999999998
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 1.7519999999999998
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 1.7519999999999998
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 1.7519999999999998
+        }
+      },
+      "oracle_seconds": 6.432000000000001,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 19.68,
+        "stay_frozen_seconds": 8.184000000000001,
+        "stay_adaptive_seconds": 8.184000000000001
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.1,
+        "accuracy": 0.5,
+        "pit_loss": 22,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 1.3520000000000003
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 1.3520000000000003
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 1.3520000000000003
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 1.3520000000000003
+        }
+      },
+      "oracle_seconds": 6.832000000000001,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 23.68,
+        "stay_frozen_seconds": 8.184000000000001,
+        "stay_adaptive_seconds": 8.184000000000001
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.1,
+        "accuracy": 0.5,
+        "pit_loss": 26,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 0.952
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 0.952
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 0.952
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 0.952
+        }
+      },
+      "oracle_seconds": 7.232000000000001,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 27.68,
+        "stay_frozen_seconds": 8.184000000000001,
+        "stay_adaptive_seconds": 8.184000000000001
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.1,
+        "accuracy": 0.65,
+        "pit_loss": 10,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 2.5519999999999996
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 8.154835,
+          "regret_seconds": 2.522834999999999
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 8.154835,
+          "regret_seconds": 2.522834999999999
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 8.05263875,
+          "regret_seconds": 2.4206387499999984
+        }
+      },
+      "oracle_seconds": 5.6320000000000014,
+      "planning_information_value_seconds": 0.1313612500000012,
+      "realized_policy_gain_seconds": 0.10219625000000043,
+      "action_values": {
+        "pit_seconds": 11.68,
+        "stay_frozen_seconds": 8.184000000000001,
+        "stay_adaptive_seconds": 8.05263875
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.1,
+        "accuracy": 0.65,
+        "pit_loss": 14,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 2.1519999999999992
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 2.1519999999999992
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 2.1519999999999992
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 2.1519999999999992
+        }
+      },
+      "oracle_seconds": 6.032000000000002,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 15.68,
+        "stay_frozen_seconds": 8.184000000000001,
+        "stay_adaptive_seconds": 8.184000000000001
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.1,
+        "accuracy": 0.65,
+        "pit_loss": 18,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 1.7519999999999998
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 1.7519999999999998
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 1.7519999999999998
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 1.7519999999999998
+        }
+      },
+      "oracle_seconds": 6.432000000000001,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 19.68,
+        "stay_frozen_seconds": 8.184000000000001,
+        "stay_adaptive_seconds": 8.184000000000001
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.1,
+        "accuracy": 0.65,
+        "pit_loss": 22,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 1.3520000000000003
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 1.3520000000000003
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 1.3520000000000003
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 1.3520000000000003
+        }
+      },
+      "oracle_seconds": 6.832000000000001,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 23.68,
+        "stay_frozen_seconds": 8.184000000000001,
+        "stay_adaptive_seconds": 8.184000000000001
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.1,
+        "accuracy": 0.65,
+        "pit_loss": 26,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 0.952
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 0.952
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 0.952
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 0.952
+        }
+      },
+      "oracle_seconds": 7.232000000000001,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 27.68,
+        "stay_frozen_seconds": 8.184000000000001,
+        "stay_adaptive_seconds": 8.184000000000001
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.1,
+        "accuracy": 0.8,
+        "pit_loss": 10,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000003,
+          "regret_seconds": 2.5520000000000014
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 7.551792000000001,
+          "regret_seconds": 1.9197919999999993
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 7.551792000000001,
+          "regret_seconds": 1.9197919999999993
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 7.099824000000002,
+          "regret_seconds": 1.4678240000000002
+        }
+      },
+      "oracle_seconds": 5.6320000000000014,
+      "planning_information_value_seconds": 1.0841759999999994,
+      "realized_policy_gain_seconds": 0.45196799999999904,
+      "action_values": {
+        "pit_seconds": 11.68,
+        "stay_frozen_seconds": 8.184000000000001,
+        "stay_adaptive_seconds": 7.099824000000002
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.1,
+        "accuracy": 0.8,
+        "pit_loss": 14,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000003,
+          "regret_seconds": 2.152000000000001
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 7.627824000000001,
+          "regret_seconds": 1.5958239999999995
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 7.627824000000001,
+          "regret_seconds": 1.5958239999999995
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 7.6252384000000015,
+          "regret_seconds": 1.5932383999999997
+        }
+      },
+      "oracle_seconds": 6.032000000000002,
+      "planning_information_value_seconds": 0.5587615999999995,
+      "realized_policy_gain_seconds": 0.0025855999999997437,
+      "action_values": {
+        "pit_seconds": 15.68,
+        "stay_frozen_seconds": 8.184000000000001,
+        "stay_adaptive_seconds": 7.6252384000000015
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.1,
+        "accuracy": 0.8,
+        "pit_loss": 18,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000003,
+          "regret_seconds": 1.7520000000000016
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 8.030640000000002,
+          "regret_seconds": 1.5986400000000005
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 8.030640000000002,
+          "regret_seconds": 1.5986400000000005
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 7.940160000000002,
+          "regret_seconds": 1.508160000000001
+        }
+      },
+      "oracle_seconds": 6.432000000000001,
+      "planning_information_value_seconds": 0.24383999999999872,
+      "realized_policy_gain_seconds": 0.09047999999999945,
+      "action_values": {
+        "pit_seconds": 19.68,
+        "stay_frozen_seconds": 8.184000000000001,
+        "stay_adaptive_seconds": 7.940160000000002
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.1,
+        "accuracy": 0.8,
+        "pit_loss": 22,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000003,
+          "regret_seconds": 1.352000000000002
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 8.173760000000001,
+          "regret_seconds": 1.3417600000000007
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 8.173760000000001,
+          "regret_seconds": 1.3417600000000007
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 8.173760000000001,
+          "regret_seconds": 1.3417600000000007
+        }
+      },
+      "oracle_seconds": 6.832000000000001,
+      "planning_information_value_seconds": 0.010239999999999583,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 23.68,
+        "stay_frozen_seconds": 8.184000000000001,
+        "stay_adaptive_seconds": 8.173760000000001
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.1,
+        "accuracy": 0.8,
+        "pit_loss": 26,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000003,
+          "regret_seconds": 0.9520000000000017
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000003,
+          "regret_seconds": 0.9520000000000017
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000003,
+          "regret_seconds": 0.9520000000000017
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000003,
+          "regret_seconds": 0.9520000000000017
+        }
+      },
+      "oracle_seconds": 7.232000000000001,
+      "planning_information_value_seconds": -1.7763568394002505e-15,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 27.68,
+        "stay_frozen_seconds": 8.184000000000001,
+        "stay_adaptive_seconds": 8.184000000000003
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.1,
+        "accuracy": 0.95,
+        "pit_loss": 10,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 2.5519999999999996
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 6.3140016125,
+          "regret_seconds": 0.6820016124999988
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 6.3140016125,
+          "regret_seconds": 0.6820016124999988
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 6.3140016125,
+          "regret_seconds": 0.6820016124999988
+        }
+      },
+      "oracle_seconds": 5.6320000000000014,
+      "planning_information_value_seconds": 1.8699983875000008,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 11.68,
+        "stay_frozen_seconds": 8.184000000000001,
+        "stay_adaptive_seconds": 6.3140016125
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.1,
+        "accuracy": 0.95,
+        "pit_loss": 14,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 2.1519999999999992
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 6.901553750000001,
+          "regret_seconds": 0.8695537499999988
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 6.901553750000001,
+          "regret_seconds": 0.8695537499999988
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 6.81845625,
+          "regret_seconds": 0.7864562499999979
+        }
+      },
+      "oracle_seconds": 6.032000000000002,
+      "planning_information_value_seconds": 1.3655437500000014,
+      "realized_policy_gain_seconds": 0.08309750000000093,
+      "action_values": {
+        "pit_seconds": 15.68,
+        "stay_frozen_seconds": 8.184000000000001,
+        "stay_adaptive_seconds": 6.81845625
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.1,
+        "accuracy": 0.95,
+        "pit_loss": 18,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 1.7519999999999998
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 7.477145625,
+          "regret_seconds": 1.045145624999999
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 7.477145625,
+          "regret_seconds": 1.045145624999999
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 7.2236062500000005,
+          "regret_seconds": 0.7916062499999992
+        }
+      },
+      "oracle_seconds": 6.432000000000001,
+      "planning_information_value_seconds": 0.9603937500000006,
+      "realized_policy_gain_seconds": 0.2535393749999999,
+      "action_values": {
+        "pit_seconds": 19.68,
+        "stay_frozen_seconds": 8.184000000000001,
+        "stay_adaptive_seconds": 7.2236062500000005
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.1,
+        "accuracy": 0.95,
+        "pit_loss": 22,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 1.3520000000000003
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 8.046800000000001,
+          "regret_seconds": 1.2148000000000003
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 8.046800000000001,
+          "regret_seconds": 1.2148000000000003
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 7.612915,
+          "regret_seconds": 0.7809149999999994
+        }
+      },
+      "oracle_seconds": 6.832000000000001,
+      "planning_information_value_seconds": 0.571085000000001,
+      "realized_policy_gain_seconds": 0.43388500000000096,
+      "action_values": {
+        "pit_seconds": 23.68,
+        "stay_frozen_seconds": 8.184000000000001,
+        "stay_adaptive_seconds": 7.612915
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.1,
+        "accuracy": 0.95,
+        "pit_loss": 26,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 0.952
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 7.982915,
+          "regret_seconds": 0.7509149999999991
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 7.982915,
+          "regret_seconds": 0.7509149999999991
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 7.982915,
+          "regret_seconds": 0.7509149999999991
+        }
+      },
+      "oracle_seconds": 7.232000000000001,
+      "planning_information_value_seconds": 0.20108500000000085,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 27.68,
+        "stay_frozen_seconds": 8.184000000000001,
+        "stay_adaptive_seconds": 7.982915
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.1,
+        "accuracy": 1.0,
+        "pit_loss": 10,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 2.5519999999999996
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 5.950000000000001,
+          "regret_seconds": 0.3179999999999996
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 5.950000000000001,
+          "regret_seconds": 0.3179999999999996
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 5.950000000000001,
+          "regret_seconds": 0.3179999999999996
+        }
+      },
+      "oracle_seconds": 5.6320000000000014,
+      "planning_information_value_seconds": 2.234,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 11.68,
+        "stay_frozen_seconds": 8.184000000000001,
+        "stay_adaptive_seconds": 5.950000000000001
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.1,
+        "accuracy": 1.0,
+        "pit_loss": 14,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 2.1519999999999992
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 6.3500000000000005,
+          "regret_seconds": 0.31799999999999873
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 6.3500000000000005,
+          "regret_seconds": 0.31799999999999873
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 6.3500000000000005,
+          "regret_seconds": 0.31799999999999873
+        }
+      },
+      "oracle_seconds": 6.032000000000002,
+      "planning_information_value_seconds": 1.8340000000000005,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 15.68,
+        "stay_frozen_seconds": 8.184000000000001,
+        "stay_adaptive_seconds": 6.3500000000000005
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.1,
+        "accuracy": 1.0,
+        "pit_loss": 18,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 1.7519999999999998
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 6.750000000000001,
+          "regret_seconds": 0.3179999999999996
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 6.750000000000001,
+          "regret_seconds": 0.3179999999999996
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 6.750000000000001,
+          "regret_seconds": 0.3179999999999996
+        }
+      },
+      "oracle_seconds": 6.432000000000001,
+      "planning_information_value_seconds": 1.4340000000000002,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 19.68,
+        "stay_frozen_seconds": 8.184000000000001,
+        "stay_adaptive_seconds": 6.750000000000001
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.1,
+        "accuracy": 1.0,
+        "pit_loss": 22,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 1.3520000000000003
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 7.15,
+          "regret_seconds": 0.3179999999999996
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 7.15,
+          "regret_seconds": 0.3179999999999996
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 7.15,
+          "regret_seconds": 0.3179999999999996
+        }
+      },
+      "oracle_seconds": 6.832000000000001,
+      "planning_information_value_seconds": 1.0340000000000007,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 23.68,
+        "stay_frozen_seconds": 8.184000000000001,
+        "stay_adaptive_seconds": 7.15
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.1,
+        "accuracy": 1.0,
+        "pit_loss": 26,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 8.184000000000001,
+          "regret_seconds": 0.952
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 7.550000000000001,
+          "regret_seconds": 0.3179999999999996
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 7.550000000000001,
+          "regret_seconds": 0.3179999999999996
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 7.550000000000001,
+          "regret_seconds": 0.3179999999999996
+        }
+      },
+      "oracle_seconds": 7.232000000000001,
+      "planning_information_value_seconds": 0.6340000000000003,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 27.68,
+        "stay_frozen_seconds": 8.184000000000001,
+        "stay_adaptive_seconds": 7.550000000000001
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.25,
+        "accuracy": 0.5,
+        "pit_loss": 10,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 5.039999999999999
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 5.039999999999999
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 5.039999999999999
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 5.039999999999999
+        }
+      },
+      "oracle_seconds": 6.640000000000001,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 11.68,
+        "stay_frozen_seconds": 12.52,
+        "stay_adaptive_seconds": 12.52
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.25,
+        "accuracy": 0.5,
+        "pit_loss": 14,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 13.02,
+          "regret_seconds": 5.379999999999999
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 13.02,
+          "regret_seconds": 5.379999999999999
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 13.02,
+          "regret_seconds": 5.379999999999999
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 13.02,
+          "regret_seconds": 5.379999999999999
+        }
+      },
+      "oracle_seconds": 7.640000000000001,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 15.68,
+        "stay_frozen_seconds": 13.02,
+        "stay_adaptive_seconds": 13.02
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.25,
+        "accuracy": 0.5,
+        "pit_loss": 18,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 13.02,
+          "regret_seconds": 4.379999999999999
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 13.02,
+          "regret_seconds": 4.379999999999999
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 13.02,
+          "regret_seconds": 4.379999999999999
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 13.02,
+          "regret_seconds": 4.379999999999999
+        }
+      },
+      "oracle_seconds": 8.64,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 19.68,
+        "stay_frozen_seconds": 13.02,
+        "stay_adaptive_seconds": 13.02
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.25,
+        "accuracy": 0.5,
+        "pit_loss": 22,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 13.02,
+          "regret_seconds": 3.379999999999999
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 13.02,
+          "regret_seconds": 3.379999999999999
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 13.02,
+          "regret_seconds": 3.379999999999999
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 13.02,
+          "regret_seconds": 3.379999999999999
+        }
+      },
+      "oracle_seconds": 9.64,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 23.68,
+        "stay_frozen_seconds": 13.02,
+        "stay_adaptive_seconds": 13.02
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.25,
+        "accuracy": 0.5,
+        "pit_loss": 26,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 13.02,
+          "regret_seconds": 2.379999999999999
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 13.02,
+          "regret_seconds": 2.379999999999999
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 13.02,
+          "regret_seconds": 2.379999999999999
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 13.02,
+          "regret_seconds": 2.379999999999999
+        }
+      },
+      "oracle_seconds": 10.64,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 27.68,
+        "stay_frozen_seconds": 13.02,
+        "stay_adaptive_seconds": 13.02
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.25,
+        "accuracy": 0.65,
+        "pit_loss": 10,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 5.039999999999999
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 5.039999999999999
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 5.039999999999999
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 11.048640624999999,
+          "regret_seconds": 4.4086406249999985
+        }
+      },
+      "oracle_seconds": 6.640000000000001,
+      "planning_information_value_seconds": 0.6313593750000006,
+      "realized_policy_gain_seconds": 0.6313593750000006,
+      "action_values": {
+        "pit_seconds": 11.68,
+        "stay_frozen_seconds": 12.52,
+        "stay_adaptive_seconds": 11.048640624999999
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.25,
+        "accuracy": 0.65,
+        "pit_loss": 14,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 13.02,
+          "regret_seconds": 5.379999999999999
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 12.869499999999999,
+          "regret_seconds": 5.229499999999998
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 12.869499999999999,
+          "regret_seconds": 5.229499999999998
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 12.4618625,
+          "regret_seconds": 4.8218625
+        }
+      },
+      "oracle_seconds": 7.640000000000001,
+      "planning_information_value_seconds": 0.5581374999999991,
+      "realized_policy_gain_seconds": 0.4076374999999981,
+      "action_values": {
+        "pit_seconds": 15.68,
+        "stay_frozen_seconds": 13.02,
+        "stay_adaptive_seconds": 12.4618625
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.25,
+        "accuracy": 0.65,
+        "pit_loss": 18,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 13.02,
+          "regret_seconds": 4.379999999999999
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 13.02,
+          "regret_seconds": 4.379999999999999
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 13.02,
+          "regret_seconds": 4.379999999999999
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 13.02,
+          "regret_seconds": 4.379999999999999
+        }
+      },
+      "oracle_seconds": 8.64,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 19.68,
+        "stay_frozen_seconds": 13.02,
+        "stay_adaptive_seconds": 13.02
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.25,
+        "accuracy": 0.65,
+        "pit_loss": 22,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 13.02,
+          "regret_seconds": 3.379999999999999
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 13.02,
+          "regret_seconds": 3.379999999999999
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 13.02,
+          "regret_seconds": 3.379999999999999
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 13.02,
+          "regret_seconds": 3.379999999999999
+        }
+      },
+      "oracle_seconds": 9.64,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 23.68,
+        "stay_frozen_seconds": 13.02,
+        "stay_adaptive_seconds": 13.02
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.25,
+        "accuracy": 0.65,
+        "pit_loss": 26,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 13.02,
+          "regret_seconds": 2.379999999999999
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 13.02,
+          "regret_seconds": 2.379999999999999
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 13.02,
+          "regret_seconds": 2.379999999999999
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 13.02,
+          "regret_seconds": 2.379999999999999
+        }
+      },
+      "oracle_seconds": 10.64,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 27.68,
+        "stay_frozen_seconds": 13.02,
+        "stay_adaptive_seconds": 13.02
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.25,
+        "accuracy": 0.8,
+        "pit_loss": 10,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 5.039999999999999
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 5.039999999999999
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 5.039999999999999
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 9.2649488,
+          "regret_seconds": 2.6249488000000003
+        }
+      },
+      "oracle_seconds": 6.640000000000001,
+      "planning_information_value_seconds": 2.415051199999999,
+      "realized_policy_gain_seconds": 2.415051199999999,
+      "action_values": {
+        "pit_seconds": 11.68,
+        "stay_frozen_seconds": 12.52,
+        "stay_adaptive_seconds": 9.2649488
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.25,
+        "accuracy": 0.8,
+        "pit_loss": 14,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 13.020000000000001,
+          "regret_seconds": 5.380000000000001
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 10.889,
+          "regret_seconds": 3.2489999999999988
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 10.889,
+          "regret_seconds": 3.2489999999999988
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 10.751208,
+          "regret_seconds": 3.1112079999999995
+        }
+      },
+      "oracle_seconds": 7.640000000000001,
+      "planning_information_value_seconds": 2.2687919999999995,
+      "realized_policy_gain_seconds": 0.13779199999999925,
+      "action_values": {
+        "pit_seconds": 15.68,
+        "stay_frozen_seconds": 13.02,
+        "stay_adaptive_seconds": 10.751208
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.25,
+        "accuracy": 0.8,
+        "pit_loss": 18,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 13.020000000000001,
+          "regret_seconds": 4.380000000000001
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 12.369000000000002,
+          "regret_seconds": 3.729000000000001
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 12.369000000000002,
+          "regret_seconds": 3.729000000000001
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 11.7402,
+          "regret_seconds": 3.100199999999999
+        }
+      },
+      "oracle_seconds": 8.64,
+      "planning_information_value_seconds": 1.2797999999999998,
+      "realized_policy_gain_seconds": 0.6288000000000018,
+      "action_values": {
+        "pit_seconds": 19.68,
+        "stay_frozen_seconds": 13.02,
+        "stay_adaptive_seconds": 11.7402
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.25,
+        "accuracy": 0.8,
+        "pit_loss": 22,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 13.020000000000001,
+          "regret_seconds": 3.380000000000001
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 12.5002,
+          "regret_seconds": 2.860199999999999
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 12.5002,
+          "regret_seconds": 2.860199999999999
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 12.5002,
+          "regret_seconds": 2.860199999999999
+        }
+      },
+      "oracle_seconds": 9.64,
+      "planning_information_value_seconds": 0.5198,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 23.68,
+        "stay_frozen_seconds": 13.02,
+        "stay_adaptive_seconds": 12.5002
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.25,
+        "accuracy": 0.8,
+        "pit_loss": 26,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 13.020000000000001,
+          "regret_seconds": 2.380000000000001
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 13.020000000000001,
+          "regret_seconds": 2.380000000000001
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 13.020000000000001,
+          "regret_seconds": 2.380000000000001
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 13.020000000000001,
+          "regret_seconds": 2.380000000000001
+        }
+      },
+      "oracle_seconds": 10.64,
+      "planning_information_value_seconds": -1.7763568394002505e-15,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 27.68,
+        "stay_frozen_seconds": 13.02,
+        "stay_adaptive_seconds": 13.020000000000001
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.25,
+        "accuracy": 0.95,
+        "pit_loss": 10,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 5.039999999999999
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 5.039999999999999
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 5.039999999999999
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 7.8081397625,
+          "regret_seconds": 1.1681397624999992
+        }
+      },
+      "oracle_seconds": 6.640000000000001,
+      "planning_information_value_seconds": 3.8718602375,
+      "realized_policy_gain_seconds": 3.8718602375,
+      "action_values": {
+        "pit_seconds": 11.68,
+        "stay_frozen_seconds": 12.52,
+        "stay_adaptive_seconds": 7.8081397625
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.25,
+        "accuracy": 0.95,
+        "pit_loss": 14,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 13.019999999999998,
+          "regret_seconds": 5.379999999999997
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 8.9653535125,
+          "regret_seconds": 1.3253535124999996
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 8.9653535125,
+          "regret_seconds": 1.3253535124999996
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 8.9653535125,
+          "regret_seconds": 1.3253535124999996
+        }
+      },
+      "oracle_seconds": 7.640000000000001,
+      "planning_information_value_seconds": 4.0546464874999995,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 15.68,
+        "stay_frozen_seconds": 13.02,
+        "stay_adaptive_seconds": 8.9653535125
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.25,
+        "accuracy": 0.95,
+        "pit_loss": 18,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 13.019999999999998,
+          "regret_seconds": 4.379999999999997
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 10.117734375,
+          "regret_seconds": 1.477734374999999
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 10.117734375,
+          "regret_seconds": 1.477734374999999
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 10.117734375,
+          "regret_seconds": 1.477734374999999
+        }
+      },
+      "oracle_seconds": 8.64,
+      "planning_information_value_seconds": 2.902265625,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 19.68,
+        "stay_frozen_seconds": 13.02,
+        "stay_adaptive_seconds": 10.117734375
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.25,
+        "accuracy": 0.95,
+        "pit_loss": 22,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 13.019999999999998,
+          "regret_seconds": 3.3799999999999972
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 11.2685,
+          "regret_seconds": 1.628499999999999
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 11.2685,
+          "regret_seconds": 1.628499999999999
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 11.2685,
+          "regret_seconds": 1.628499999999999
+        }
+      },
+      "oracle_seconds": 9.64,
+      "planning_information_value_seconds": 1.7515,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 23.68,
+        "stay_frozen_seconds": 13.02,
+        "stay_adaptive_seconds": 11.2685
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.25,
+        "accuracy": 0.95,
+        "pit_loss": 26,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 13.019999999999998,
+          "regret_seconds": 2.3799999999999972
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 12.3685,
+          "regret_seconds": 1.7284999999999986
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 12.3685,
+          "regret_seconds": 1.7284999999999986
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 12.3685,
+          "regret_seconds": 1.7284999999999986
+        }
+      },
+      "oracle_seconds": 10.64,
+      "planning_information_value_seconds": 0.6515000000000004,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 27.68,
+        "stay_frozen_seconds": 13.02,
+        "stay_adaptive_seconds": 12.3685
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.25,
+        "accuracy": 1.0,
+        "pit_loss": 10,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 5.039999999999999
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 5.039999999999999
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 5.039999999999999
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 7.4350000000000005,
+          "regret_seconds": 0.7949999999999999
+        }
+      },
+      "oracle_seconds": 6.640000000000001,
+      "planning_information_value_seconds": 4.244999999999999,
+      "realized_policy_gain_seconds": 4.244999999999999,
+      "action_values": {
+        "pit_seconds": 11.68,
+        "stay_frozen_seconds": 12.52,
+        "stay_adaptive_seconds": 7.4350000000000005
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.25,
+        "accuracy": 1.0,
+        "pit_loss": 14,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 13.020000000000001,
+          "regret_seconds": 5.380000000000001
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 8.435,
+          "regret_seconds": 0.7949999999999999
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 8.435,
+          "regret_seconds": 0.7949999999999999
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 8.435,
+          "regret_seconds": 0.7949999999999999
+        }
+      },
+      "oracle_seconds": 7.640000000000001,
+      "planning_information_value_seconds": 4.584999999999999,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 15.68,
+        "stay_frozen_seconds": 13.02,
+        "stay_adaptive_seconds": 8.435
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.25,
+        "accuracy": 1.0,
+        "pit_loss": 18,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 13.020000000000001,
+          "regret_seconds": 4.380000000000001
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 9.435,
+          "regret_seconds": 0.7949999999999999
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 9.435,
+          "regret_seconds": 0.7949999999999999
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 9.435,
+          "regret_seconds": 0.7949999999999999
+        }
+      },
+      "oracle_seconds": 8.64,
+      "planning_information_value_seconds": 3.584999999999999,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 19.68,
+        "stay_frozen_seconds": 13.02,
+        "stay_adaptive_seconds": 9.435
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.25,
+        "accuracy": 1.0,
+        "pit_loss": 22,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 13.020000000000001,
+          "regret_seconds": 3.380000000000001
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 10.435,
+          "regret_seconds": 0.7949999999999999
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 10.435,
+          "regret_seconds": 0.7949999999999999
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 10.435,
+          "regret_seconds": 0.7949999999999999
+        }
+      },
+      "oracle_seconds": 9.64,
+      "planning_information_value_seconds": 2.584999999999999,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 23.68,
+        "stay_frozen_seconds": 13.02,
+        "stay_adaptive_seconds": 10.435
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.25,
+        "accuracy": 1.0,
+        "pit_loss": 26,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 13.020000000000001,
+          "regret_seconds": 2.380000000000001
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 11.435,
+          "regret_seconds": 0.7949999999999999
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 11.435,
+          "regret_seconds": 0.7949999999999999
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 11.435,
+          "regret_seconds": 0.7949999999999999
+        }
+      },
+      "oracle_seconds": 10.64,
+      "planning_information_value_seconds": 1.584999999999999,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 27.68,
+        "stay_frozen_seconds": 13.02,
+        "stay_adaptive_seconds": 11.435
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.5,
+        "accuracy": 0.5,
+        "pit_loss": 10,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 3.3599999999999994
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 3.3599999999999994
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 3.3599999999999994
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 3.3599999999999994
+        }
+      },
+      "oracle_seconds": 8.32,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 11.68,
+        "stay_frozen_seconds": 13.3,
+        "stay_adaptive_seconds": 13.3
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.5,
+        "accuracy": 0.5,
+        "pit_loss": 14,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 5.359999999999999
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 5.359999999999999
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 5.359999999999999
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 5.359999999999999
+        }
+      },
+      "oracle_seconds": 10.32,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 15.68,
+        "stay_frozen_seconds": 17.3,
+        "stay_adaptive_seconds": 17.3
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.5,
+        "accuracy": 0.5,
+        "pit_loss": 18,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 7.359999999999999
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 7.359999999999999
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 7.359999999999999
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 7.359999999999999
+        }
+      },
+      "oracle_seconds": 12.32,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 19.68,
+        "stay_frozen_seconds": 21.08,
+        "stay_adaptive_seconds": 21.08
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.5,
+        "accuracy": 0.5,
+        "pit_loss": 22,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 21.08,
+          "regret_seconds": 6.759999999999998
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 21.08,
+          "regret_seconds": 6.759999999999998
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 21.08,
+          "regret_seconds": 6.759999999999998
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 21.08,
+          "regret_seconds": 6.759999999999998
+        }
+      },
+      "oracle_seconds": 14.32,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 23.68,
+        "stay_frozen_seconds": 21.08,
+        "stay_adaptive_seconds": 21.08
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.5,
+        "accuracy": 0.5,
+        "pit_loss": 26,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 21.08,
+          "regret_seconds": 4.759999999999998
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 21.08,
+          "regret_seconds": 4.759999999999998
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 21.08,
+          "regret_seconds": 4.759999999999998
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 21.08,
+          "regret_seconds": 4.759999999999998
+        }
+      },
+      "oracle_seconds": 16.32,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 27.68,
+        "stay_frozen_seconds": 21.08,
+        "stay_adaptive_seconds": 21.08
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.5,
+        "accuracy": 0.65,
+        "pit_loss": 10,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 3.3599999999999994
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 3.3599999999999994
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 3.3599999999999994
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 3.3599999999999994
+        }
+      },
+      "oracle_seconds": 8.32,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 11.68,
+        "stay_frozen_seconds": 13.3,
+        "stay_adaptive_seconds": 13.3
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.5,
+        "accuracy": 0.65,
+        "pit_loss": 14,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 5.359999999999999
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 5.359999999999999
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 5.359999999999999
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 5.359999999999999
+        }
+      },
+      "oracle_seconds": 10.32,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 15.68,
+        "stay_frozen_seconds": 17.3,
+        "stay_adaptive_seconds": 16.566924999999998
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.5,
+        "accuracy": 0.65,
+        "pit_loss": 18,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 7.359999999999999
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 7.359999999999999
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 7.359999999999999
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 19.006,
+          "regret_seconds": 6.686
+        }
+      },
+      "oracle_seconds": 12.32,
+      "planning_information_value_seconds": 0.6739999999999995,
+      "realized_policy_gain_seconds": 0.6739999999999995,
+      "action_values": {
+        "pit_seconds": 19.68,
+        "stay_frozen_seconds": 21.08,
+        "stay_adaptive_seconds": 19.006
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.5,
+        "accuracy": 0.65,
+        "pit_loss": 22,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 21.08,
+          "regret_seconds": 6.759999999999998
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 21.006,
+          "regret_seconds": 6.686
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 21.006,
+          "regret_seconds": 6.686
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 20.803574999999995,
+          "regret_seconds": 6.483574999999995
+        }
+      },
+      "oracle_seconds": 14.32,
+      "planning_information_value_seconds": 0.27642500000000325,
+      "realized_policy_gain_seconds": 0.20242500000000518,
+      "action_values": {
+        "pit_seconds": 23.68,
+        "stay_frozen_seconds": 21.08,
+        "stay_adaptive_seconds": 20.803574999999995
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.5,
+        "accuracy": 0.65,
+        "pit_loss": 26,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 21.08,
+          "regret_seconds": 4.759999999999998
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 21.08,
+          "regret_seconds": 4.759999999999998
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 21.08,
+          "regret_seconds": 4.759999999999998
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 21.08,
+          "regret_seconds": 4.759999999999998
+        }
+      },
+      "oracle_seconds": 16.32,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 27.68,
+        "stay_frozen_seconds": 21.08,
+        "stay_adaptive_seconds": 21.08
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.5,
+        "accuracy": 0.8,
+        "pit_loss": 10,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 3.3599999999999994
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 3.3599999999999994
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 3.3599999999999994
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 3.3599999999999994
+        }
+      },
+      "oracle_seconds": 8.32,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 11.68,
+        "stay_frozen_seconds": 13.3,
+        "stay_adaptive_seconds": 11.832086399999998
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.5,
+        "accuracy": 0.8,
+        "pit_loss": 14,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 5.359999999999999
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 5.359999999999999
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 5.359999999999999
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 14.3036,
+          "regret_seconds": 3.983599999999999
+        }
+      },
+      "oracle_seconds": 10.32,
+      "planning_information_value_seconds": 1.3764000000000003,
+      "realized_policy_gain_seconds": 1.3764000000000003,
+      "action_values": {
+        "pit_seconds": 15.68,
+        "stay_frozen_seconds": 17.3,
+        "stay_adaptive_seconds": 14.3036
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.5,
+        "accuracy": 0.8,
+        "pit_loss": 18,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 7.359999999999999
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 7.359999999999999
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 7.359999999999999
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 16.6236,
+          "regret_seconds": 4.303599999999999
+        }
+      },
+      "oracle_seconds": 12.32,
+      "planning_information_value_seconds": 3.0564,
+      "realized_policy_gain_seconds": 3.0564,
+      "action_values": {
+        "pit_seconds": 19.68,
+        "stay_frozen_seconds": 21.08,
+        "stay_adaptive_seconds": 16.6236
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.5,
+        "accuracy": 0.8,
+        "pit_loss": 22,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 21.08,
+          "regret_seconds": 6.759999999999998
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 18.822,
+          "regret_seconds": 4.501999999999999
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 18.822,
+          "regret_seconds": 4.501999999999999
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 18.822,
+          "regret_seconds": 4.501999999999999
+        }
+      },
+      "oracle_seconds": 14.32,
+      "planning_information_value_seconds": 2.257999999999999,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 23.68,
+        "stay_frozen_seconds": 21.08,
+        "stay_adaptive_seconds": 18.822
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.5,
+        "accuracy": 0.8,
+        "pit_loss": 26,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 21.08,
+          "regret_seconds": 4.759999999999998
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 20.822,
+          "regret_seconds": 4.501999999999999
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 20.822,
+          "regret_seconds": 4.501999999999999
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 20.6428,
+          "regret_seconds": 4.322800000000001
+        }
+      },
+      "oracle_seconds": 16.32,
+      "planning_information_value_seconds": 0.43719999999999715,
+      "realized_policy_gain_seconds": 0.17919999999999803,
+      "action_values": {
+        "pit_seconds": 27.68,
+        "stay_frozen_seconds": 21.08,
+        "stay_adaptive_seconds": 20.6428
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.5,
+        "accuracy": 0.95,
+        "pit_loss": 10,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 3.3599999999999994
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 3.3599999999999994
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 3.3599999999999994
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 10.298370012500001,
+          "regret_seconds": 1.978370012500001
+        }
+      },
+      "oracle_seconds": 8.32,
+      "planning_information_value_seconds": 1.3816299874999984,
+      "realized_policy_gain_seconds": 1.3816299874999984,
+      "action_values": {
+        "pit_seconds": 11.68,
+        "stay_frozen_seconds": 13.3,
+        "stay_adaptive_seconds": 10.298370012500001
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.5,
+        "accuracy": 0.95,
+        "pit_loss": 14,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 5.359999999999999
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 5.359999999999999
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 5.359999999999999
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 12.402395012500001,
+          "regret_seconds": 2.082395012500001
+        }
+      },
+      "oracle_seconds": 10.32,
+      "planning_information_value_seconds": 3.2776049874999984,
+      "realized_policy_gain_seconds": 3.2776049874999984,
+      "action_values": {
+        "pit_seconds": 15.68,
+        "stay_frozen_seconds": 17.3,
+        "stay_adaptive_seconds": 12.402395012500001
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.5,
+        "accuracy": 0.95,
+        "pit_loss": 18,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 7.359999999999999
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 7.359999999999999
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 7.359999999999999
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 14.50036875,
+          "regret_seconds": 2.1803687499999995
+        }
+      },
+      "oracle_seconds": 12.32,
+      "planning_information_value_seconds": 5.17963125,
+      "realized_policy_gain_seconds": 5.17963125,
+      "action_values": {
+        "pit_seconds": 19.68,
+        "stay_frozen_seconds": 21.08,
+        "stay_adaptive_seconds": 14.50036875
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.5,
+        "accuracy": 0.95,
+        "pit_loss": 22,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 21.08,
+          "regret_seconds": 6.759999999999998
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 16.595368750000002,
+          "regret_seconds": 2.275368750000002
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 16.595368750000002,
+          "regret_seconds": 2.275368750000002
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 16.595368750000002,
+          "regret_seconds": 2.275368750000002
+        }
+      },
+      "oracle_seconds": 14.32,
+      "planning_information_value_seconds": 4.484631249999996,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 23.68,
+        "stay_frozen_seconds": 21.08,
+        "stay_adaptive_seconds": 16.595368750000002
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.5,
+        "accuracy": 0.95,
+        "pit_loss": 26,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 21.08,
+          "regret_seconds": 4.759999999999998
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 18.638,
+          "regret_seconds": 2.3180000000000014
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 18.638,
+          "regret_seconds": 2.3180000000000014
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 18.638,
+          "regret_seconds": 2.3180000000000014
+        }
+      },
+      "oracle_seconds": 16.32,
+      "planning_information_value_seconds": 2.4419999999999966,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 27.68,
+        "stay_frozen_seconds": 21.08,
+        "stay_adaptive_seconds": 18.638
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.5,
+        "accuracy": 1.0,
+        "pit_loss": 10,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 3.3599999999999994
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 3.3599999999999994
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 3.3599999999999994
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 9.91,
+          "regret_seconds": 1.5899999999999999
+        }
+      },
+      "oracle_seconds": 8.32,
+      "planning_information_value_seconds": 1.7699999999999996,
+      "realized_policy_gain_seconds": 1.7699999999999996,
+      "action_values": {
+        "pit_seconds": 11.68,
+        "stay_frozen_seconds": 13.3,
+        "stay_adaptive_seconds": 9.91
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.5,
+        "accuracy": 1.0,
+        "pit_loss": 14,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 5.359999999999999
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 5.359999999999999
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 5.359999999999999
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 11.91,
+          "regret_seconds": 1.5899999999999999
+        }
+      },
+      "oracle_seconds": 10.32,
+      "planning_information_value_seconds": 3.7699999999999996,
+      "realized_policy_gain_seconds": 3.7699999999999996,
+      "action_values": {
+        "pit_seconds": 15.68,
+        "stay_frozen_seconds": 17.3,
+        "stay_adaptive_seconds": 11.91
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.5,
+        "accuracy": 1.0,
+        "pit_loss": 18,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 7.359999999999999
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 7.359999999999999
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 7.359999999999999
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 13.91,
+          "regret_seconds": 1.5899999999999999
+        }
+      },
+      "oracle_seconds": 12.32,
+      "planning_information_value_seconds": 5.77,
+      "realized_policy_gain_seconds": 5.77,
+      "action_values": {
+        "pit_seconds": 19.68,
+        "stay_frozen_seconds": 21.08,
+        "stay_adaptive_seconds": 13.91
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.5,
+        "accuracy": 1.0,
+        "pit_loss": 22,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 21.08,
+          "regret_seconds": 6.759999999999998
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 15.91,
+          "regret_seconds": 1.5899999999999999
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 15.91,
+          "regret_seconds": 1.5899999999999999
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 15.91,
+          "regret_seconds": 1.5899999999999999
+        }
+      },
+      "oracle_seconds": 14.32,
+      "planning_information_value_seconds": 5.169999999999998,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 23.68,
+        "stay_frozen_seconds": 21.08,
+        "stay_adaptive_seconds": 15.91
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.5,
+        "accuracy": 1.0,
+        "pit_loss": 26,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "stay",
+          "expected_excess_seconds": 21.08,
+          "regret_seconds": 4.759999999999998
+        },
+        "certainty_equivalent": {
+          "action": "stay",
+          "expected_excess_seconds": 17.91,
+          "regret_seconds": 1.5899999999999999
+        },
+        "frozen_belief": {
+          "action": "stay",
+          "expected_excess_seconds": 17.91,
+          "regret_seconds": 1.5899999999999999
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 17.91,
+          "regret_seconds": 1.5899999999999999
+        }
+      },
+      "oracle_seconds": 16.32,
+      "planning_information_value_seconds": 3.169999999999998,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 27.68,
+        "stay_frozen_seconds": 21.08,
+        "stay_adaptive_seconds": 17.91
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.75,
+        "accuracy": 0.5,
+        "pit_loss": 10,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 1.6799999999999997
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 1.6799999999999997
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 1.6799999999999997
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 1.6799999999999997
+        }
+      },
+      "oracle_seconds": 10.0,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 11.68,
+        "stay_frozen_seconds": 14.08,
+        "stay_adaptive_seconds": 14.08
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.75,
+        "accuracy": 0.5,
+        "pit_loss": 14,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 2.6799999999999997
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 2.6799999999999997
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 2.6799999999999997
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 2.6799999999999997
+        }
+      },
+      "oracle_seconds": 13.0,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 15.68,
+        "stay_frozen_seconds": 18.08,
+        "stay_adaptive_seconds": 18.08
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.75,
+        "accuracy": 0.5,
+        "pit_loss": 18,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 3.6799999999999997
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 3.6799999999999997
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 3.6799999999999997
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 3.6799999999999997
+        }
+      },
+      "oracle_seconds": 16.0,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 19.68,
+        "stay_frozen_seconds": 22.080000000000002,
+        "stay_adaptive_seconds": 22.080000000000002
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.75,
+        "accuracy": 0.5,
+        "pit_loss": 22,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 4.68
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 4.68
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 4.68
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 4.68
+        }
+      },
+      "oracle_seconds": 19.0,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 23.68,
+        "stay_frozen_seconds": 26.080000000000002,
+        "stay_adaptive_seconds": 26.080000000000002
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.75,
+        "accuracy": 0.5,
+        "pit_loss": 26,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 5.68
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 5.68
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 5.68
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 5.68
+        }
+      },
+      "oracle_seconds": 22.0,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 27.68,
+        "stay_frozen_seconds": 29.139999999999997,
+        "stay_adaptive_seconds": 29.139999999999997
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.75,
+        "accuracy": 0.65,
+        "pit_loss": 10,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 1.6799999999999997
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 1.6799999999999997
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 1.6799999999999997
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 1.6799999999999997
+        }
+      },
+      "oracle_seconds": 10.0,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 11.68,
+        "stay_frozen_seconds": 14.08,
+        "stay_adaptive_seconds": 14.08
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.75,
+        "accuracy": 0.65,
+        "pit_loss": 14,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 2.6799999999999997
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 2.6799999999999997
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 2.6799999999999997
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 2.6799999999999997
+        }
+      },
+      "oracle_seconds": 13.0,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 15.68,
+        "stay_frozen_seconds": 18.08,
+        "stay_adaptive_seconds": 18.080000000000002
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.75,
+        "accuracy": 0.65,
+        "pit_loss": 18,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 3.6799999999999997
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 3.6799999999999997
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 3.6799999999999997
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 3.6799999999999997
+        }
+      },
+      "oracle_seconds": 16.0,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 19.68,
+        "stay_frozen_seconds": 22.080000000000002,
+        "stay_adaptive_seconds": 22.080000000000002
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.75,
+        "accuracy": 0.65,
+        "pit_loss": 22,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 4.68
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 4.68
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 4.68
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 4.68
+        }
+      },
+      "oracle_seconds": 19.0,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 23.68,
+        "stay_frozen_seconds": 26.080000000000002,
+        "stay_adaptive_seconds": 25.659462500000004
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.75,
+        "accuracy": 0.65,
+        "pit_loss": 26,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 5.68
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 5.68
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 5.68
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 5.68
+        }
+      },
+      "oracle_seconds": 22.0,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 27.68,
+        "stay_frozen_seconds": 29.139999999999997,
+        "stay_adaptive_seconds": 28.042500000000004
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.75,
+        "accuracy": 0.8,
+        "pit_loss": 10,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 1.6799999999999997
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 1.6799999999999997
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 1.6799999999999997
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 1.6799999999999997
+        }
+      },
+      "oracle_seconds": 10.0,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 11.68,
+        "stay_frozen_seconds": 14.08,
+        "stay_adaptive_seconds": 13.940696
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.75,
+        "accuracy": 0.8,
+        "pit_loss": 14,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 2.6799999999999997
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 2.6799999999999997
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 2.6799999999999997
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 2.6799999999999997
+        }
+      },
+      "oracle_seconds": 13.0,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 15.68,
+        "stay_frozen_seconds": 18.08,
+        "stay_adaptive_seconds": 17.283096
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.75,
+        "accuracy": 0.8,
+        "pit_loss": 18,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 3.6799999999999997
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 3.6799999999999997
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 3.6799999999999997
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 3.6799999999999997
+        }
+      },
+      "oracle_seconds": 16.0,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 19.68,
+        "stay_frozen_seconds": 22.080000000000002,
+        "stay_adaptive_seconds": 20.576600000000003
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.75,
+        "accuracy": 0.8,
+        "pit_loss": 22,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 4.68
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 4.68
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 4.68
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 4.68
+        }
+      },
+      "oracle_seconds": 19.0,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 23.68,
+        "stay_frozen_seconds": 26.080000000000002,
+        "stay_adaptive_seconds": 23.750200000000003
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.75,
+        "accuracy": 0.8,
+        "pit_loss": 26,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 5.68
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 5.68
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 5.68
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 26.475000000000005,
+          "regret_seconds": 4.475000000000005
+        }
+      },
+      "oracle_seconds": 22.0,
+      "planning_information_value_seconds": 1.2049999999999947,
+      "realized_policy_gain_seconds": 1.2049999999999947,
+      "action_values": {
+        "pit_seconds": 27.68,
+        "stay_frozen_seconds": 29.139999999999997,
+        "stay_adaptive_seconds": 26.475000000000005
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.75,
+        "accuracy": 0.95,
+        "pit_loss": 10,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 1.6799999999999997
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 1.6799999999999997
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 1.6799999999999997
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 1.6799999999999997
+        }
+      },
+      "oracle_seconds": 10.0,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 11.68,
+        "stay_frozen_seconds": 14.08,
+        "stay_adaptive_seconds": 12.7064219375
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.75,
+        "accuracy": 0.95,
+        "pit_loss": 14,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 2.6799999999999997
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 2.6799999999999997
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 2.6799999999999997
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 2.6799999999999997
+        }
+      },
+      "oracle_seconds": 13.0,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 15.68,
+        "stay_frozen_seconds": 18.08,
+        "stay_adaptive_seconds": 15.8054469375
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.75,
+        "accuracy": 0.95,
+        "pit_loss": 18,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 3.6799999999999997
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 3.6799999999999997
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 3.6799999999999997
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 18.883003125,
+          "regret_seconds": 2.8830031249999983
+        }
+      },
+      "oracle_seconds": 16.0,
+      "planning_information_value_seconds": 0.7969968750000014,
+      "realized_policy_gain_seconds": 0.7969968750000014,
+      "action_values": {
+        "pit_seconds": 19.68,
+        "stay_frozen_seconds": 22.080000000000002,
+        "stay_adaptive_seconds": 18.883003125
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.75,
+        "accuracy": 0.95,
+        "pit_loss": 22,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 4.68
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 4.68
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 4.68
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 21.920753124999997,
+          "regret_seconds": 2.9207531249999974
+        }
+      },
+      "oracle_seconds": 19.0,
+      "planning_information_value_seconds": 1.7592468750000023,
+      "realized_policy_gain_seconds": 1.7592468750000023,
+      "action_values": {
+        "pit_seconds": 23.68,
+        "stay_frozen_seconds": 26.080000000000002,
+        "stay_adaptive_seconds": 21.920753124999997
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.75,
+        "accuracy": 0.95,
+        "pit_loss": 26,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 5.68
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 5.68
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 5.68
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 24.9075,
+          "regret_seconds": 2.907499999999999
+        }
+      },
+      "oracle_seconds": 22.0,
+      "planning_information_value_seconds": 2.772500000000001,
+      "realized_policy_gain_seconds": 2.772500000000001,
+      "action_values": {
+        "pit_seconds": 27.68,
+        "stay_frozen_seconds": 29.139999999999997,
+        "stay_adaptive_seconds": 24.9075
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.75,
+        "accuracy": 1.0,
+        "pit_loss": 10,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 1.6799999999999997
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 1.6799999999999997
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 1.6799999999999997
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 1.6799999999999997
+        }
+      },
+      "oracle_seconds": 10.0,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 11.68,
+        "stay_frozen_seconds": 14.08,
+        "stay_adaptive_seconds": 12.385000000000002
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.75,
+        "accuracy": 1.0,
+        "pit_loss": 14,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 2.6799999999999997
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 2.6799999999999997
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 2.6799999999999997
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 15.385000000000002,
+          "regret_seconds": 2.3850000000000016
+        }
+      },
+      "oracle_seconds": 13.0,
+      "planning_information_value_seconds": 0.29499999999999815,
+      "realized_policy_gain_seconds": 0.29499999999999815,
+      "action_values": {
+        "pit_seconds": 15.68,
+        "stay_frozen_seconds": 18.08,
+        "stay_adaptive_seconds": 15.385000000000002
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.75,
+        "accuracy": 1.0,
+        "pit_loss": 18,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 3.6799999999999997
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 3.6799999999999997
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 3.6799999999999997
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 18.385,
+          "regret_seconds": 2.3850000000000016
+        }
+      },
+      "oracle_seconds": 16.0,
+      "planning_information_value_seconds": 1.2949999999999982,
+      "realized_policy_gain_seconds": 1.2949999999999982,
+      "action_values": {
+        "pit_seconds": 19.68,
+        "stay_frozen_seconds": 22.080000000000002,
+        "stay_adaptive_seconds": 18.385
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.75,
+        "accuracy": 1.0,
+        "pit_loss": 22,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 4.68
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 4.68
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 4.68
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 21.385,
+          "regret_seconds": 2.3850000000000016
+        }
+      },
+      "oracle_seconds": 19.0,
+      "planning_information_value_seconds": 2.294999999999998,
+      "realized_policy_gain_seconds": 2.294999999999998,
+      "action_values": {
+        "pit_seconds": 23.68,
+        "stay_frozen_seconds": 26.080000000000002,
+        "stay_adaptive_seconds": 21.385
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.75,
+        "accuracy": 1.0,
+        "pit_loss": 26,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 5.68
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 5.68
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 5.68
+        },
+        "adaptive": {
+          "action": "stay",
+          "expected_excess_seconds": 24.385,
+          "regret_seconds": 2.3850000000000016
+        }
+      },
+      "oracle_seconds": 22.0,
+      "planning_information_value_seconds": 3.294999999999998,
+      "realized_policy_gain_seconds": 3.294999999999998,
+      "action_values": {
+        "pit_seconds": 27.68,
+        "stay_frozen_seconds": 29.139999999999997,
+        "stay_adaptive_seconds": 24.385
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.9,
+        "accuracy": 0.5,
+        "pit_loss": 10,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 0.6719999999999988
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 0.6719999999999988
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 0.6719999999999988
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 0.6719999999999988
+        }
+      },
+      "oracle_seconds": 11.008000000000001,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 11.68,
+        "stay_frozen_seconds": 14.548,
+        "stay_adaptive_seconds": 14.548
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.9,
+        "accuracy": 0.5,
+        "pit_loss": 14,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 1.0719999999999992
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 1.0719999999999992
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 1.0719999999999992
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 1.0719999999999992
+        }
+      },
+      "oracle_seconds": 14.608,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 15.68,
+        "stay_frozen_seconds": 18.548000000000002,
+        "stay_adaptive_seconds": 18.548000000000002
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.9,
+        "accuracy": 0.5,
+        "pit_loss": 18,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 1.4720000000000013
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 1.4720000000000013
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 1.4720000000000013
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 1.4720000000000013
+        }
+      },
+      "oracle_seconds": 18.208,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 19.68,
+        "stay_frozen_seconds": 22.548000000000002,
+        "stay_adaptive_seconds": 22.548000000000002
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.9,
+        "accuracy": 0.5,
+        "pit_loss": 22,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 1.8719999999999999
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 1.8719999999999999
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 1.8719999999999999
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 1.8719999999999999
+        }
+      },
+      "oracle_seconds": 21.808,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 23.68,
+        "stay_frozen_seconds": 26.548000000000002,
+        "stay_adaptive_seconds": 26.548000000000002
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.9,
+        "accuracy": 0.5,
+        "pit_loss": 26,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 2.272000000000002
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 2.272000000000002
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 2.272000000000002
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 2.272000000000002
+        }
+      },
+      "oracle_seconds": 25.407999999999998,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 27.68,
+        "stay_frozen_seconds": 30.548000000000002,
+        "stay_adaptive_seconds": 30.548000000000002
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.9,
+        "accuracy": 0.65,
+        "pit_loss": 10,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 0.6719999999999988
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 0.6719999999999988
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 0.6719999999999988
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 0.6719999999999988
+        }
+      },
+      "oracle_seconds": 11.008000000000001,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 11.68,
+        "stay_frozen_seconds": 14.548,
+        "stay_adaptive_seconds": 14.548000000000002
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.9,
+        "accuracy": 0.65,
+        "pit_loss": 14,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 1.0719999999999992
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 1.0719999999999992
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 1.0719999999999992
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 1.0719999999999992
+        }
+      },
+      "oracle_seconds": 14.608,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 15.68,
+        "stay_frozen_seconds": 18.548000000000002,
+        "stay_adaptive_seconds": 18.548000000000002
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.9,
+        "accuracy": 0.65,
+        "pit_loss": 18,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 1.4720000000000013
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 1.4720000000000013
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 1.4720000000000013
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 1.4720000000000013
+        }
+      },
+      "oracle_seconds": 18.208,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 19.68,
+        "stay_frozen_seconds": 22.548000000000002,
+        "stay_adaptive_seconds": 22.548000000000005
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.9,
+        "accuracy": 0.65,
+        "pit_loss": 22,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 1.8719999999999999
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 1.8719999999999999
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 1.8719999999999999
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 1.8719999999999999
+        }
+      },
+      "oracle_seconds": 21.808,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 23.68,
+        "stay_frozen_seconds": 26.548000000000002,
+        "stay_adaptive_seconds": 26.548000000000005
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.9,
+        "accuracy": 0.65,
+        "pit_loss": 26,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 2.272000000000002
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 2.272000000000002
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 2.272000000000002
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 2.272000000000002
+        }
+      },
+      "oracle_seconds": 25.407999999999998,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 27.68,
+        "stay_frozen_seconds": 30.548000000000002,
+        "stay_adaptive_seconds": 30.548000000000005
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.9,
+        "accuracy": 0.8,
+        "pit_loss": 10,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 0.6719999999999988
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 0.6719999999999988
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 0.6719999999999988
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 0.6719999999999988
+        }
+      },
+      "oracle_seconds": 11.008000000000001,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 11.68,
+        "stay_frozen_seconds": 14.548,
+        "stay_adaptive_seconds": 14.548000000000002
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.9,
+        "accuracy": 0.8,
+        "pit_loss": 14,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 1.0719999999999992
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 1.0719999999999992
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 1.0719999999999992
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 1.0719999999999992
+        }
+      },
+      "oracle_seconds": 14.608,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 15.68,
+        "stay_frozen_seconds": 18.548000000000002,
+        "stay_adaptive_seconds": 18.548000000000002
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.9,
+        "accuracy": 0.8,
+        "pit_loss": 18,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 1.4720000000000013
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 1.4720000000000013
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 1.4720000000000013
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 1.4720000000000013
+        }
+      },
+      "oracle_seconds": 18.208,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 19.68,
+        "stay_frozen_seconds": 22.548000000000002,
+        "stay_adaptive_seconds": 22.548000000000002
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.9,
+        "accuracy": 0.8,
+        "pit_loss": 22,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 1.8719999999999999
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 1.8719999999999999
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 1.8719999999999999
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 1.8719999999999999
+        }
+      },
+      "oracle_seconds": 21.808,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 23.68,
+        "stay_frozen_seconds": 26.548000000000002,
+        "stay_adaptive_seconds": 26.23064
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.9,
+        "accuracy": 0.8,
+        "pit_loss": 26,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 2.272000000000002
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 2.272000000000002
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 2.272000000000002
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 2.272000000000002
+        }
+      },
+      "oracle_seconds": 25.407999999999998,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 27.68,
+        "stay_frozen_seconds": 30.548000000000002,
+        "stay_adaptive_seconds": 29.830640000000002
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.9,
+        "accuracy": 0.95,
+        "pit_loss": 10,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 0.6719999999999988
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 0.6719999999999988
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 0.6719999999999988
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 0.6719999999999988
+        }
+      },
+      "oracle_seconds": 11.008000000000001,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 11.68,
+        "stay_frozen_seconds": 14.548,
+        "stay_adaptive_seconds": 14.1185481561875
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.9,
+        "accuracy": 0.95,
+        "pit_loss": 14,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 1.0719999999999992
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 1.0719999999999992
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 1.0719999999999992
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 1.0719999999999992
+        }
+      },
+      "oracle_seconds": 14.608,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 15.68,
+        "stay_frozen_seconds": 18.548000000000002,
+        "stay_adaptive_seconds": 17.757589875
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.9,
+        "accuracy": 0.95,
+        "pit_loss": 18,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 1.4720000000000013
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 1.4720000000000013
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 1.4720000000000013
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 1.4720000000000013
+        }
+      },
+      "oracle_seconds": 18.208,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 19.68,
+        "stay_frozen_seconds": 22.548000000000002,
+        "stay_adaptive_seconds": 21.396614875
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.9,
+        "accuracy": 0.95,
+        "pit_loss": 22,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 1.8719999999999999
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 1.8719999999999999
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 1.8719999999999999
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 1.8719999999999999
+        }
+      },
+      "oracle_seconds": 21.808,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 23.68,
+        "stay_frozen_seconds": 26.548000000000002,
+        "stay_adaptive_seconds": 25.028465000000004
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.9,
+        "accuracy": 0.95,
+        "pit_loss": 26,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 2.272000000000002
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 2.272000000000002
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 2.272000000000002
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 2.272000000000002
+        }
+      },
+      "oracle_seconds": 25.407999999999998,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 27.68,
+        "stay_frozen_seconds": 30.548000000000002,
+        "stay_adaptive_seconds": 28.658465000000003
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.9,
+        "accuracy": 1.0,
+        "pit_loss": 10,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 0.6719999999999988
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 0.6719999999999988
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 0.6719999999999988
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 11.68,
+          "regret_seconds": 0.6719999999999988
+        }
+      },
+      "oracle_seconds": 11.008000000000001,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 11.68,
+        "stay_frozen_seconds": 14.548,
+        "stay_adaptive_seconds": 13.870000000000001
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.9,
+        "accuracy": 1.0,
+        "pit_loss": 14,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 1.0719999999999992
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 1.0719999999999992
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 1.0719999999999992
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 15.68,
+          "regret_seconds": 1.0719999999999992
+        }
+      },
+      "oracle_seconds": 14.608,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 15.68,
+        "stay_frozen_seconds": 18.548000000000002,
+        "stay_adaptive_seconds": 17.47
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.9,
+        "accuracy": 1.0,
+        "pit_loss": 18,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 1.4720000000000013
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 1.4720000000000013
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 1.4720000000000013
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 19.68,
+          "regret_seconds": 1.4720000000000013
+        }
+      },
+      "oracle_seconds": 18.208,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 19.68,
+        "stay_frozen_seconds": 22.548000000000002,
+        "stay_adaptive_seconds": 21.070000000000004
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.9,
+        "accuracy": 1.0,
+        "pit_loss": 22,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 1.8719999999999999
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 1.8719999999999999
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 1.8719999999999999
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 23.68,
+          "regret_seconds": 1.8719999999999999
+        }
+      },
+      "oracle_seconds": 21.808,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 23.68,
+        "stay_frozen_seconds": 26.548000000000002,
+        "stay_adaptive_seconds": 24.67
+      }
+    },
+    {
+      "scenario": {
+        "laps": 8,
+        "age": 12,
+        "low": 0.04,
+        "high": 0.3,
+        "prior_high": 0.9,
+        "accuracy": 1.0,
+        "pit_loss": 26,
+        "fresh_degradation": 0.06
+      },
+      "policies": {
+        "fixed": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 2.272000000000002
+        },
+        "certainty_equivalent": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 2.272000000000002
+        },
+        "frozen_belief": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 2.272000000000002
+        },
+        "adaptive": {
+          "action": "pit",
+          "expected_excess_seconds": 27.68,
+          "regret_seconds": 2.272000000000002
+        }
+      },
+      "oracle_seconds": 25.407999999999998,
+      "planning_information_value_seconds": 0.0,
+      "realized_policy_gain_seconds": 0.0,
+      "action_values": {
+        "pit_seconds": 27.68,
+        "stay_frozen_seconds": 30.548000000000002,
+        "stay_adaptive_seconds": 28.270000000000003
+      }
+    }
+  ]
+}
